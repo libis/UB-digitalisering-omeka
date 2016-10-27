@@ -1,21 +1,20 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
-<section class="item-section general-section">   
+<section class="item-section general-section">
     <div class="container-fluid">
         <div class="row image-row">
             <?php echo $this->openLayersZoom()->zoom(get_current_record('Item')); ?>
-            
-        </div>    
+
+        </div>
     </div>
 </section>
-<section class="metadata-section general-section">   
+<section class="metadata-section general-section">
     <div id="content" class='container' role="main" tabindex="-1">
-        <div class="row">
-            
-            <div class="offset-sm-2 col-sm-8 page">                
+        <div class="row">            
+            <div class="offset-sm-2 col-sm-8 page">
                 <div class='content'>
                     <h1 class="section-title projecten-title"><span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span></h1>
                     <?php echo all_element_texts('item'); ?>
-                    
+
                     <!-- The following returns all of the files associated with an item. -->
                     <?php if (metadata('item', 'has files') && (get_theme_option('Item FileGallery') == 1)): ?>
                     <div id="itemfiles" class="element">
@@ -53,10 +52,10 @@
                 </ul>
                 </nav>
             </div>
-        </div> 
+        </div>
     </div>
-    
-</section>    
+
+</section>
 <?php //fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
 
