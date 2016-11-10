@@ -16,6 +16,8 @@
 /.htaccess
 /admin/.htaccess
 /Capfile
+/themes/default/sass
+/themes/default/.sass-cache
 
 #################
 ## Eclipse
