@@ -16,8 +16,6 @@
 /.htaccess
 /admin/.htaccess
 /Capfile
-/themes/default/images
-/files
 
 #################
 ## Eclipse
