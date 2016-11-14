@@ -16,6 +16,9 @@
 /.htaccess
 /admin/.htaccess
 /Capfile
+/files
+/application/logs
+/themes/default/images
 /themes/default/sass
 /themes/default/.sass-cache
 

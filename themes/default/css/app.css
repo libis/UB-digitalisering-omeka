@@ -4823,21 +4823,28 @@ header {
   top: 0;
   width: 100%;
   z-index: 1; }
+  header .container {
+    padding-left: 0;
+    padding-right: 0; }
 
 .public-nav {
   background: #ff9800;
   padding: 0rem; }
   .public-nav .row {
-    border-bottom: 1px solid #e68900;
     margin: 0;
-    padding: 0.6rem 1rem; }
+    padding: 0.5rem 2rem 0.2rem; }
+  .public-nav .row:first-child {
+    padding: 1rem 2rem 0.5rem; }
+  .public-nav #exCollapsingNavbar2 {
+    padding: 0.8rem 0rem;
+    border-top: 1px solid #e68900; }
   .public-nav .navbar-brand {
     color: #fff;
     font-weight: 100;
     font-size: 2.2rem;
     margin-left: 0;
     line-height: 1;
-    padding: 0.1em 0.5rem;
+    padding: 0.1em 0.5rem 0.5rem 0.5rem;
     border: 4px solid #fff;
     text-transform: uppercase; }
   .public-nav .navbar-nav li {
@@ -4845,19 +4852,30 @@ header {
     .public-nav .navbar-nav li a {
       color: #fff;
       font-weight: 700;
-      margin: 0 20px 0 0;
-      font-size: 0.8rem;
+      margin: 0 25px 0 0;
+      font-size: 1rem;
       text-transform: uppercase; }
   .public-nav .form-inline {
     background: transparent;
     margin-left: 0.4rem;
     padding: 0rem;
-    border: 1px solid #fff;
-    height: 40px;
-    margin: 5px 0; }
+    border-bottom: 4px solid #fff;
+    height: 46px;
+    margin: 0px 0; }
     .public-nav .form-inline .form-control {
       background: none;
-      border: none; }
+      border: none;
+      padding-left: 0; }
+    .public-nav .form-inline *::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 100; }
+    .public-nav .form-inline *:-moz-placeholder {
+      color: #fff; }
+    .public-nav .form-inline *::-moz-placeholder {
+      color: #fff; }
+    .public-nav .form-inline *:-ms-input-placeholder {
+      color: #fff; }
   .public-nav .btn {
     background: #ff9800;
     padding: 6px;
@@ -4865,7 +4883,8 @@ header {
     border: none;
     color: #fff; }
   .public-nav i {
-    vertical-align: middle; }
+    vertical-align: middle;
+    font-size: 1.7rem; }
 
 .jumbotron {
   border-radius: 0;
@@ -4897,21 +4916,21 @@ header {
   margin-top: 600px; }
 
 .home-section {
-  padding: 0rem 0 0rem 0;
+  padding: 0rem 2rem;
   z-index: 50;
   position: relative;
-  background: #fff; }
+  background: #fafafa; }
   .home-section h2 {
     line-height: 1.8rem;
-    padding: 0.7rem 0;
-    text-align: center; }
+    padding: 0.7rem 0; }
   .home-section .exhibit-section-row {
     background: #fff; }
   .home-section .section-title {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 500;
     text-transform: uppercase;
-    margin: 1rem 0; }
+    padding: 4rem 0 0rem;
+    color: #ff9800; }
     .home-section .section-title span {
       padding: 0.5rem; }
   .home-section img {
@@ -4921,17 +4940,17 @@ header {
   .home-section .exhibit-columns {
     column-count: 3;
     column-gap: 1px;
-    column-rule: 1px outset #ffe0b2;
-    column-rule-style: ridge;
+    column-rule: 1px outset rgba(255, 152, 0, 0.1);
+    -moz-column-rule: 1px outset rgba(255, 152, 0, 0.1);
     -moz-column-count: 3;
-    -moz-column-gap: 0.05rem !important;
-    border-top: 1px solid #ffe0b2; }
+    -moz-column-gap: 0.05rem !important; }
   .home-section .card {
     border: none;
-    border-bottom: 1px solid #ffe0b2;
     margin-bottom: 0;
-    padding: 2rem;
-    margin-bottom: 1px; }
+    padding: 2rem 2rem 2rem 2rem;
+    border-top: 1px solid rgba(255, 152, 0, 0.1);
+    margin-bottom: 1px;
+    background: transparent; }
     .home-section .card .card-img {
       border-radius: 0; }
     .home-section .card .card-block {
@@ -4965,6 +4984,11 @@ header {
         font-weight: bold;
         margin-bottom: 1.5rem;
         max-width: 90%; }
+      .home-section .card .card-img-overlay .tag {
+        text-transform: uppercase;
+        background: #ff9800;
+        letter-spacing: 1px;
+        font-weight: 400; }
       .home-section .card .card-img-overlay hr {
         width: 15px;
         border-color: #ff9800;
@@ -4983,38 +5007,49 @@ header {
         .home-section .card .card-img-overlay .caption i {
           vertical-align: text-top;
           font-size: 1em; }
-  .home-section .featured h4 {
-    font-size: 2.5rem;
-    margin: 1rem 0;
-    font-weight: bold; }
-  .home-section .featured .overlay-text {
-    padding: 0rem; }
-  .home-section .featured .card-block {
-    padding-top: 1rem; }
-  .home-section .featured .description {
-    margin: 1rem 0;
-    color: #666; }
-  .home-section .featured .featured-tag {
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 5px; }
-    .home-section .featured .featured-tag span {
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      padding-bottom: 0.2rem;
-      border-bottom: 4px solid #ff9800; }
-  .home-section .featured .caption span {
-    border: 1px solid #ffe0b2;
-    padding: 0.8rem;
-    text-transform: uppercase;
-    font-size: 0.8rem; }
+  .home-section .featured {
+    background: #fff;
+    text-align: center; }
+    .home-section .featured h4 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(255, 152, 0, 0.3);
+      padding-bottom: 1rem; }
+    .home-section .featured .overlay-text {
+      padding: 0rem; }
+    .home-section .featured .card-block {
+      padding-top: 1rem; }
+    .home-section .featured .description {
+      margin: 1.5rem 0 2rem;
+      font-size: 1.4rem;
+      color: #666; }
+    .home-section .featured .featured-tag {
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-bottom: 5px; }
+      .home-section .featured .featured-tag span {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 4px solid #ff9800; }
+    .home-section .featured .caption {
+      margin: 1.5rem 0 0.5rem !important; }
+      .home-section .featured .caption span {
+        background: rgba(255, 152, 0, 0.5);
+        padding: 0.5rem 0.8rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #fff; }
+
+.project-section {
+  background: #fafafa; }
 
 .showcase-section {
   background: #000; }
   .showcase-section .exhibit-section-row {
     background: black;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #fff; }
+    margin-bottom: 3rem; }
     .showcase-section .exhibit-section-row h2 {
       color: #fff; }
   .showcase-section .card {
