@@ -4,7 +4,8 @@
         <div class="row">
             <div class="grid-sizer col-md-8 offset-md-2">
                 <h1>Intro boodschap<span>,</span></h1>
-                <p>Vestibulum ac hendrerit quam. Aliquam accumsan, mauris at pellentesque lobortis, mi nibh feugiat ante, nec mattis urna libero eu justo.</p>
+                <p>Vestibulum ac hendrerit quam. Aliquam accumsan, mauris at pellentesque lobortis,
+                   mi nibh feugiat ante, nec mattis urna libero eu justo.</p>
             </div>
         </div>
     </div>
@@ -21,21 +22,21 @@
             <h2 class="section-title projecten-title"><span>Tentoonstellingen</span></h2>
             <hr class="title-hr">
         </div> -->
-        <div class="row">
+        <div class="row"><?php echo('')?>
             <div class="card-columns exhibit-columns">
                 <div class="card featured">
                     <div class="card-block">
                         <div class="title-kijker">
                             <p class="featured-tag"><span>In de kijker</span></p>
                             <h4 class="card-title">Donec quis ornare metus</h4>
-                            <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin malesuada tellus nulla, non tempus ipsum vehicula consectetur.</p>
+                            <p class="description">Pellentesque habitant morbi tristique senectus et netus et
+                               malesuada fames ac turpis egestas. Proin malesuada tellus nulla,
+                                non tempus ipsum vehicula consectetur.</p>
                         </div>
                     </div>
                     <img class="card-img" src="<?php echo img('ph/bg4.jpg');?>" alt="Card image">
-                    <div class="card-block">
-                        <div class="overlay-text">
-                            <p class="caption"><span>Start tentoonstelling</span></p>
-                        </div>
+                    <div class="to-exhibit">
+                        <p><span>Start tentoonstelling</span></p>
                     </div>
                  </div>
                 <div class="card">
@@ -115,12 +116,10 @@
                       </div>
                   </div>
                   <img class="card-img" src="<?php echo img('ph/bg4.jpg');?>" alt="Card image">
-                  <div class="card-block">
-                      <div class="overlay-text">
-                          <p class="caption"><span>Naar project</span></p>
-                      </div>
+                  <div class="to-exhibit">
+                      <p><span>Naar project</span></p>
                   </div>
-                 </div>
+                </div>
                 <div class="card">
                     <img class="card-img" src="<?php echo img('ph/bg1.jpg');?>" alt="Card image">
                     <div class="card-img-overlay">
