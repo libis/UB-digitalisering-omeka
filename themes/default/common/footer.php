@@ -27,21 +27,32 @@
                             <li><a href="">Menu item 1</a></li>
                             <li><a href="">Menu item 1</a></li>
                             <li><a href="">Menu item 1</a></li>
-                           
+                            <li><a href="">Menu item 1</a></li>
+                            <li><a href="">Menu item 1</a></li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="col-sm-2">
+                        <ul>
+                            <li><a href="">Menu item 1</a></li>
+                            <li><a href="">Menu item 1</a></li>
+                            <li><a href="">Menu item 1</a></li>
+                            <li><a href="">Menu item 1</a></li>
+                            <li><a href="">Menu item 1</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
                         <h4>Locatie titel</h4>
                         <p>Straatstraat 22<br>
                             3000 Leuven<br>
                             016222222<br>
                         .....</p>
                     </div>
-                </div>    
+                </div>
             </div>
 
             <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
-        </div>    
+        </div>
 
     </footer><!-- end footer -->
 

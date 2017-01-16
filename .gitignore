@@ -21,6 +21,17 @@
 /themes/default/images
 /themes/default/sass
 /themes/default/.sass-cache
+/.vscode
+.sass-lint.yml
+/themes/default/bower_components
+/themes/default/sass
+/themes/default/.sass-cache
+/themes/default/css/app.css.map
+/themes/default/css/app.min.css.map
+/themes/default/package.json
+/themes/default/config.rb
+/themes/default/Gruntfile.js
+/plugins/SolrSearch/solr-core
 
 #################
 ## Eclipse

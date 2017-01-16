@@ -6540,8 +6540,8 @@ header .container {
 
 .home-section .exhibit-columns {
   column-gap: 1px;
-  column-rule: 1px outset rgba(255, 152, 0, 0.1);
-  -moz-column-rule: 1px outset rgba(255, 152, 0, 0.1);
+  column-rule: 1px outset rgba(255, 152, 0, 0.2);
+  -moz-column-rule: 1px outset rgba(255, 152, 0, 0.2);
   -moz-column-count: 3;
   -moz-column-gap: 0.05rem !important;
 }
@@ -6550,7 +6550,7 @@ header .container {
   border: none;
   margin-bottom: 0;
   padding: 2rem;
-  border-top: 1px solid rgba(255, 152, 0, 0.1);
+  border-top: 1px solid rgba(255, 152, 0, 0.2);
   margin-bottom: 1px;
   background: transparent;
 }
@@ -7029,9 +7029,141 @@ header .container {
   }
 }
 
+.solr-section-search {
+  margin-top: 170px;
+  z-index: 101;
+  padding: 0rem 0 3rem 0;
+}
+
+.solr-section-search h1 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.solr-section-search #solr-search-form {
+  padding-bottom: 2rem;
+}
+
+.solr-section-search #solr-search-form button {
+  background: #ff9800;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 8px 12px 8px 8px;
+  height: 2.3rem;
+  font-size: 1rem;
+  border-radius: 0 20px 20px 0;
+  margin: 0 0 0 -5px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.solr-section-search #solr-search-form button i {
+  vertical-align: middle;
+}
+
+.solr-section-search #solr-search-form input[type="text"] {
+  border: none;
+  padding: 0 20px;
+  height: 2.3rem;
+  min-width: 250px;
+  border-radius: 20px 0 0 20px;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: rgba(51, 51, 51, 0.8);
+  width: 100%;
+  max-width: 400px;
+}
+
+.solr-section-results {
+  background: #fafafa;
+  z-index: 101;
+  position: relative;
+  padding: 3rem;
+}
+
+@media (max-width: 767px) {
+  .solr-section-results {
+    margin-top: 0px;
+  }
+}
+
+.solr-section-results h1 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.solr-section-results .content {
+  padding: 3rem 0;
+}
+
+.solr-section-results #solr-applied-facets ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.2rem;
+}
+
+.solr-section-results #solr-applied-facets ul li {
+  background: #ff9800;
+  border-radius: 5px;
+  width: auto;
+  display: inline-block;
+  margin: 0 15px 25px 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  line-height: 1.2rem;
+}
+
+.solr-section-results #solr-applied-facets ul li a {
+  color: #fff;
+}
+
+.solr-section-results #solr-applied-facets ul li a i {
+  line-height: 1.2rem;
+  vertical-align: middle;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.solr-section-results h2 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: rgba(51, 51, 51, 0.8);
+  margin-bottom: 15px;
+}
+
+.solr-section-results .result {
+  padding: 1rem;
+  background: white;
+  border-bottom: 2px solid #fff;
+}
+
+.solr-section-results .result .result-title {
+  font-size: 1.2rem;
+}
+
+.solr-section-results #solr-facets strong {
+  font-size: 1rem;
+}
+
+.solr-section-results #solr-facets ul {
+  margin: 5px 0;
+}
+
+.solr-section-results #solr-facets ul li {
+  font-size: 1rem;
+}
+
 footer {
   background: transparent url("../images/footer_lodyas.png") repeat scroll 0 0;
-  padding: 3rem 0;
+  padding: 4rem 0;
   color: #ccc;
 }
 
@@ -7052,12 +7184,13 @@ footer img {
 
 footer ul {
   padding-left: 0;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 footer ul li {
   list-style: none;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 footer a {
