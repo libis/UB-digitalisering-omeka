@@ -6351,7 +6351,6 @@ header .container {
   padding: 0.1em 0.5rem 0.5rem;
   border: 4px solid #fff;
   text-transform: uppercase;
-  height: 46px;
   vertical-align: top;
 }
 
@@ -7071,7 +7070,7 @@ header .container {
   min-width: 250px;
   border-radius: 20px 0 0 20px;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1;
   color: rgba(51, 51, 51, 0.8);
   width: 100%;
@@ -7079,7 +7078,7 @@ header .container {
 }
 
 .solr-section-results {
-  background: #fafafa;
+  background: #f6f6f6;
   z-index: 101;
   position: relative;
   padding: 3rem;
@@ -7140,9 +7139,28 @@ header .container {
 }
 
 .solr-section-results .result {
-  padding: 1rem;
-  background: white;
-  border-bottom: 2px solid #fff;
+  padding: 2rem;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.solr-section-results .result h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.solr-section-results .result p {
+  margin-top: 10px;
+  color: #666;
+}
+
+.solr-section-results .result .col-text, .solr-section-results .result .col-img {
+  padding: 0;
+}
+
+.solr-section-results .result .col-text img, .solr-section-results .result .col-img img {
+  width: 90%;
 }
 
 .solr-section-results .result .result-title {
