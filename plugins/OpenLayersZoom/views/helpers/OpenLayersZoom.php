@@ -124,11 +124,15 @@ class OpenLayersZoom_View_Helper_OpenLayersZoom extends Zend_View_Helper_Abstrac
     {
         if ($file == null) {
             $file = get_current_record('file');
+
         }
         if (empty($file)) {
             return;
         }
 
+        return $file->getWebPath('fullsize');
+
+        /*
         $tileUrl = '';
         // Does it use a IIPImage server?
         if ($this->_creator->useIIPImageServer()) {
@@ -145,7 +149,7 @@ class OpenLayersZoom_View_Helper_OpenLayersZoom extends Zend_View_Helper_Abstrac
             $tileUrl = $this->_creator->getZDataWeb($file);
     }
 
-        return $tileUrl;
+        return $tileUrl;*/
     }
 
     /**
@@ -163,7 +167,7 @@ class OpenLayersZoom_View_Helper_OpenLayersZoom extends Zend_View_Helper_Abstrac
             $html = '<div id="' . $target . '" class="map" ></div>';
             $html .= sprintf(
                 '<script type="text/javascript">open_layers_zoom("%s",%d,%d,%s)</script>',
-                $target, $width, $height, json_encode($tileUrl . '/'));
+                $target, $width, $height, json_encode($tileUrl));
 
             return $html;
         }

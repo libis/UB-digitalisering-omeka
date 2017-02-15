@@ -25,12 +25,13 @@ function open_layers_zoom(target, imgWidth, imgHeight, url)
         units: 'pixels',
         extent: [0, 0, imgWidth/2, imgHeight/2]
     });
-    
+
     var source = new ol.source.ImageStatic({
-        url: 'http://localhost/omeka/ub_digitaal/files/fullsize/bdae8b21a95fbc8863f0ae3598e68ec4.jpg',
+        url: url,
         projection: projection,
         imageExtent: extent,
-        attributions: '© <a href="http://xkcd.com/license.html">xkcd</a>'
+        attributions: '© <a href="http://xkcd.com/license.html">xkcd</a>',
+        maxZoom: 1
     });
 
     var map = new ol.Map({
@@ -47,13 +48,14 @@ function open_layers_zoom(target, imgWidth, imgHeight, url)
         interactions: ol.interaction.defaults().extend([
             new ol.interaction.DragRotateAndZoom()
         ]),
+        interactions: ol.interaction.defaults({mouseWheelZoom:false}),
         target: target,
         view: new ol.View({
             projection: projection,
             //center: imgCenter,
             center: ol.extent.getCenter(extent),
             zoom: -1,
-            maxZoom: 8
+            maxZoom: 1
         })
     });
 }
