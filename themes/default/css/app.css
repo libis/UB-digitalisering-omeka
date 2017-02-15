@@ -6734,6 +6734,11 @@ header .container {
   background: #000;
 }
 
+.showcase-section .card-columns {
+  -moz-column-count: 4;
+  -moz-column-gap: 5.25rem;
+}
+
 .showcase-section .exhibit-section-row {
   margin-bottom: 3rem;
 }
@@ -6770,17 +6775,31 @@ header .container {
   color: #fff;
 }
 
+.item-title-section {
+  padding: 12rem 0 3rem 0;
+  background: transparent url("../images/footer_lodyas.png") repeat scroll 0 0;
+}
+
+.item-title-section h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.item-title-section h2 {
+  color: white;
+}
+
 .item-section {
-  z-index: -3;
+  z-index: 50;
+  position: relative;
   padding-top: 0;
+  background: #f6f6f6;
 }
 
 .item-section .image-row {
   overflow: hidden;
-}
-
-.item-section .openlayerszoom-images {
-  background: transparent url("../images/footer_lodyas.png") repeat scroll 0 0;
+  background: #f6f6f6;
 }
 
 .item-section .ol-mouse-position {
@@ -6818,7 +6837,7 @@ header .container {
 }
 
 .item-section .ol-viewport {
-  z-index: 0;
+  z-index: 101;
 }
 
 .item-section .ol-viewport .ol-unselectable {
@@ -6848,8 +6867,8 @@ header .container {
 }
 
 .item-section .ol-zoom {
-  bottom: 0.5em;
-  right: 0.5em;
+  bottom: 1em;
+  right: 1em;
   left: auto !important;
   top: auto;
 }
@@ -6869,33 +6888,47 @@ header .container {
 }
 
 .item-section .ol-full-screen {
-  right: 0.5em;
-  bottom: 4.5em;
+  right: 1em;
+  bottom: 5em;
   top: auto;
 }
 
 .item-section .ol-overviewmap {
-  right: 0.5em;
+  right: 1em;
   left: auto;
-  bottom: 7em;
+  bottom: 7.5em;
   top: auto;
 }
 
 .metadata-section {
   z-index: 101;
-  background: #fff3e0;
+  background: #fff;
   position: relative;
 }
 
 .metadata-section .content {
-  background: #fff;
   padding: 3rem;
 }
 
-.metadata-section h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
+.metadata-section .content h2 {
+  display: none;
+}
+
+.metadata-section .content .element {
+  clear: both;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.metadata-section .content .element .element-text {
+  color: #666;
+}
+
+.metadata-section .content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  float: left;
+  width: 200px;
 }
 
 .metadata-section .item-pagination li {

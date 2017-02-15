@@ -1,18 +1,28 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
-<section class="item-section general-section">
+<section class="item-title-section">
+  <div id="content" class='container' role="main" tabindex="-1">
+      <div class="row">
+          <div class="offset-sm-2 col-sm-8 col-xs-12 page">
+            <h1 class="section-title projecten-title">
+              <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
+            </h1>
+            <h2><i>Item type</i></h2>
+          </div>
+      </div>
+    </div>
+</section>
+<section class="item-section">
     <div class="container-fluid">
         <div class="row image-row">
             <?php echo $this->openLayersZoom()->zoom(get_current_record('Item')); ?>
-
         </div>
     </div>
 </section>
-<section class="metadata-section general-section">
+<section class="metadata-section">
     <div id="content" class='container' role="main" tabindex="-1">
-        <div class="row">            
-            <div class="offset-sm-2 col-sm-8 page">
+        <div class="row">
+            <div class="offset-sm-2 col-sm-10 col-xs-12 page">
                 <div class='content'>
-                    <h1 class="section-title projecten-title"><span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span></h1>
                     <?php echo all_element_texts('item'); ?>
 
                     <!-- The following returns all of the files associated with an item. -->
@@ -56,8 +66,5 @@
     </div>
 
 </section>
-<?php //fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-
-
 
 <?php echo foot(); ?>
