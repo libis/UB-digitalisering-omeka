@@ -115,7 +115,7 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
 
             if(!empty($pids)):
                 foreach($pids as $pid):
-                    $obj = rosetta_download_image(get_option('rosetta_resolver').'/'.$pid);
+                    $obj = rosetta_download_image(get_option('rosetta_resolver').'/'.$pid.'/stream?quality=low');
 
                     file_put_contents('/tmp/'.$pid.'_resolver',$obj);
 
@@ -129,7 +129,7 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
                     $file->save();
 
                     //delete the tmp file
-                    unlink('/tmp/'.$pid.'_resolver');
+                    //unlink('/tmp/'.$pid.'_resolver');
                 endforeach;
             else:
                 return false;

@@ -7,12 +7,13 @@
         foreach ($list as $key => $rep):
             //var_dump($rep['content']);echo '<br><hr><br>';
             $content = $rep['content'];
+            echo "<ul>";
             foreach($content as $fl => $file):
-              echo $fl."<br>";
-              echo "<div class='rosetta_image child'><img alt='".$file['label']."' src='".$base_url."/".$fl."'/><Input type = 'Radio' Name ='pid' value= '".$fl."'>
-              </div>";
+              //echo $fl."<br>";
+              echo "<li><a target='_blank' href='".$base_url."/".$fl."/stream?quality=low'>".$file['label']." - ".$file['file_label']."</a><Input type = 'Radio' Name ='pid' value= '".$fl."'>
+              </li>";
             endforeach;
-            echo '<br><hr><br>';          
+            echo '</ul><hr><br>';
         endforeach;
         //echo $html;
     else:?>
