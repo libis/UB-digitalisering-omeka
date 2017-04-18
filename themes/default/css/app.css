@@ -6997,6 +6997,11 @@ header .container {
   padding-top: 0.5rem;
 }
 
+.exhibit-show-section .page .exhibit-block,
+.simple-page-section .page .exhibit-block {
+  overflow: auto;
+}
+
 .exhibit-show-section .page .exhibit,
 .simple-page-section .page .exhibit {
   clear: both;

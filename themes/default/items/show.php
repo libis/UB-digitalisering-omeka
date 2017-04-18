@@ -6,7 +6,9 @@
             <h1 class="section-title projecten-title">
               <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
             </h1>
-            <h2><i>Item type</i></h2>
+            <?php if(metadata('item','item_type_name')):?>
+              <h2><i><?php echo metadata('item','item_type_name');?></i></h2>
+            <?php endif;?>
           </div>
       </div>
     </div>
@@ -49,11 +51,6 @@
                     </div>
                     <?php endif;?>
 
-                    <!-- The following prints a citation for this item. -->
-                    <div id="item-citation" class="element">
-                        <h3><?php echo __('Citation'); ?></h3>
-                        <div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
-                    </div>
                 </div>
                 <nav>
                 <ul class="item-pagination navigation">
