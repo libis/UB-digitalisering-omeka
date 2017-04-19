@@ -2,7 +2,7 @@
 <section class="item-title-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
-          <div class="offset-sm-2 col-sm-8 col-xs-12 page">
+          <div class="col-sm-12 col-xs-12 page">
             <h1 class="section-title projecten-title">
               <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
             </h1>
@@ -16,6 +16,8 @@
 <section class="item-section">
     <div class="container-fluid">
         <div class="row image-row">
+            <a id="prev" class="image-control"><i class="material-icons">&#xE5CB;</i></a>
+            <a id="next" class="image-control"><i class="material-icons">&#xE5CC;</i></a>
             <?php echo $this->openLayersZoom()->zoom(get_current_record('Item')); ?>
         </div>
     </div>
@@ -61,7 +63,30 @@
             </div>
         </div>
     </div>
-
 </section>
+
+<script>
+    //image control
+    var divs = jQuery('div[id^="map-"]').hide(),
+
+    N = divs.length,
+    C = 0;
+
+    if(N > 1){
+      jQuery("#prev").fadeIn();
+      jQuery("#next").fadeIn();
+    }
+  
+    divs.hide().eq( C ).show();
+
+    jQuery("#next, #prev").click(function(){
+        jQuery("#prev").hide();
+        jQuery("#next").hide();
+
+        divs.stop().hide().fadeOut(1000).eq( (this.id=='next'? ++C : --C) %N ).fadeIn(800);
+        jQuery("#prev").delay( 800 ).fadeIn();
+        jQuery("#next").delay( 800 ).fadeIn();
+    });
+</script>
 
 <?php echo foot(); ?>
