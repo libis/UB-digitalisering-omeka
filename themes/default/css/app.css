@@ -6832,6 +6832,15 @@ header .container {
   color: white;
 }
 
+.item-title-section h4 {
+  color: white;
+  font-weight: 100;
+}
+
+.item-title-section h4 a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .item-section {
   z-index: 50;
   position: relative;
@@ -7027,7 +7036,6 @@ header .container {
 
 .exhibit-show-section,
 .simple-page-section {
-  margin-top: 170px;
   background: #f7f7f7;
   z-index: 101;
   position: relative;
@@ -7055,7 +7063,7 @@ header .container {
 
 .exhibit-show-section .page .top,
 .simple-page-section .page .top {
-  background: #FFF3E0;
+  background: rgba(255, 152, 0, 0.3);
   margin: 0;
   height: auto;
   overflow: hidden;
@@ -7113,6 +7121,7 @@ header .container {
 .simple-page-section .content {
   background: #fff;
   padding: 3rem;
+  min-height: 50rem;
 }
 
 .exhibit-show-section .content h1,
@@ -7138,13 +7147,24 @@ header .container {
 .simple-page-section .nav ul li {
   list-style: none;
   font-weight: bold;
-  padding: 1rem 0;
-  border-bottom: 1px solid #ffeacc;
+  padding: 0.5rem 0;
 }
 
-.exhibit-show-section .nav ul li:first-child,
-.simple-page-section .nav ul li:first-child {
-  border-top: 1px solid #ffeacc;
+.exhibit-show-section .nav ul li a:hover,
+.simple-page-section .nav ul li a:hover {
+  text-decoration: none;
+}
+
+.exhibit-show-section .nav ul li ul,
+.simple-page-section .nav ul li ul {
+  margin-top: 10px;
+}
+
+.exhibit-show-section .nav ul li ul li,
+.simple-page-section .nav ul li ul li {
+  border-left: 2px solid rgba(255, 152, 0, 0.8);
+  padding: 0.5rem;
+  font-weight: 100;
 }
 
 @media (max-width: 767px) {

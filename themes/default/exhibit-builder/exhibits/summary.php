@@ -1,22 +1,32 @@
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
+<section class="item-title-section">
+  <div id="content" class='container' role="main" tabindex="-1">
+      <div class="row">
+          <div class="offset-sm-1 col-sm-11 col-xs-12 page">
+            <?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
+            <div class="exhibit-credits">
+                  <h3><?php echo $exhibitCredits; ?></h3>
+            </div>
+            <?php endif; ?>
+
+            <h1><?php echo metadata('exhibit', 'title'); ?></h1>
+          </div>
+      </div>
+    </div>
+</section>
 <section class="metadata-section general-section exhibit-show-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
-        <div class="offset-sm-2 col-sm-8 page">
+        <div class="offset-sm-1 col-sm-9 page">
             <div class='top'>
-                <?php if (!$is_home_page): ?>
-                <p id="simple-pages-breadcrumbs"><span>Tentoonstelling</span></p>
+                <p id="simple-pages-breadcrumbs"><span>
+                  <a href="<?php echo url('exhibits');?>">Tentoonstellingen</a>
+                  > <?php echo metadata('exhibit', 'title'); ?>
+                </span></p>
 
-                <?php endif; ?>
             </div>
             <div class='content'>
-                <?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
-                <div class="exhibit-credits">
-                      <h3><?php echo $exhibitCredits; ?></h3>
-                </div>
-                <?php endif; ?>
 
-                <h1><?php echo metadata('exhibit', 'title'); ?></h1>
 
                 <?php if (($exhibit->cover_image_file_id)): ?>
                 <?php
