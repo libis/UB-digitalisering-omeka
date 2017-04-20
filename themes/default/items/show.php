@@ -2,7 +2,7 @@
 <section class="item-title-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
-          <div class="col-sm-12 col-xs-12 page">
+          <div class="offset-sm-1 col-sm-11 col-xs-12 page">
             <h1 class="section-title projecten-title">
               <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
             </h1>
@@ -25,7 +25,7 @@
 <section class="metadata-section">
     <div id="content" class='container' role="main" tabindex="-1">
         <div class="row">
-            <div class="offset-sm-2 col-sm-10 col-xs-12 page">
+            <div class="offset-sm-1 col-sm-10 col-xs-12 page">
                 <div class='content'>
                     <?php echo all_element_texts('item'); ?>
 
