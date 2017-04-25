@@ -28,9 +28,7 @@
   <div class="container solr-container">
     <!-- Applied facets. -->
     <div id="solr-applied-facets">
-
       <ul>
-
         <!-- Get the applied facets. -->
         <?php foreach (SolrSearch_Helpers_Facet::parseFacets() as $f) : ?>
           <li>
@@ -46,27 +44,21 @@
 
           </li>
         <?php endforeach; ?>
-
       </ul>
-
     </div>
 
     <div class="row">
       <div id="solr-facets" class="col-md-3 col-xs-12">
           <!-- Facets. -->
-
-
           <h2><?php echo __('Limit your search'); ?></h2>
 
             <?php foreach ($results->facet_counts->facet_fields as $name => $facets) : ?>
 
             <!-- Does the facet have any hits? -->
             <?php if (count(get_object_vars($facets))) : ?>
-
                 <!-- Facet label. -->
                 <?php $label = SolrSearch_Helpers_Facet::keyToLabel($name); ?>
                 <strong><?php echo $label; ?></strong>
-
               <ul>
               <!-- Facets. -->
                 <?php foreach ($facets as $value => $count) : ?>
@@ -96,31 +88,35 @@
             <!-- Results. -->
 
             <!-- Number found. -->
-            <h2 id="num-found">
-                <?php echo $results->response->numFound; ?> results
-            </h2>
-
+            <div class="row">
+              <div class="col-md-8 col-xs-12">
+                <h2 id="num-found">
+                    <?php echo $results->response->numFound; ?> results
+                </h2>
+              </div>
+              <div class="col-md-4 col-xs-12">
+                <?php echo pagination_links(array('scrolling_style'=>'Sliding')); ?>
+              </div>
+            </div>
             <?php foreach ($results->response->docs as $doc) : ?>
 
               <!-- Document. -->
               <div class="row result">
                 <?php if ($doc->resulttype == 'Item') :
-
                     $item = get_db()->getTable($doc->model)->find($doc->modelid);
                     if (metadata($item, 'has files')) :?>
-                          <div class="col-md-3 col-img">
-                      <?php
-                      echo link_to_item(
-                          item_image('square_thumbnail', array('alt' => $doc->title), 0, $item),
-                          array(),
-                          'show',
-                          $item
-                      );
-                      ?>
-                      </div>
-
-                      <?php endif; ?>
-                    <?php endif;?>
+                        <div class="col-md-3 col-img">
+                            <?php
+                            echo link_to_item(
+                                item_image('thumbnail', array('alt' => $doc->title), 0, $item),
+                                array(),
+                                'show',
+                                $item
+                            );
+                            ?>
+                        </div>
+                    <?php endif; ?>
+                  <?php endif;?>
 
                 <!-- Header. -->
                 <div class="col-md-9 col-text">
@@ -157,8 +153,11 @@
             <?php endforeach; ?>
         </div>
     </div>
-
-    <?php echo pagination_links(); ?>
+    <div class="row">
+      <div class="offset-md-8 col-md-4 col-xs-12">
+        <?php echo pagination_links(array('scrolling_style'=>'Sliding')); ?>
+      </div>
+    </div>
   </div>
 </div>
 <?php echo foot();

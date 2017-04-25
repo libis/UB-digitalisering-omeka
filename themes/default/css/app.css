@@ -6323,7 +6323,7 @@ header .container {
 .public-nav {
   background: #ff9800;
   padding: 0px;
-  border-bottom: 1px solid #e68900;
+  border-bottom: 2px solid #e68900;
 }
 
 .public-nav .row {
@@ -6336,7 +6336,7 @@ header .container {
 }
 
 .public-nav #exCollapsingNavbar2 {
-  padding: 0.8rem 0;
+  padding: 0.7rem 0;
   border-top: 1px solid #e68900;
 }
 
@@ -6375,7 +6375,7 @@ header .container {
   color: #fff;
   font-weight: 700;
   margin: 0 25px 0 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -6470,7 +6470,7 @@ header .container {
   height: 600px;
   width: 100%;
   z-index: -2;
-  margin-top: -144px;
+  margin-top: -142px;
 }
 
 .jumbotron h1 {
@@ -6557,7 +6557,7 @@ header .container {
   font-size: 1.1rem;
   padding: 2rem 1rem;
   background: rgba(255, 152, 0, 0.7);
-  border-top: 10px solid rgba(255, 152, 0, 0.6);
+  border-top: 5px solid rgba(255, 152, 0, 0.6);
 }
 
 .home-section img {
@@ -7050,15 +7050,19 @@ header .container {
 
 .exhibit-show-section h3,
 .simple-page-section h3 {
-  font-weight: 100;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 
 .exhibit-show-section .cover,
 .simple-page-section .cover {
+  padding: 3rem;
+}
+
+.exhibit-show-section .cover img,
+.simple-page-section .cover img {
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 .exhibit-show-section .page .top,
@@ -7102,6 +7106,18 @@ header .container {
 .exhibit-show-section .page .exhibit,
 .simple-page-section .page .exhibit {
   clear: both;
+  margin-bottom: 2rem;
+}
+
+.exhibit-show-section .page .exhibit .tags a,
+.simple-page-section .page .exhibit .tags a {
+  background: rgba(255, 152, 0, 0.8);
+  color: white;
+  border-radius: 5px;
+  margin: 0 5px 5px 0;
+  padding: 0.3rem 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .exhibit-show-section .page .exhibit .image,
@@ -7287,7 +7303,7 @@ header .container {
 
 .solr-section-results .result {
   padding: 2rem;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -7320,10 +7336,47 @@ header .container {
 
 .solr-section-results #solr-facets ul {
   margin: 5px 0;
+  list-style: none;
+  margin-left: 0.6rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid rgba(255, 152, 0, 0.2);
 }
 
 .solr-section-results #solr-facets ul li {
   font-size: 1rem;
+}
+
+.solr-section-results .pagination {
+  list-style: none;
+  width: 300px;
+  float: right;
+  text-align: right;
+  margin: 0 0 15px 0;
+  font-weight: 100;
+}
+
+.solr-section-results .pagination li {
+  display: inline-block;
+  text-align: center;
+}
+
+.solr-section-results .pagination li a {
+  line-height: inherit;
+}
+
+.solr-section-results .pagination li a i {
+  font-size: 1.9rem;
+  line-height: 0.7;
+  vertical-align: text-top;
+}
+
+.solr-section-results .pagination li input {
+  background: #eee;
+  border: none;
+  padding: 3px 5px;
+  margin: 0 4px;
+  width: 60px;
+  text-align: right;
 }
 
 footer {

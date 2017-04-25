@@ -11,7 +11,7 @@ echo head(array(
 ));
 ?>
 <section class="item-title-section">
-  <div id="content" class='container' role="main" tabindex="-1">
+    <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
           <div class="offset-sm-1 col-sm-11 col-xs-12 page">
               <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
@@ -25,8 +25,7 @@ echo head(array(
             <div class="offset-sm-1 col-sm-9 page">
                 <div class='top'>
                     <?php if (!$is_home_page): ?>
-                    <p id="simple-pages-breadcrumbs"><span><?php echo simple_pages_display_breadcrumbs(); ?></span></p>
-
+                        <p id="simple-pages-breadcrumbs"><span><?php echo simple_pages_display_breadcrumbs(); ?></span></p>
                     <?php endif; ?>
                 </div>
                 <div class='content'>

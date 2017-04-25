@@ -6,7 +6,7 @@ echo head(array(
 <section class="item-title-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
-          <div class="offset-sm-1 col-sm-11 col-xs-12 page">            
+          <div class="offset-sm-1 col-sm-11 col-xs-12 page">
             <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></h1>
             <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
           </div>
@@ -50,7 +50,6 @@ echo head(array(
           </div>
           <div class="col-md-2 nav">
             <nav id="exhibit-pages">
-                <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
                 <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
             </nav>
           </div>
