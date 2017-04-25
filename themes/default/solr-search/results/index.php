@@ -10,7 +10,7 @@
 
 <div class="content-wrapper bs-docs-section solr-section-search">
   <div class="container solr-container">
-    <h1><?php echo __('Search the Collection'); ?></h1>
+    <h1>De collectie</h1>
 
     <!-- Search form. -->
     <div class="solr">
@@ -25,7 +25,7 @@
   </div>
 </div>
 <div class="content-wrapper bs-docs-section solr-section-results">
-  <div class="container solr-container">
+  <div class="container-fluid solr-container">
     <!-- Applied facets. -->
     <div id="solr-applied-facets">
       <ul>
@@ -91,7 +91,7 @@
             <div class="row">
               <div class="col-md-8 col-xs-12">
                 <h2 id="num-found">
-                    <?php echo $results->response->numFound; ?> results
+                    <?php echo $results->response->numFound; ?> resultaten
                 </h2>
               </div>
               <div class="col-md-4 col-xs-12">
@@ -105,7 +105,7 @@
                 <?php if ($doc->resulttype == 'Item') :
                     $item = get_db()->getTable($doc->model)->find($doc->modelid);
                     if (metadata($item, 'has files')) :?>
-                        <div class="col-md-3 col-img">
+                        <div class="col-md-2 col-img">
                             <?php
                             echo link_to_item(
                                 item_image('thumbnail', array('alt' => $doc->title), 0, $item),
@@ -119,7 +119,7 @@
                   <?php endif;?>
 
                 <!-- Header. -->
-                <div class="col-md-9 col-text">
+                <div class="col-md-10 col-text">
 
                     <!-- Record URL. -->
                     <?php $url = SolrSearch_Helpers_View::getDocumentUrl($doc); ?>

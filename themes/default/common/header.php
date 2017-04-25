@@ -52,8 +52,8 @@
                           &#9776;
                         </button>
                         <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">Expo</a>
-                        <form class="form-inline pull-xs-right">
-                          <input class="form-control" type="text" placeholder="Search">
+                        <form action="<?php echo url("/solr-search/");?>" class="form-inline pull-xs-right">
+                          <input class="form-control" name="q" type="text" placeholder="Search">
                           <button class="btn" type="submit"><i class="material-icons">search</i></button>
                         </form>
                     </div>

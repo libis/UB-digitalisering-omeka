@@ -1,5 +1,5 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
-<section class="item-title-section">
+<!--<section class="item-title-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
           <div class="offset-sm-1 col-sm-11 col-xs-12 page">
@@ -12,7 +12,7 @@
           </div>
       </div>
     </div>
-</section>
+</section>-->
 <section class="item-section">
     <div class="container-fluid">
         <div class="row image-row">
@@ -27,8 +27,14 @@
         <div class="row">
             <div class="offset-sm-1 col-sm-10 col-xs-12 page">
                 <div class='content'>
-                    <?php echo all_element_texts('item'); ?>
+                    <?php if(metadata('item','item_type_name')):?>
+                        <h4><i><?php echo metadata('item','item_type_name');?></i></h4>
+                    <?php endif;?>
+                    <h1 class="section-title projecten-title">
+                        <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
+                    </h1>
 
+                    <?php echo all_element_texts('item'); ?>
                     <!-- The following returns all of the files associated with an item. -->
                     <?php if (metadata('item', 'has files') && (get_theme_option('Item FileGallery') == 1)): ?>
                     <div id="itemfiles" class="element">

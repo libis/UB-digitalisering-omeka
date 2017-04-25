@@ -2,7 +2,7 @@
 <section class="item-title-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
-          <div class="offset-sm-1 col-sm-11 col-xs-12 page">
+          <div class="col-sm-12 col-xs-12 page">
             <?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
             <div class="exhibit-credits">
                   <h3><?php echo $exhibitCredits; ?></h3>
@@ -14,21 +14,20 @@
       </div>
     </div>
 </section>
-<section class="metadata-section general-section exhibit-show-section">
-  <div id="content" class='container' role="main" tabindex="-1">
+<section class="general-section exhibit-show-section">
+  <div id="content" class='container-fluid' role="main" tabindex="-1">
       <div class="row">
         <div class="col-sm-5 page">
-            <!--<div class='top'>
-                <p id="simple-pages-breadcrumbs"><span>
-                  <a href="<?php echo url('exhibits');?>">Tentoonstellingen</a>
-                  > <?php echo metadata('exhibit', 'title'); ?>
-                </span></p>
-            </div>-->
             <div class='content'>
                 <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
+
                 <div class="exhibit-description">
+                    <h3>Overzicht tentoonstelling</h3>
+                    <hr class="top-exhibit">
                     <?php echo $exhibitDescription; ?>
+                    <hr class="top-exhibit">
                 </div>
+
                 <?php endif; ?>
             </div>
         </div>

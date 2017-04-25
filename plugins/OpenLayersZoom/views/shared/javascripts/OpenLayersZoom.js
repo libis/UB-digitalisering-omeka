@@ -42,8 +42,7 @@ function open_layers_zoom(target, imgWidth, imgHeight, url)
         ],
         logo: false,
         controls: ol.control.defaults({attribution: false}).extend([
-            new ol.control.FullScreen(),
-            new ol.control.OverviewMap()
+            new ol.control.FullScreen()
         ]),
         interactions: ol.interaction.defaults().extend([
             new ol.interaction.DragRotateAndZoom()
@@ -54,7 +53,7 @@ function open_layers_zoom(target, imgWidth, imgHeight, url)
             projection: projection,
             //center: imgCenter,
             center: ol.extent.getCenter(extent),
-            zoom: -1,
+            zoom: 0,
             maxZoom: 1
         })
     });

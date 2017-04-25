@@ -6305,6 +6305,7 @@ body {
 header {
   margin-left: auto;
   margin-right: auto;
+  background: #f7f7f7;
   width: 100%;
   z-index: 1;
 }
@@ -6818,34 +6819,28 @@ header .container {
 }
 
 .item-title-section {
-  padding: 5rem 0 5rem 0;
-  background: transparent url("../images/footer_lodyas.png") repeat scroll 0 0;
+  padding: 3rem 0 3rem 0;
+  background: #f7f7f7;
 }
 
 .item-title-section h1 {
-  color: white;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.item-title-section h2 {
-  color: white;
-}
-
 .item-title-section h4 {
-  color: white;
   font-weight: 100;
 }
 
 .item-title-section h4 a {
-  color: rgba(255, 255, 255, 0.7);
+  color: #666;
 }
 
 .item-section {
   z-index: 50;
   position: relative;
   padding-top: 0;
-  background: #f7f7f7;
+  background: #eee;
 }
 
 .item-section .container-fluid {
@@ -6986,6 +6981,12 @@ header .container {
   padding: 4rem 0 3rem 0;
 }
 
+.metadata-section .content h1 {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
 .metadata-section .content h2 {
   display: none;
 }
@@ -7006,6 +7007,12 @@ header .container {
   float: left;
   line-height: 1.5;
   width: 200px;
+}
+
+@media (max-width: 767px) {
+  .metadata-section .content h3 {
+    float: none;
+  }
 }
 
 .metadata-section .item-pagination {
@@ -7036,7 +7043,7 @@ header .container {
 
 .exhibit-show-section,
 .simple-page-section {
-  background: #f7f7f7;
+  background: white;
   z-index: 101;
   position: relative;
 }
@@ -7053,6 +7060,92 @@ header .container {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+.exhibit-show-section h4,
+.simple-page-section h4 {
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.exhibit-show-section .card-columns,
+.simple-page-section .card-columns {
+  column-gap: 3rem;
+  column-rule: 2px solid rgba(255, 152, 0, 0.2);
+  -moz-column-rule: 2px solid rgba(255, 152, 0, 0.2);
+  -moz-column-count: 3;
+  -moz-column-gap: 3rem !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .exhibit-show-section .card-columns,
+  .simple-page-section .card-columns {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .exhibit-show-section .card-columns,
+  .simple-page-section .card-columns {
+    column-count: 3;
+  }
+}
+
+.exhibit-show-section .card-columns .card,
+.simple-page-section .card-columns .card {
+  border: none;
+  background: none;
+  padding: 2rem 0;
+}
+
+.exhibit-show-section .card-columns .card img,
+.simple-page-section .card-columns .card img {
+  width: 100%;
+}
+
+.exhibit-show-section .card-columns .card .card-title,
+.simple-page-section .card-columns .card .card-title {
+  text-transform: none;
+  font-weight: bold;
+}
+
+.exhibit-show-section .card-columns .card .card-block,
+.simple-page-section .card-columns .card .card-block {
+  background: none;
+  padding: 2rem 0;
+}
+
+.exhibit-show-section .card-columns .card .card-footer,
+.simple-page-section .card-columns .card .card-footer {
+  border-top: 2px solid rgba(255, 152, 0, 0.2);
+  padding: 0;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  background: none;
+}
+
+.exhibit-show-section .card-columns .card .card-footer .lees-meer,
+.simple-page-section .card-columns .card .card-footer .lees-meer {
+  line-height: 1rem;
+  text-align: right;
+}
+
+.exhibit-show-section .card-columns .card .card-footer .lees-meer a,
+.simple-page-section .card-columns .card .card-footer .lees-meer a {
+  background: rgba(255, 152, 0, 0.8);
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0.3rem 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.exhibit-show-section .card-columns .card .card-footer .lees-meer a:hover,
+.simple-page-section .card-columns .card .card-footer .lees-meer a:hover {
+  text-decoration: none;
+  background: #ff9800;
 }
 
 .exhibit-show-section .cover,
@@ -7103,21 +7196,36 @@ header .container {
   overflow: auto;
 }
 
+.exhibit-show-section .page hr.top-exhibit,
+.simple-page-section .page hr.top-exhibit {
+  width: 40px;
+  border-color: rgba(255, 152, 0, 0.3);
+  border-width: 10px;
+}
+
+.exhibit-show-section .page .exhibit-description,
+.simple-page-section .page .exhibit-description {
+  padding: 0;
+}
+
+.exhibit-show-section .page .exhibit-description h3,
+.simple-page-section .page .exhibit-description h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.exhibit-show-section .page .exhibit-description p,
+.simple-page-section .page .exhibit-description p {
+  padding: 1rem 0;
+}
+
 .exhibit-show-section .page .exhibit,
 .simple-page-section .page .exhibit {
   clear: both;
   margin-bottom: 2rem;
-}
-
-.exhibit-show-section .page .exhibit .tags a,
-.simple-page-section .page .exhibit .tags a {
-  background: rgba(255, 152, 0, 0.8);
-  color: white;
-  border-radius: 5px;
-  margin: 0 5px 5px 0;
-  padding: 0.3rem 0.5rem;
-  font-weight: bold;
-  font-size: 1rem;
 }
 
 .exhibit-show-section .page .exhibit .image,
@@ -7136,7 +7244,7 @@ header .container {
 .exhibit-show-section .content,
 .simple-page-section .content {
   background: #fff;
-  padding: 3rem;
+  padding: 3rem 0rem;
   min-height: 50rem;
 }
 
@@ -7183,6 +7291,17 @@ header .container {
   font-weight: 100;
 }
 
+.exhibit-show-section .nav .simple-nav,
+.simple-page-section .nav .simple-nav {
+  padding: 1rem;
+  background: #ff9800;
+}
+
+.exhibit-show-section .nav .simple-nav a,
+.simple-page-section .nav .simple-nav a {
+  color: white;
+}
+
 @media (max-width: 767px) {
   .exhibit-show-section .nav,
   .simple-page-section .nav {
@@ -7192,20 +7311,19 @@ header .container {
 }
 
 .solr-section-search {
-  margin-top: 3rem;
   z-index: 101;
-  padding: 0rem 0 3rem 0;
+  padding: 3rem 0 3rem 0;
+  background: #f7f7f7;
 }
 
 .solr-section-search h1 {
   margin-bottom: 2rem;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
 }
 
 .solr-section-search #solr-search-form {
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .solr-section-search #solr-search-form button {
@@ -7227,7 +7345,7 @@ header .container {
 }
 
 .solr-section-search #solr-search-form input[type="text"] {
-  border: none;
+  border: 1px solid #ccc;
   padding: 0 20px;
   height: 2.3rem;
   min-width: 250px;
@@ -7237,11 +7355,17 @@ header .container {
   line-height: 1;
   color: rgba(51, 51, 51, 0.8);
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
+}
+
+@media (max-width: 767px) {
+  .solr-section-search #solr-search-form input[type="text"] {
+    max-width: 400px;
+  }
 }
 
 .solr-section-results {
-  background: #f7f7f7;
+  background: #eee;
   z-index: 101;
   position: relative;
   padding: 3rem;
@@ -7304,7 +7428,7 @@ header .container {
 .solr-section-results .result {
   padding: 2rem;
   margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .solr-section-results .result h2 {
@@ -7371,7 +7495,7 @@ header .container {
 }
 
 .solr-section-results .pagination li input {
-  background: #eee;
+  background: rgba(204, 204, 204, 0.5);
   border: none;
   padding: 3px 5px;
   margin: 0 4px;
