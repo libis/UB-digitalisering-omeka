@@ -1,18 +1,4 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
-<!--<section class="item-title-section">
-  <div id="content" class='container' role="main" tabindex="-1">
-      <div class="row">
-          <div class="offset-sm-1 col-sm-11 col-xs-12 page">
-            <h1 class="section-title projecten-title">
-              <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
-            </h1>
-            <?php if(metadata('item','item_type_name')):?>
-              <h2><i><?php echo metadata('item','item_type_name');?></i></h2>
-            <?php endif;?>
-          </div>
-      </div>
-    </div>
-</section>-->
 <section class="item-section">
     <div class="container-fluid">
         <div class="row image-row">
@@ -59,13 +45,7 @@
                     </div>
                     <?php endif;?>
 
-                </div>
-                <!--<nav>
-                <ul class="item-pagination navigation">
-                    <li id="previous-item" class="previous"><?php echo link_to_previous_item_show("Vorige"); ?></li>
-                    <li id="next-item" class="next"><?php echo link_to_next_item_show("Volgende"); ?></li>
-                </ul>
-              </nav>-->
+                </div>                
             </div>
         </div>
     </div>

@@ -12,33 +12,33 @@
 </div>
 
 <section class="exhibit-section home-section general-section">
-    <!-- <div id="content" class='container'>
-        <div class="row exhibit-section-row">
-              <h2 class="section-title"><span>Tentoonstellingen</span></h2>
-        </div>
-    </div>-->
+
     <div id="content" class='container-fluid' role="main" tabindex="-1">
         <div class="row">
             <div class="col-xs-12 col-sm-1 side-title">
                 <h2 class="section-title projecten-title"><span>Tentoon- stellingen</span></h2>
             </div>
-            <div class="col-xs-12 col-sm-11">
+            <div class="col-xs-12 col-sm-5">
+              <div class="card featured">
+                  <div class="card-block">
+                      <div class="title-kijker">
+                          <p class="featured-tag"><span>In de kijker</span></p>
+                          <h4 class="card-title">Donec quis ornare metus</h4>
+                          <p class="description">Pellentesque habitant morbi tristique senectus et netus et
+                             malesuada fames ac turpis egestas. Proin malesuada tellus nulla,
+                              non tempus ipsum vehicula consectetur.</p>
+                          <img class="card-img" src="<?php echo img('ph/bg4.jpg');?>" alt="Card image">
+                      </div>
+                  </div>
+
+                  <div class="to-exhibit">
+                      <p><span>Start tentoonstelling</span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
                 <div class="card-columns exhibit-columns">
-                    <div class="card featured">
-                        <div class="card-block">
-                            <div class="title-kijker">
-                                <p class="featured-tag"><span>In de kijker</span></p>
-                                <h4 class="card-title">Donec quis ornare metus</h4>
-                                <p class="description">Pellentesque habitant morbi tristique senectus et netus et
-                                   malesuada fames ac turpis egestas. Proin malesuada tellus nulla,
-                                    non tempus ipsum vehicula consectetur.</p>
-                            </div>
-                        </div>
-                        <img class="card-img" src="<?php echo img('ph/bg4.jpg');?>" alt="Card image">
-                        <div class="to-exhibit">
-                            <p><span>Start tentoonstelling</span></p>
-                        </div>
-                     </div>
+
                     <div class="card">
                         <img class="card-img" src="<?php echo img('ph/bg1.jpg');?>" alt="Card image">
                         <div class="card-img-overlay">
@@ -92,35 +92,36 @@
                 </div>
             </div>
         </div>
-        <hr class="column-end">
+      
+        <div class="link-to-all">
+            <a href="">Alle tentoonstellingen <i class="material-icons">&#xE5CC;</i></a>
+        </div>
     </div>
 </section>
 <section class="exhibit-section home-section project-section general-section">
-    <!--<div id="content" class='container'>
-        <div class="row exhibit-section-row">
-            <h2 class="section-title"><span>Projecten</span></h2>
-        </div>
-    </div>-->
     <div id="content" class='container-fluid' role="main" tabindex="-1">
         <div class="row">
             <div class="col-xs-12 col-sm-1 side-title">
                 <h2 class="section-title projecten-title"><span>Projecten</span></h2>
             </div>
-            <div class="col-xs-12 col-sm-11">
-                <div class="card-columns exhibit-columns">
-                    <div class="card featured feat-project">
-                      <div class="card-block">
-                          <div class="title-kijker">
-                              <p class="featured-tag"><span>In de kijker</span></p>
-                              <h4 class="card-title">Donec quis ornare metus</h4>
-                              <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin malesuada tellus nulla, non tempus ipsum vehicula consectetur.</p>
-                          </div>
-                      </div>
-                      <img class="card-img" src="<?php echo img('ph/bg4.jpg');?>" alt="Card image">
-                      <div class="to-exhibit">
-                          <p><span>Naar project</span></p>
-                      </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="card featured feat-project">
+                <div class="card-block">
+                    <div class="title-kijker">
+                        <p class="featured-tag"><span>In de kijker</span></p>
+                        <h4 class="card-title">Donec quis ornare metus</h4>
+                        <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin malesuada tellus nulla, non tempus ipsum vehicula consectetur.</p>
                     </div>
+                </div>
+                <img class="card-img" src="<?php echo img('ph/bg4.jpg');?>" alt="Card image">
+                <div class="to-exhibit">
+                    <p><span>Naar project</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="card-columns exhibit-columns">
+
                     <div class="card">
                         <img class="card-img" src="<?php echo img('ph/bg1.jpg');?>" alt="Card image">
                         <div class="card-img-overlay">
@@ -178,7 +179,10 @@
                 </div>
             </div>
        </div>
-       <hr class="column-end">
+
+       <div class="link-to-all">
+           <a href="">Alle projecten<i class="material-icons">&#xE5CC;</i></a>
+       </div>
     </div>
     </div>
 </section>
@@ -253,6 +257,10 @@
                   <h4 class="card-title">Card title that wraps to a new line</h4>
                 </div>
             </div>
+        </div>
+
+        <div class="link-to-all">
+            <a href="">Alle showcases<i class="material-icons">&#xE5CC;</i></a>
         </div>
     </div>
 </section>
