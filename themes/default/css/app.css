@@ -6981,11 +6981,17 @@ header .container-fluid {
 
 .showcase-section .link-to-all {
   background: none;
-  padding: 0 0 2rem 0;
+  padding: 0 0 4rem 0;
 }
 
 .showcase-section .link-to-all a:hover {
   background: none;
+}
+
+@media (max-width: 767px) {
+  .showcase-section .link-to-all {
+    margin-bottom: 2rem;
+  }
 }
 
 .item-title-section {
