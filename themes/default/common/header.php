@@ -45,10 +45,10 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
         <header role="banner">
-            <div class="container">
+            <div class="container-fluid">
                 <nav class="navbar public-nav">
                     <div class="row">
-                        <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler hidden-lg-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
                           &#9776;
                         </button>
                         <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">Expo</a>
@@ -58,7 +58,7 @@
                         </form>
                     </div>
                     <div class="row">
-                        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                        <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
                         <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
                         </div>
                     </div>
