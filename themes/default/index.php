@@ -15,10 +15,10 @@
 
     <div id="content" class='container-fluid' role="main" tabindex="-1">
         <div class="row">
-            <div class="col-xs-12 col-lg-12 col-xl-1 hidden-xl-up side-title">
+            <div class="col-lg-12 col-xl-1 hidden-xl-up side-title">
                 <h2 class="section-title projecten-title"><span>Tentoonstellingen</span></h2>
             </div>
-            <div class="col-xs-12 col-lg-12 col-xl-1 hidden-lg-down side-title">
+            <div class="col-xl-1 hidden-lg-down side-title">
                 <h2 class="section-title projecten-title"><span>Tentoon- stellingen</span></h2>
             </div>
             <div class="col-sm-12 col-md-7 col-lg-5 col-xl-4 featured-column">
@@ -100,7 +100,7 @@
 <section class="exhibit-section home-section project-section general-section">
     <div id="content" class='container-fluid' role="main" tabindex="-1">
         <div class="row">
-            <div class="col-xs-12 col-lg-12 col-xl-1 side-title">
+            <div class="col-lg-12 col-xl-1 side-title">
                 <h2 class="section-title projecten-title"><span>Projecten</span></h2>
             </div>
             <div class="col-sm-12 col-md-7 col-lg-5 col-xl-4 featured-column">
