@@ -11,6 +11,93 @@
     </div>
 </div>
 
+
+<!--<section class="exhibit-section home-section home-section2 general-section">
+
+    <div id="content" class='container-fluid' role="main" tabindex="-1">
+        <div class="row row-eq">
+            <div class="col-sm-12 col-xl-4 side-title">
+                <h2 class=""><span>Recente Tentoonstellingen</span></h2>
+                <p class="description">Pellentesque habitant morbi tristique senectus et netus et
+                   malesuada fames ac turpis egestas. Proin malesuada tellus nulla,
+                    non tempus ipsum vehicula consectetur.</p>
+            </div>
+
+            <div class="col-sm-12 col-xl-4 featured-img-column">
+              <img class="card-img" src="<?php echo img('ph/bg6.png');?>" alt="Card image">
+            </div>
+            <div class="col-sm-12 col-xl-4 featured-text-column">
+                <p class="featured-tag"><span>In de kijker</span></p>
+                <h4 class="card-title">Donec quis ornare metus</h4>
+                <p class="auteur"><span>John Doe</span></p>
+
+                <p class="description">Pellentesque habitant morbi tristique senectus et netus et
+                   malesuada fames ac turpis egestas.</p>
+
+                <div class="to-exhibit">
+                    <p><a href="">Start tentoonstelling</a></p>
+                </div>
+            </div>
+        </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+              <div class="card">
+                  <img class="card-img" src="<?php echo img('ph/bg6.png');?>" alt="Card image">
+                  <div class="card-img-overlay">
+                      <div class="overlay-text">
+                        <hr class="top">
+                        <h4 class="card-title">Donec quis ornare metus</h4>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+              <div class="card">
+                  <img class="card-img" src="<?php echo img('ph//bg6.png');?>" alt="Card image">
+                  <div class="card-img-overlay">
+                      <div class="overlay-text">
+                        <hr class="top">
+                        <h4 class="card-title">Donec quis ornare metus</h4>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+              <div class="card">
+                  <img class="card-img" src="<?php echo img('ph/bg6.png');?>" alt="Card image">
+                  <div class="card-img-overlay">
+                      <div class="overlay-text">
+                        <hr class="top">
+                        <h4 class="card-title">Donec quis ornare metus</h4>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+              <div class="card">
+                  <img class="card-img" src="<?php echo img('ph//bg6.png');?>" alt="Card image">
+                  <div class="card-img-overlay">
+                      <div class="overlay-text">
+                        <hr class="top">
+                        <h4 class="card-title">Donec quis ornare metus</h4>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+      <div class="link-to-all">
+          <a href="">Alle tentoonstellingen <i class="material-icons">&#xE5CC;</i></a>
+      </div>
+    </div>
+</section>
+-->
+
+
 <section class="exhibit-section home-section general-section">
 
     <div id="content" class='container-fluid' role="main" tabindex="-1">
@@ -97,6 +184,7 @@
 
     </div>
 </section>
+-->
 <section class="exhibit-section home-section project-section general-section">
     <div id="content" class='container-fluid' role="main" tabindex="-1">
         <div class="row">
