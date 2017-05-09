@@ -27,7 +27,7 @@
 <div class="content-wrapper bs-docs-section solr-section-results">
   <div class="container-fluid solr-container">
     <!-- Applied facets. -->
-    <div id="solr-applied-facets">
+    <div id="solr-applied-facets" class="row">
       <ul>
         <!-- Get the applied facets. -->
         <?php foreach (SolrSearch_Helpers_Facet::parseFacets() as $f) : ?>
@@ -89,12 +89,12 @@
 
             <!-- Number found. -->
             <div class="row">
-              <div class="col-md-8 col-xs-12">
+              <div class="col-sm-8 col-xs-12">
                 <h2 id="num-found">
                     <?php echo $results->response->numFound; ?> resultaten
                 </h2>
               </div>
-              <div class="col-md-4 col-xs-12">
+              <div class="col-sm-4 col-xs-12">
                 <?php echo pagination_links(array('scrolling_style'=>'Sliding')); ?>
               </div>
             </div>
@@ -105,7 +105,7 @@
                 <?php if ($doc->resulttype == 'Item') :
                     $item = get_db()->getTable($doc->model)->find($doc->modelid);
                     if (metadata($item, 'has files')) :?>
-                        <div class="col-md-2 col-img">
+                        <div class="col-lg-2 col-md-3 col-img">
                             <?php
                             echo link_to_item(
                                 item_image('thumbnail', array('alt' => $doc->title), 0, $item),
@@ -119,7 +119,7 @@
                   <?php endif;?>
 
                 <!-- Header. -->
-                <div class="col-md-10 col-text">
+                <div class="col-lg-10 col-md-9 col-text">
 
                     <!-- Record URL. -->
                     <?php $url = SolrSearch_Helpers_View::getDocumentUrl($doc); ?>

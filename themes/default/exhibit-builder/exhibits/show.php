@@ -6,7 +6,7 @@ echo head(array(
 <section class="item-title-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
-          <div class="offset-sm-1 col-sm-11 col-xs-12 page">
+          <div class="col-sm-12 col-xs-12 page">
             <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></h1>
             <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
           </div>
@@ -16,10 +16,10 @@ echo head(array(
 <section class="metadata-section general-section exhibit-show-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
-        <div class="offset-sm-1 col-sm-9 col-xs-12 page">
+        <div class="col-xs-12 col-md-9 col-xs-12 page">
           <div class='top'>
 
-              <p id="simple-pages-breadcrumbs"><span>
+              <p id="simple-pages-breadcrumbs" class="hidden-sm-down"><span>
                 <a href="<?php echo url('exhibits');?>">Tentoonstellingen</a>
                 > <?php echo exhibit_builder_link_to_exhibit($exhibit); ?>
                 > <?php echo metadata('exhibit_page', 'title'); ?>
@@ -48,7 +48,7 @@ echo head(array(
             </div>
 
           </div>
-          <div class="col-md-2 nav">
+          <div class="col-xs-12 col-md-3 col-md-3 nav">
             <nav id="exhibit-pages">
                 <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
             </nav>

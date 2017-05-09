@@ -184,7 +184,6 @@
 
     </div>
 </section>
--->
 <section class="exhibit-section home-section project-section general-section">
     <div id="content" class='container-fluid' role="main" tabindex="-1">
         <div class="row">
