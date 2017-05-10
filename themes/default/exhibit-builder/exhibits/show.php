@@ -31,12 +31,12 @@ echo head(array(
                 <?php exhibit_builder_render_exhibit_page(); ?>
               </div>
               <div id="exhibit-page-navigation">
-                  <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
+                  <?php if ($prevLink = exhibit_builder_link_to_previous_page('<i class="material-icons">&#xE5C4;</i>')): ?>
                   <div id="exhibit-nav-prev">
                   <?php echo $prevLink; ?>
                   </div>
                   <?php endif; ?>
-                  <?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
+                  <?php if ($nextLink = exhibit_builder_link_to_next_page('<i class="material-icons">&#xE5C8;</i>')): ?>
                   <div id="exhibit-nav-next">
                   <?php echo $nextLink; ?>
                   </div>
