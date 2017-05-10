@@ -7547,6 +7547,17 @@ header {
   }
 }
 
+.exhibit-show-section .page #exhibit-page-navigation,
+.simple-page-section .page #exhibit-page-navigation {
+  overflow: auto;
+  margin-bottom: 0;
+}
+
+.exhibit-show-section .page #exhibit-page-navigation a:hover,
+.simple-page-section .page #exhibit-page-navigation a:hover {
+  text-decoration: none;
+}
+
 .exhibit-show-section .content,
 .simple-page-section .content {
   background: #fff;
@@ -7621,6 +7632,11 @@ header {
   .simple-page-section .nav {
     margin-top: 0;
     padding: 0 2rem 2rem;
+  }
+  .exhibit-show-section .nav #exhibit-pages,
+  .simple-page-section .nav #exhibit-pages {
+    background: #f7f7f7;
+    padding: 1rem;
   }
 }
 
