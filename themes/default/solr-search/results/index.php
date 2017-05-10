@@ -10,7 +10,7 @@
 
 <div class="content-wrapper bs-docs-section solr-section-search">
   <div class="container solr-container">
-    <h1>De collectie</h1>
+    <h1>De collectie <span>(<?php echo $results->response->numFound; ?> resultaten)</span></h1>
 
     <!-- Search form. -->
     <div class="solr">
@@ -85,16 +85,9 @@
 
           </div>
           <div class="solr-results col-md-9 col-xs-12">
-            <!-- Results. -->
-
             <!-- Number found. -->
             <div class="row">
-              <div class="col-sm-8 col-xs-12">
-                <h2 id="num-found">
-                    <?php echo $results->response->numFound; ?> resultaten
-                </h2>
-              </div>
-              <div class="col-sm-4 col-xs-12">
+              <div class="col-sm-12 col-xs-12">
                 <?php echo pagination_links(array('scrolling_style'=>'Sliding')); ?>
               </div>
             </div>
@@ -116,7 +109,7 @@
                             ?>
                         </div>
                     <?php endif; ?>
-                  <?php endif;?>
+                <?php endif;?>
 
                 <!-- Header. -->
                 <div class="col-lg-10 col-md-9 col-text">

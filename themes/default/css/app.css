@@ -6293,6 +6293,10 @@ body {
   font-size: 1.1rem;
 }
 
+a {
+  transition: all .2s ease-in-out;
+}
+
 .navbar {
   background: transparent;
   border-bottom: none;
@@ -6316,9 +6320,13 @@ header {
   }
 }
 
-header .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+@media (max-width: 767px) {
+  header .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .public-nav {
@@ -6359,9 +6367,7 @@ header .container-fluid {
   border: none;
   border-radius: 0px;
   height: 50px;
-  margin-left: 1rem;
-  border-left: 1px solid white;
-  padding: 0rem 0rem 0.2rem 1rem;
+  padding: 0rem 1rem 0rem 0rem;
   z-index: 1000;
   color: #fff;
   font-size: 2rem;
@@ -6384,6 +6390,11 @@ header .container-fluid {
   text-transform: uppercase;
 }
 
+.public-nav .navbar-nav li a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width: 767px) {
   .public-nav .navbar-nav li {
     float: none;
@@ -6399,7 +6410,7 @@ header .container-fluid {
   margin: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 543px) {
   .public-nav .form-inline {
     float: none !important;
     height: auto;
@@ -6417,7 +6428,7 @@ header .container-fluid {
   font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 543px) {
   .public-nav .form-inline .form-control {
     width: 85%;
     display: inline;
@@ -6453,7 +6464,7 @@ header .container-fluid {
   color: #fff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 543px) {
   .public-nav .btn {
     width: 15%;
   }
@@ -6478,7 +6489,7 @@ header .container-fluid {
   margin-top: -135px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .jumbotron {
     margin-top: 0px;
     height: auto;
@@ -6504,7 +6515,7 @@ header .container-fluid {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .jumbotron h1 {
     margin-top: 0px;
   }
@@ -7625,8 +7636,21 @@ header .container-fluid {
   font-weight: bold;
 }
 
+@media (max-width: 543px) {
+  .solr-section-search h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.solr-section-search h1 span {
+  font-weight: 100;
+}
+
 .solr-section-search #solr-search-form {
-  padding-bottom: 0.5rem;
+  border: 1px solid rgba(8, 167, 235, 0.2);
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -7637,34 +7661,36 @@ header .container-fluid {
 }
 
 .solr-section-search #solr-search-form button {
-  background: #08a7eb;
+  background: none;
   text-transform: uppercase;
-  color: white;
+  color: #08A7EB;
   border: none;
-  padding: 8px 12px 8px 8px;
-  height: 2.3rem;
-  font-size: 1rem;
-  border-radius: 0 20px 20px 0;
+  padding: 0px 12px 4px 8px;
+  height: 2.8rem;
+  font-size: 2rem;
   margin: 0 0 0 -5px;
   line-height: 1;
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 20px 20px 0;
 }
 
 .solr-section-search #solr-search-form button i {
   vertical-align: middle;
+  font-size: 2rem;
 }
 
 .solr-section-search #solr-search-form input[type="text"] {
-  border: 1px solid #eee;
   padding: 0 20px;
-  height: 2.3rem;
-  border-radius: 20px 0 0 20px;
-  display: inline-block;
-  font-size: 1rem;
+  padding-right: 8rem;
+  height: 2.8rem;
+  font-size: 1.3rem;
   line-height: 1;
   color: rgba(51, 51, 51, 0.8);
   width: 100%;
-  max-width: 450px;
+  border: none;
+  border-radius: 20px;
 }
 
 @media (max-width: 543px) {
@@ -7678,7 +7704,7 @@ header .container-fluid {
   background: #eee;
   z-index: 101;
   position: relative;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 @media (max-width: 767px) {
@@ -7789,6 +7815,10 @@ header .container-fluid {
   font-size: 1.2rem;
 }
 
+.solr-section-results #solr-facets {
+  padding-left: 0;
+}
+
 @media (max-width: 767px) {
   .solr-section-results #solr-facets {
     background: #f7f7f7;
@@ -7887,6 +7917,11 @@ footer ul li {
 
 footer a {
   color: #ccc;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

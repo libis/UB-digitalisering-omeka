@@ -45,10 +45,10 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
         <header role="banner">
-            <div class="container-fluid">
+            <div class="container">
                 <nav class="navbar public-nav">
                     <div class="row">
-                        <button class="navbar-toggler hidden-lg-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler hidden-lg-up pull-xs-left" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
                           &#9776;
                         </button>
                         <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">Expo</a>
