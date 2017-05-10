@@ -6309,7 +6309,7 @@ a {
 header {
   margin-left: auto;
   margin-right: auto;
-  background: #f7f7f7;
+  background: none;
   width: 100%;
   z-index: 1;
 }
@@ -7074,12 +7074,12 @@ header {
 
 .item-title-section {
   padding: 3rem 0 3rem 0;
-  background: #f7f7f7;
 }
 
 .item-title-section h1 {
   text-transform: uppercase;
   font-weight: 700;
+  color: #fff;
 }
 
 @media (max-width: 543px) {
@@ -7090,10 +7090,11 @@ header {
 
 .item-title-section h4 {
   font-weight: 100;
+  color: #fff;
 }
 
 .item-title-section h4 a {
-  color: #666;
+  color: #fff;
 }
 
 @media (max-width: 543px) {
@@ -7106,7 +7107,6 @@ header {
   z-index: 50;
   position: relative;
   padding-top: 0;
-  background: #f7f7f7;
 }
 
 .item-section .container-fluid {
@@ -7125,7 +7125,7 @@ header {
 .item-section .image-row .image-control i {
   font-size: 5rem;
   cursor: pointer;
-  color: #777;
+  color: #f7f7f7;
 }
 
 .item-section .image-row #prev {
@@ -7511,7 +7511,7 @@ header {
 
 .exhibit-show-section .page .exhibit-description,
 .simple-page-section .page .exhibit-description {
-  padding: 0;
+  padding: 1rem 0 0 0;
 }
 
 .exhibit-show-section .page .exhibit-description h3,
@@ -7627,13 +7627,13 @@ header {
 .solr-section-search {
   z-index: 101;
   padding: 3rem 0 3rem 0;
-  background: #f7f7f7;
 }
 
 .solr-section-search h1 {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
+  color: #fff;
 }
 
 @media (max-width: 543px) {
@@ -7884,9 +7884,9 @@ header {
 }
 
 footer {
-  background: transparent url("../images/footer_lodyas.png") repeat scroll 0 0;
+  background: #333;
   padding: 4rem 0;
-  color: #ccc;
+  color: rgba(204, 204, 204, 0.8);
 }
 
 footer h4 {
@@ -7916,12 +7916,12 @@ footer ul li {
 }
 
 footer a {
-  color: #ccc;
+  color: rgba(204, 204, 204, 0.8);
 }
 
 footer a:hover {
   text-decoration: none;
-  color: white;
+  color: #666;
 }
 
 /*# sourceMappingURL=app.css.map */
