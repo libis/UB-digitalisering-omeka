@@ -62,9 +62,11 @@ class Transformer{
         $result="";
 
         /*
-          ok - DIGI-nr : 935 (holding)
           spatial: 264a
           publisher: 264b
+
+          collectie? 852c
+          plaatskenmerk 852hik
         */
 
         foreach($fields as $field):
@@ -126,6 +128,12 @@ class Transformer{
                 if($field["264"]["ind1"]==' '&&$field["264"]["ind2"]=='1'):
                     $data=$field["264"]['subfields']['c'];
                     $result["date"][] = str_replace('.', '', $data);
+                endif;
+                if(isset($field["264"]['subfields']['a'])):
+                    $result["spatial"][] = $field["264"]['subfields']['a'];
+                endif;
+                if(isset($field["264"]['subfields']['b'])):
+                    $result["publisher"][] = $field["264"]['subfields']['b'];
                 endif;
             endif;
 
@@ -192,36 +200,20 @@ class Transformer{
                 endif;
             endif;
 
-            if(isset($field["544"])):
-                $result[]["source"]=$field["544"]['subfields']['a'];
+            /*if(isset($field["544"])){
+                $result["source"][]=$field["544"]['subfields']['a'];
                 if ($field["544"]['subfields']['b'] != null) {
         		       $result["IdentifierCallnumber"][] = $field["544"]['subfields']['b'];
                 }
-            endif;
-
-            if(isset($field["852"])):
-                if (!isset($field["852"]['subfields']['l'])) {
-			              $data =$field["852"]['subfields']['b'];
-            				    switch ($data) {
-            				    case "BIBC":
-            					    $data = "KU Leuven. Division of Heritage & Culture";
-            					    break;
-            				    case "GBIB":
-            					    $data = "KU Leuven. Maurits Sabbe Library (Theology)";
-            					    break;
-            				    case "WBIB":
-            					    $data = "KU Leuven. Campuslibrary Arenberg";
-            					    break;
-            				    default:
-                      }//end switch
-
-                  $result['source'][]= $data;
-
-      				    if ($field["852"]['subfields']['h'] != null) {
-      					    $result["IdentifierCallnumber"][] = $field["852"]['subfields']['h'];
-      				    }
-	             }
-            endif;
+            }*/
+            if(isset($field["852"])){
+                if (isset($field["852"]['subfields']['c'])) {
+			             $result['source'][] =$field["852"]['subfields']['c'];
+                }
+    				    if ($field["852"]['subfields']['h'] != null) {
+    					    $result["IdentifierCallnumber"][] = $field["852"]['subfields']['h'];
+    				    }
+            }
 
             if (isset($field["700"])):
     			    if($field["700"]['subfields']['4']=="stu" || $field["700"]['subfields']['4']=="pfs"
