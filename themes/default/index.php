@@ -1,14 +1,34 @@
 <?php echo head(array('bodyid'=>'home', 'bodyclass' =>'two-col')); ?>
 <div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="grid-sizer col-lg-8 offset-lg-2 col-xs-12">
-                <h1>Intro boodschap<span>,</span></h1>
-                <p>Vestibulum ac hendrerit quam. Aliquam accumsan, mauris at pellentesque lobortis,
-                   mi nibh feugiat ante, nec mattis urna libero eu justo.</p>
+  <div class="container">
+    <div class="row">
+        <div class="grid-sizer col-xs-12 intro">
+          <div class="row">
+              <div class="grid-sizer offset-lg-2 col-lg-8 col-xs-12 intro-box">
+                  <!--<h1>Intro boodschap<span>,</span></h1>-->
+                  <img class="logo" src="http://vagrant/ub_digitaal/themes/default/images/KULEUVEN.png">
+                  <p>Vestibulum ac hendrerit quam. Aliquam accumsan, mauris at pellentesque lobortis,
+                     mi nibh feugiat ante, nec mattis urna libero eu justo.</p>
+
+              </div>
             </div>
         </div>
     </div>
+    <div class="row">
+        <!--<div class="col-lg-4 col-xs-12">
+             <h1>onze collectie <span></span></h1>
+        </div>-->
+        <div class="offset-lg-2 col-lg-8 col-xs-12   front-search">
+             <!-- Search form. -->
+             <div class="solr">
+               <form action="<?php echo url("/solr-search/");?>" id="solr-search-form">
+                   <input type="text" placeholder="ZOEK IN DE COLLECTIE" title="<?php echo __('Search keywords') ?>" name="q" />
+                 <button type="submit" /><i class="material-icons">&#xE8B6;</i></button>
+               </form>
+             </div>
+        </div>
+    </div>
+  </div>
 </div>
 
 

@@ -51,6 +51,7 @@
                         <button class="navbar-toggler hidden-lg-up pull-xs-left" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
                           &#9776;
                         </button>
+                        
                         <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">Expo</a>
                         <form action="<?php echo url("/solr-search/");?>" class="form-inline pull-xs-right">
                           <input class="form-control" name="q" type="text" placeholder="Search">
