@@ -5,8 +5,8 @@
         <div class="grid-sizer col-xs-12 intro">
           <div class="row">
               <div class="grid-sizer offset-lg-2 col-lg-8 col-xs-12 intro-box">
-                  <!--<h1>Intro boodschap<span>,</span></h1>-->
-                  <img class="logo" src="http://vagrant/ub_digitaal/themes/default/images/KULEUVEN.png">
+                  <h1>Intro boodschap<span>,</span></h1>
+                  <!--<img class="logo" src="http://vagrant/ub_digitaal/themes/default/images/KULEUVEN.png">-->
                   <p>Vestibulum ac hendrerit quam. Aliquam accumsan, mauris at pellentesque lobortis,
                      mi nibh feugiat ante, nec mattis urna libero eu justo.</p>
 

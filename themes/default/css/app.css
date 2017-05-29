@@ -6297,6 +6297,10 @@ a {
   transition: all .2s ease-in-out;
 }
 
+.container-fluid {
+  max-width: 95rem;
+}
+
 .navbar {
   background: transparent;
   border-bottom: none;
@@ -6312,6 +6316,11 @@ header {
   background: none;
   width: 100%;
   z-index: 1;
+}
+
+header .container-fluid {
+  max-width: 100%;
+  padding: 0;
 }
 
 @media (max-width: 767px) {
@@ -6333,6 +6342,7 @@ header {
   background: #ff8700;
   padding: 0px;
   max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   border-bottom: 2px solid #e67a00;
 }
@@ -6356,17 +6366,30 @@ header {
   font-weight: 100;
   font-size: 2.2rem;
   margin-left: 0;
-  line-height: 1;
-  padding: 0.1em 0.5rem 0.5rem;
-  border: 4px solid #fff;
+  height: 60px;
+  padding: 0;
   text-transform: uppercase;
+}
+
+.public-nav .navbar-brand .logo {
+  height: 60px;
+  display: inline-block;
   vertical-align: top;
+}
+
+.public-nav .navbar-brand span {
+  border-right: 1px solid #fff;
+  height: 60px;
+  line-height: 60px;
+  padding-right: 20px;
+  margin-right: 20px;
+  display: inline-block;
 }
 
 .public-nav .navbar-toggler {
   border: none;
   border-radius: 0px;
-  height: 50px;
+  height: 60px;
   padding: 0rem 1rem 0rem 0rem;
   z-index: 1000;
   color: #fff;
@@ -6481,11 +6504,11 @@ header {
   margin: 0;
   color: white;
   text-shadow: #444 0 1px 1px;
-  background: url("../images/ph/bg6.png") no-repeat center center/100%;
+  background: url("../images/ph/bg5.jpg") no-repeat center center/100%;
   text-align: center;
   width: 100%;
   z-index: -2;
-  margin-top: -133px;
+  padding: 6rem 2rem;
 }
 
 @media (max-width: 767px) {
@@ -6493,10 +6516,6 @@ header {
     margin-top: 0px;
     height: auto;
   }
-}
-
-.jumbotron .intro {
-  margin-top: 5rem;
 }
 
 .jumbotron .intro .logo {
@@ -6627,10 +6646,6 @@ header {
   .jumbotron p {
     font-size: 1.3rem;
   }
-}
-
-.container-fluid {
-  max-width: 95rem;
 }
 
 @media (max-width: 767px) {

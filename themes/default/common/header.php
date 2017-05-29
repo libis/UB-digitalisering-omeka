@@ -45,14 +45,14 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
         <header role="banner">
-            <div class="container">
+            <div class="container-fluid">
                 <nav class="navbar public-nav">
                     <div class="row">
                         <button class="navbar-toggler hidden-lg-up pull-xs-left" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
                           &#9776;
                         </button>
-                        
-                        <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">Expo</a>
+
+                        <a class="navbar-brand" href="<?php echo WEB_ROOT;?>"><span>Expo</span><img class="logo" src="http://vagrant/ub_digitaal/themes/default/images/KULEUVEN.png"></a>
                         <form action="<?php echo url("/solr-search/");?>" class="form-inline pull-xs-right">
                           <input class="form-control" name="q" type="text" placeholder="Search">
                           <button class="btn" type="submit"><i class="material-icons">search</i></button>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="row">
                         <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
-                        <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
+                          <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
                         </div>
                     </div>
                 </nav>
