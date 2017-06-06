@@ -51,7 +51,7 @@
     </div>
 
     <div class="row">
-      <div id="solr-facets" class="col-md-2 col-xs-12">
+      <div id="solr-facets" class="col-xs-12 col-sm-12 col-md-3 col-xl-2">
           <!-- Facets. -->
           <h5><?php echo __('Filter op:'); ?></h5>
           <?php $i=0;?>
@@ -84,7 +84,7 @@
               <?php endif; ?>
           <?php endforeach; ?>
       </div>
-      <div class="solr-results col-md-10 col-xs-12">
+      <div class="solr-results col-md-9 col-xl-10 col-xs-12">
           <!-- Number found. -->
           <div class="row">
             <div class="col-sm-12 col-xs-12">

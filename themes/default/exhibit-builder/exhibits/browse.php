@@ -7,7 +7,11 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
       <div class="row">
           <div class="col-sm-12 col-xs-12 page">
             <?php
-                $tag = $_GET['tag'];
+                $tag="";
+                if(isset($_GET['tag'])):
+                  $tag = $_GET['tag'];
+                endif;
+
                 switch($tag){
                   case "tentoonstelling":
                     $title = "Tentoonstellingen";

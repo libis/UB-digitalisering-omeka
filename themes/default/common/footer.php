@@ -18,7 +18,7 @@
                         .....</p>
                     </div>
 
-                    <div class="col-xs-12 col-sm-2 col-md-3 col-lg-2 hidden-sm-down">
+                    <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2 hidden-sm-down">
                         <ul>
                             <li><a href="">Menu item 1</a></li>
                             <li><a href="">Menu item 1</a></li>
@@ -29,7 +29,7 @@
                             <li><a href="">Menu item 1</a></li>
                         </ul>
                     </div>
-                    <div class="col-xs-12 col-sm-2 col-md-3 col-lg-2 hidden-sm-down">
+                    <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2 hidden-sm-down">
                         <ul>
                             <li><a href="">Menu item 1</a></li>
                             <li><a href="">Menu item 1</a></li>
@@ -40,7 +40,7 @@
                             <li><a href="">Menu item 1</a></li>
                         </ul>
                     </div>
-                    <div class="col-xs-12 col-sm-2 col-md-3 col-lg-2 hidden-sm-down">
+                    <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2 hidden-sm-down">
                         <ul>
                             <li><a href="">Menu item 1</a></li>
                             <li><a href="">Menu item 1</a></li>

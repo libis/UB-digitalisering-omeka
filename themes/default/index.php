@@ -38,7 +38,7 @@
 <section class="feature-section">
     <div id="content" class='container' role="main" tabindex="-1">
         <div class="row featured">
-            <div class="col-sm-12 col-md-7 col-lg-5 col-xl-5">
+            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
                 <?php $file = $exhibit->getFile();?>
                 <div class="card">
                     <?php if ($file): ?>
@@ -46,7 +46,7 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-7 col-lg-5 col-xl-7 featured-column">
+            <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 featured-column">
               <div class="title-kijker">
                   <p class="featured-tag"><span>Tentoonstelling</span> <span>in de kijker</span></p>
               </div>
@@ -70,7 +70,7 @@
         </div>
         <div class="row">
             <?php foreach(array_slice($exhibits,1) as $exhibit):?>
-                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
@@ -86,13 +86,10 @@
                 </div>
             <?php endforeach;?>
             <?php for($i=0;$i<=$size;$i++){?>
-                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
-                    <div class="no-exhibit">
-
-                    </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="no-exhibit"></div>
                 </div>
             <?php } ?>
-
         </div>
         <div class="row">
             <div class="col-xs-12">
