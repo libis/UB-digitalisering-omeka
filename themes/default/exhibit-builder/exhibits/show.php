@@ -1,32 +1,23 @@
-<?php
-echo head(array(
-    'title' => metadata('exhibit_page', 'title').' &middot; '.metadata('exhibit', 'title'),
-    'bodyclass' => 'exhibits show', ));
-?>
-<section class="item-title-section">
-  <div id="content" class='container' role="main" tabindex="-1">
-      <div class="row">
-          <div class="col-sm-12 col-xs-12 page">
-            <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></h1>
-            <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
+    <?php
+    echo head(array(
+        'title' => metadata('exhibit_page', 'title').' &middot; '.metadata('exhibit', 'title'),
+        'bodyclass' => 'exhibits show', ));
+    ?>
+    <section class="item-title-section">
+      <div id="content" class='container' role="main" tabindex="-1">
+          <div class="row">
+              <div class="col-sm-12 col-xs-12 page">
+                <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></h1>
+                <h4>Tentoonstelling: <span><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></span></h4>
+              </div>
           </div>
-      </div>
-    </div>
-</section>
+        </div>
+    </section>
+</header>
 <section class="metadata-section general-section exhibit-show-section">
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
         <div class="col-xs-12 col-md-9 col-xs-12 page">
-          <div class='top'>
-
-              <p id="simple-pages-breadcrumbs" class="hidden-sm-down"><span>
-                <a href="<?php echo url('exhibits');?>">Tentoonstellingen</a>
-                > <?php echo exhibit_builder_link_to_exhibit($exhibit); ?>
-                > <?php echo metadata('exhibit_page', 'title'); ?>
-              </span></p>
-          </div>
-            <div class='content'>
-
               <div id="exhibit-blocks">
                 <?php exhibit_builder_render_exhibit_page(); ?>
               </div>
@@ -45,8 +36,6 @@ echo head(array(
                   <?php echo exhibit_builder_page_trail(); ?>
                 </div>-->
               </div>
-            </div>
-
           </div>
           <div class="col-xs-12 col-md-3 col-md-3 nav">
             <nav id="exhibit-pages">

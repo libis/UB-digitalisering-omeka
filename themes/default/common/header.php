@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php echo get_html_lang(); ?>">
+<html class="easy-sidebar-active" lang="<?php echo get_html_lang(); ?>">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,14 +21,15 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_file(array('iconfonts', 'app'));
-    queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
-    echo head_css();
-    echo theme_header_background();
+      queue_css_file(array('iconfonts', 'app'));
+      queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
+      echo head_css();
+      echo theme_header_background();
     ?>
 
     <?php
       queue_js_file('masonry');
+      queue_js_file('jquery.detect_swipe');
       echo head_js();
     ?>
 
@@ -39,42 +40,42 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
         <header role="banner">
-            <div class="container-fluid">
+            <div class="container-fluid nav-container">
                 <nav class="navbar public-nav">
                     <div class="row">
-                        <button class="navbar-toggler hidden-lg-up pull-xs-left" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler easy-sidebar-toggle pull-xs-left" type="button" aria-expanded="false" aria-label="Toggle navigation">
                           &#9776;
                         </button>
-
-                        <a class="navbar-brand" href="<?php echo WEB_ROOT;?>"><span>Expo</span><img class="logo" src="http://vagrant/ub_digitaal/themes/default/images/KULEUVEN.png"></a>
-                        <form action="<?php echo url("/solr-search/");?>" class="form-inline pull-xs-right">
-                          <input class="form-control" name="q" type="text" placeholder="Search">
-                          <button class="btn" type="submit"><i class="material-icons">search</i></button>
-                        </form>
+                        <a class="navbar-brand" href="<?php echo WEB_ROOT;?>"><span>Expo</span></a>
+                        <div class="logo" class=""><img src="<?php echo img("KULEUVEN.png") ?>"></div>
                     </div>
                     <div class="row">
-                        <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
+                        <div class="collapse navbar-toggleable-xl" id="exCollapsingNavbar2">
                           <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
                         </div>
                     </div>
                 </nav>
             </div>
             <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
-        </header>
-        <div class="collapse full-menu" id="exCollapsingNavbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h4>Collapsed content</h4>
-                        <span class="text-muted"> <?php echo public_nav_main(array('role' => 'navigation')); ?></span>
-                    </div>
+
+            <nav class="navbar navbar-inverse easy-sidebar">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                  </div>
+
+                  <form action="<?php echo url("/solr-search/");?>" class="form-inline">
+                    <input class="form-control" name="q" type="text" placeholder="Search">
+                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                  </form>
+
+                  <?php echo public_nav_main(array('role' => 'navigation')); ?>
                 </div>
-            </div>
-        </div>
+                <!-- /.container-fluid -->
+              </nav>
         <?php //echo search_form();?>

@@ -66,5 +66,24 @@ jQuery('.grid').masonry({
   percentPosition: true
 });
 
+jQuery('.easy-sidebar-toggle').click(function(e) {
+  e.preventDefault();
+  jQuery('body').toggleClass('toggled');
+  jQuery('.navbar.easy-sidebar').removeClass('toggled');
+  if(jQuery('body').hasClass('toggled')){
+    jQuery('.easy-sidebar-toggle').html("&#10005;");
+  }else{
+    jQuery('.easy-sidebar-toggle').html("&#9776;");
+  }
+
+});
+jQuery('html').on('swiperight', function(){
+  jQuery('body').addClass('toggled');
+});
+jQuery('html').on('swipeleft', function(){
+  jQuery('body').removeClass('toggled');
+});
+
+
 </script>
 </html>

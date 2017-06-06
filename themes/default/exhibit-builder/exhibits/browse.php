@@ -6,13 +6,30 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
   <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
           <div class="col-sm-12 col-xs-12 page">
+            <?php
+                $tag = $_GET['tag'];
+                switch($tag){
+                  case "tentoonstelling":
+                    $title = "Tentoonstellingen";
+                    break;
+                  case "project":
+                    $title = "Projecten";
+                    break;
+                  case "showcase":
+                    $title = "Showcases";
+                    break;
+                  default:
+                    $title = "Alles";
+                }
+            ?>
             <h1><?php echo $title; ?> <?php echo __('(%s total)', $total_results); ?></h1>
           </div>
       </div>
     </div>
 </section>
+</header>
 <section class="general-section exhibit-show-section">
-  <div id="content" class='container-fluid' role="main" tabindex="-1">
+  <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
         <div class="col-sm-12 col-xs-12 page">
             <?php if (count($exhibits) > 0): ?>
@@ -51,7 +68,6 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
           <p><?php echo __('There are no exhibits available yet.'); ?></p>
           <?php endif; ?>
         </div>
-
     </div>
   </div>
 </section>

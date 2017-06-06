@@ -1,4 +1,5 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
+</header>
 <section class="item-section">
     <div class="container-fluid">
         <div class="row image-row">
@@ -8,6 +9,7 @@
         </div>
     </div>
 </section>
+
 <section class="metadata-section">
     <div id="content" class='container' role="main" tabindex="-1">
         <div class="row">

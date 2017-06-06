@@ -1,6 +1,6 @@
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
 <section class="item-title-section">
-  <div id="content" class='container' role="main" tabindex="-1">
+  <div id="content" class='container-fluid' role="main" tabindex="-1">
       <div class="row">
           <div class="col-sm-12 col-xs-12 page">
             <?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
@@ -14,22 +14,21 @@
       </div>
     </div>
 </section>
+</header>
 <section class="general-section exhibit-show-section">
   <div id="content" class='container-fluid' role="main" tabindex="-1">
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-5 page">
-            <div class='content'>
-                <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
+            <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
 
-                <div class="exhibit-description">
-                    <h3>Overzicht tentoonstelling</h3>
-                    <hr class="top-exhibit">
-                    <?php echo $exhibitDescription; ?>
-                    <hr class="top-exhibit">
-                </div>
-
-                <?php endif; ?>
+            <div class="exhibit-description">
+                <h3>Overzicht tentoonstelling</h3>
+                <hr class="top-exhibit">
+                <?php echo $exhibitDescription; ?>
+                <hr class="top-exhibit">
             </div>
+
+            <?php endif; ?>
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-5 cover">
             <?php if (($exhibit->cover_image_file_id)): ?>
@@ -53,4 +52,5 @@
         </div>
       </div>
   </div>
+</section>
 <?php echo foot(); ?>
