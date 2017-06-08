@@ -6350,7 +6350,8 @@ header .nav-container {
 }
 
 body.item header {
-  background: transparent;
+  background: #666666;
+  min-height: 0;
 }
 
 .public-nav {
@@ -7123,6 +7124,7 @@ body.item header {
 
 .item-section .image-row {
   overflow: hidden;
+  background: #eee;
 }
 
 .item-section .image-row .image-control {

@@ -67,7 +67,9 @@ class Importer{
             $new_item = true;
             $item = new Item();
             $item->item_type_id = $this->type;
-            $item->collection_id = $this->collection;
+            if($this->collection):
+              $item->collection_id = $this->collection;
+            endif;
             $item->featured = 0;
             $item->public = 1;
             $item->owner_id = 1;
@@ -129,7 +131,6 @@ class Importer{
     }
 
     protected function add_files($item,$pids){
-
         foreach($pids as $pid):
             //download the file, start with the highest quality (to get more accurate metadata)
             $obj = rosetta_download_image(get_option('rosetta_resolver').'/'.$pid);
@@ -146,15 +147,16 @@ class Importer{
             $file->save();
 
             //delete the tmp file
-            unlink('/tmp/'.$pid.'_resolver');
+            //not necessary because tmp file is moved to files/original
+            //unlink('/tmp/'.$pid.'_resolver');
         endforeach;
     }
 
     protected function get_existing_item($record){
-        $objectid = get_db()->getTable('Element')->findByElementSetNameAndElementName('Item Type Metadata', 'Object id');
+        $objectid = get_db()->getTable('Element')->findByElementSetNameAndElementName('Item Type Metadata', 'MMS ID');
 
         if(!$objectid):
-          die("element Object id does not exist");
+          die("element MMS ID does not exist");
         endif;
 
         //item exists?

@@ -26,10 +26,10 @@ class Transformer{
             $record = json_decode($record,true);
             //simplify the array
             $fields = $this->parse_fields($record['fields']);
-            echo "<pre>";
-            var_dump($fields);
-            echo "</pre>";
-            die();
+            //echo "<pre>";
+            //var_dump($fields);
+            //echo "</pre>";
+            //die();
             $result = $this->transform($fields);
             $final['results'][]= $result;
         endforeach;

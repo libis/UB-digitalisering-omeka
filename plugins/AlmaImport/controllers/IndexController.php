@@ -44,7 +44,7 @@ class AlmaImport_IndexController extends Omeka_Controller_AbstractActionControll
             $transformer = new Transformer($records);
             $result = $transformer->get_array();
 
-            $status = $this->_import($result,$type,$collection,$download_imgages);
+            $status = $this->_import($result,$type,$collection,$download_images);
         endif;
 
         //get item types and collections
@@ -55,7 +55,7 @@ class AlmaImport_IndexController extends Omeka_Controller_AbstractActionControll
         $this->view->assign(compact('ids','status','item_types','collections'));
     }
 
-    protected function _import($data,$type,$collection){
+    protected function _import($data,$type,$collection,$download_images){
         $mappingFilePath = PLUGIN_DIR."/AlmaImport/mappingrules.csv";
 
         if (!file_exists($mappingFilePath))
