@@ -103,7 +103,7 @@ class Importer{
                 $element_texts = explode('$$',$metadata);
                 $element = get_db()->getTable('Element')->findByElementSetNameAndElementName($element_set, $element_name);
             else:
-                $element == null;
+                $element = null;
             endif;
 
             if($element != null):
@@ -125,6 +125,7 @@ class Importer{
                     $element_text->save();
                 endforeach;
             endif;
+            $element == null;
         endforeach;
 
         return true;
