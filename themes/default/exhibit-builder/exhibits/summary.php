@@ -22,10 +22,14 @@
             <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
 
             <div class="exhibit-description">
-                <h3>Overzicht tentoonstelling</h3>
-                <hr class="top-exhibit">
+                <h3><span>Overzicht tentoonstelling</span></h3>
                 <?php echo $exhibitDescription; ?>
-                <hr class="top-exhibit">
+                <?php
+                  $page = $exhibit->TopPages[0];
+                ?>
+                <div class="to-exhibit">
+                    <p><a href="<?php echo html_escape($page->getRecordUrl()); ?>">Start tentoonstelling</a></p>
+                </div>
             </div>
 
             <?php endif; ?>
