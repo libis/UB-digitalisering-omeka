@@ -7098,18 +7098,18 @@ body.item header {
   }
 }
 
-.item-title-section h4 {
+.item-title-section h4, .item-title-section h3 {
   font-weight: 100;
   color: #fff;
 }
 
-.item-title-section h4 a {
+.item-title-section h4 a, .item-title-section h3 a {
   color: #fff;
   font-weight: bold;
   border-bottom: 2px solid white;
 }
 
-.item-title-section h4 a:hover {
+.item-title-section h4 a:hover, .item-title-section h3 a:hover {
   text-decoration: none;
 }
 
