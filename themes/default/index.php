@@ -111,7 +111,6 @@
 <section class="feature-section">
     <div id="content" class='container' role="main" tabindex="-1">
         <div class="row featured">
-
             <div class="col-sm-12 col-md-7 col-lg-5 col-xl-5">
                 <?php $file = $exhibit->getFile();?>
                 <div class="card">
@@ -170,7 +169,7 @@
         <div class="row">
             <div class="col-xs-12">
               <div class="link-to-all">
-                  <a href="<?php echo url("exhibits/browse?tag=project"); ?>">Alle tentoonstellingen</a>
+                  <a href="<?php echo url("exhibits/browse?tag=project"); ?>">Alle projecten</a>
               </div>
             </div>
         </div>
@@ -178,7 +177,7 @@
 </section>
 <?php endif;?>
 <!-- showcases -->
-<?php $exhibits = libis_get_exhibits_home(5,"showcase");?>
+<?php $exhibits = libis_get_exhibits_home(12,"showcase");?>
 <?php if($exhibits): ?>
 <section class="showcase-section home-section">
     <div id="content" class='container'>
@@ -192,12 +191,12 @@
         <div class="card-columns">
           <?php foreach($exhibits as $showcase):?>
             <div class="card">
-                <?php $file = $exhibit->getFile();?>
+                <?php $file = $showcase->getFile();?>
                 <?php if ($file): ?>
                     <img class="card-img-top" src="<?php echo $file->getWebPath(); ?>">
                 <?php endif; ?>
                 <div class="card-block">
-                    <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
+                    <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($showcase); ?></h4>
                 </div>
             </div>
           <?php endforeach;?>
