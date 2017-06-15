@@ -6298,6 +6298,10 @@ a {
   color: #1D8DB0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 :focus {
   outline: none;
 }
@@ -7270,13 +7274,30 @@ body.item header {
 }
 
 .metadata-section .content h1 {
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
 }
 
 .metadata-section .content h2 {
   display: none;
+}
+
+.metadata-section .content .digital-copy-link {
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: right;
+}
+
+.metadata-section .content .digital-copy-link a {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.metadata-section .content .digital-copy-link a i {
+  font-size: 1.4rem;
+  padding-right: 4px;
+  vertical-align: text-bottom;
 }
 
 .metadata-section .content .element {
@@ -7293,7 +7314,7 @@ body.item header {
   font-size: 1.2rem;
   font-weight: bold;
   float: left;
-  line-height: 1.1;
+  line-height: 1.5;
   width: 200px;
 }
 

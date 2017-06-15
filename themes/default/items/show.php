@@ -14,17 +14,20 @@
     <div id="content" class='container' role="main" tabindex="-1">
         <div class="row">
             <div class="offset-sm-1 col-sm-10 col-xs-12 page">
+              <?php $texts =  all_element_texts('item',array('return_type'=>'array'));?>
+
                 <div class='content'>
-                    <?php if(metadata('item','item_type_name')):?>
-                        <h4><i><?php echo metadata('item','item_type_name');?></i></h4>
-                    <?php endif;?>
                     <h1 class="section-title projecten-title">
                         <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
+
                     </h1>
-
-                    <?php $texts =  all_element_texts('item',array('return_type'=>'array')); ?>
-
-                    <?php //echo"<pre>";var_dump($texts);echo '</pre>';?>
+                    <?php if(isset($texts['Object Item Type Metadata']['IE nummer'])):?>
+                      <p class="digital-copy-link">
+                        <a href="http://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['IE nummer'][0];?>/representation">
+                          <i class="material-icons">&#xE3B6;</i>Bekijk online
+                        </a>
+                      </p>
+                    <?php endif;?>
 
                     <?php if (isset($texts['Dublin Core']['Title'])): ?>
                     <div id="collection" class="element">
@@ -54,10 +57,10 @@
                     </div>
                     <?php endif; ?>
 
-                    <?php if (isset($texts['Text Item Type Metadata']['Call number'])): ?>
+                    <?php if (isset($texts['Object Item Type Metadata']['Call number'])): ?>
                     <div id="collection" class="element">
                         <h3><?php echo __('Subject'); ?></h3>
-                        <div class="element-text"><p><?php echo implode(', ',$texts['Text Item Type Metadata']['Call number']); ?></p></div>
+                        <div class="element-text"><p><?php echo implode(', ',$texts['Object Item Type Metadata']['Call number']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
@@ -89,22 +92,22 @@
                     </div>
                     <?php endif; ?>
 
-                    <?php if (isset($texts['Text Item Type Metadata']['LIMO'])): ?>
+                    <?php if (isset($texts['Object Item Type Metadata']['LIMO'])): ?>
                     <div id="collection" class="element">
-                        <a href="<?php echo $texts['Text Item Type Metadata']['LIMO']; ?>"><?php echo __('Bekijk uitgebreide beschrijving');?></a>
+                        <a href="<?php echo $texts['Object Item Type Metadata']['LIMO'][0]; ?>"><strong><?php echo __('Bekijk uitgebreide beschrijving');?></strong></a>
                     </div>
                     <?php endif; ?>
 
-                    <?php if (isset($texts['Text Item Type Metadata']['Rosetta ID'])): ?>
+                    <?php if (isset($texts['Object Item Type Metadata']['Rosetta ID'])): ?>
                     <div id="collection" class="element">
-                        <a href="https://resolver.libis.be/<?php echo $texts['Text Item Type Metadata']['Rosetta ID']; ?>"><?php echo __('Bekijk het volledige object');?></a>
+                        <a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['Rosetta ID']; ?>"><?php echo __('Bekijk het volledige object');?></a>
                     </div>
                     <?php endif; ?>
 
-                    <?php if (isset($texts['Text Item Type Metadata']['Call number'])): ?>
+                    <?php if (isset($texts['Object Item Type Metadata']['Call number'])): ?>
                     <div id="collection" class="element">
                         <h3><?php echo __('Subject'); ?></h3>
-                        <div class="element-text"><p><?php echo implode(', ',$texts['Text Item Type Metadata']['Call number']); ?></p></div>
+                        <div class="element-text"><p><?php echo implode(', ',$texts['Object Item Type Metadata']['Call number']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
