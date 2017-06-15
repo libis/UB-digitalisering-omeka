@@ -7048,7 +7048,7 @@ body.item header {
   background: transparent;
 }
 
-.showcase-section .card .card-block h4 {
+.showcase-section .card .card-block h4 a {
   font-size: 1rem;
   margin: 0;
   font-weight: bold;
