@@ -8,6 +8,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
                         <img src="<?php echo img("KULEUVEN.png");?>">
+                        <img src="<?php echo img("libis_logo.png");?>">
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
