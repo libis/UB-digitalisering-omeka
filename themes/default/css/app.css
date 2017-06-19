@@ -317,7 +317,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
@@ -5170,7 +5170,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5270,7 +5270,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6288,7 +6288,7 @@ html {
 
 body {
   height: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #333;
   font-size: 1.1rem;
 }
@@ -6354,7 +6354,7 @@ header .nav-container {
 }
 
 body.item header {
-  background: #666666;
+  background: #2b2b2b;
   min-height: 0;
 }
 
@@ -6455,7 +6455,7 @@ body.item header {
 
 .public-nav .navbar-nav li a {
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 900;
+  font-weight: 500;
   margin: 0 35px 0 0;
   font-size: 1.1rem;
 }
@@ -6606,7 +6606,7 @@ body.item header {
 .jumbotron p {
   font-size: 1.7rem;
   padding: 1rem 0;
-  font-weight: 900;
+  font-weight: 500;
   text-shadow: none;
 }
 
@@ -6784,7 +6784,7 @@ body.item header {
 }
 
 .feature-section .featured .featured-tag {
-  font-weight: 800;
+  font-weight: 700;
   color: #333;
   font-size: 1.2rem;
   margin: 0.5rem 0 1rem 0;
@@ -6816,7 +6816,7 @@ body.item header {
   color: #1D8DB0;
   padding: 0rem 0 3rem;
   margin-bottom: 0.5rem;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -6916,7 +6916,6 @@ body.item header {
 .home-section .card .card-img-overlay h4 a {
   color: white;
   padding-bottom: 0.2rem;
-  border-bottom: 1px solid white;
 }
 
 .home-section .card .card-img-overlay h4 a:hover {
@@ -7002,7 +7001,7 @@ body.item header {
   color: white;
   padding: 0rem 0 3rem;
   margin-bottom: 0.5rem;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -7135,7 +7134,7 @@ body.item header {
 
 .item-section .image-row {
   overflow: hidden;
-  background: #eee;
+  background: #333;
 }
 
 .item-section .image-row .image-control {
@@ -7298,6 +7297,15 @@ body.item header {
   font-size: 1.4rem;
   padding-right: 4px;
   vertical-align: text-bottom;
+}
+
+.metadata-section .content #collection p {
+  font-weight: 100;
+  color: #1D8DB0;
+}
+
+.metadata-section .content #collection p a {
+  font-weight: bold;
 }
 
 .metadata-section .content .element {

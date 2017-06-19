@@ -29,93 +29,92 @@
                       </p>
                     <?php endif;?>
 
-                    <?php if (isset($texts['Dublin Core']['Title'])): ?>
+                    <!-- If the item belongs to a collection, the following creates a link to that collection. -->
+                    <?php if (metadata('item', 'Collection Name')): ?>
+                    <div id="collection">
+                        <p><?php echo __('Collection'); ?>: <a href='<?php echo url('/solr-search?q=&facet=collection:"'.metadata('item', 'Collection Name').'"'); ?>'><?php echo metadata('item', 'Collection Name');?></a></p>
+                    </div>
+                    <?php endif; ?>
+
+                    <!--<?php if (isset($texts['Dublin Core']['Title'])): ?>
                     <div id="collection" class="element">
                         <h3><?php echo __('Title'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Title']); ?></p></div>
                     </div>
-                    <?php endif; ?>
+                  <?php endif; ?>-->
 
                     <?php if (isset($texts['Dublin Core']['Subject'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo __('Subject'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Subject']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Dublin Core']['Description'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo __('Description'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Description']);?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Dublin Core']['Source'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo 'Collectie'; ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Source']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Object Item Type Metadata']['Call number'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo __('Subject'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Object Item Type Metadata']['Call number']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Dublin Core']['Creator'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo __('Creator'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Creator']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Dublin Core']['Date'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo __('Date'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Date']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Dublin Core']['Publisher'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo __('Publisher'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Publisher']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Dublin Core']['Spatial coverage'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo 'Plaats'; ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Spatial coverage']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Object Item Type Metadata']['LIMO'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <a href="<?php echo $texts['Object Item Type Metadata']['LIMO'][0]; ?>"><strong><?php echo __('Bekijk uitgebreide beschrijving');?></strong></a>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Object Item Type Metadata']['Rosetta ID'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['Rosetta ID']; ?>"><?php echo __('Bekijk het volledige object');?></a>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Object Item Type Metadata']['Call number'])): ?>
-                    <div id="collection" class="element">
+                    <div class="element">
                         <h3><?php echo __('Subject'); ?></h3>
                         <div class="element-text"><p><?php echo implode(', ',$texts['Object Item Type Metadata']['Call number']); ?></p></div>
-                    </div>
-                    <?php endif; ?>
-
-                    <!-- If the item belongs to a collection, the following creates a link to that collection. -->
-                    <?php if (metadata('item', 'Collection Name')): ?>
-                    <div id="collection" class="element">
-                        <h3><?php echo __('Collection'); ?></h3>
-                        <div class="element-text"><p><?php echo link_to_collection_for_item(); ?></p></div>
                     </div>
                     <?php endif; ?>
 
