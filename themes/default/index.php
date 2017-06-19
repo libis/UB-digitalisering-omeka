@@ -127,7 +127,7 @@
                 <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
                 <div class="description"><?php echo $exhibit->description;?></div>
                 <div class="to-exhibit">
-                    <p><a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>">Start tentoonstelling</a></p>
+                    <p><a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>">Bekijk project</a></p>
                 </div>
               </div>
             </div>
