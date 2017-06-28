@@ -6290,7 +6290,7 @@ body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
   background: #333;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 a {
@@ -6755,9 +6755,15 @@ body.item header {
   padding: 2rem;
 }
 
+@media (max-width: 991px) {
+  .feature-section .featured .featured-column .feature-text {
+    padding: 1rem;
+  }
+}
+
 .feature-section .featured .featured-column .feature-text .description {
   margin: 1rem 0 3rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #333;
 }
 
@@ -6787,7 +6793,7 @@ body.item header {
   font-weight: 700;
   color: #333;
   font-size: 1.2rem;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .feature-section .featured .featured-tag span {
@@ -6796,6 +6802,8 @@ body.item header {
   text-transform: uppercase;
   color: #fff;
   padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
   border-radius: 20px;
 }
 
@@ -6814,7 +6822,7 @@ body.item header {
 
 .home-section .section-title {
   color: #1D8DB0;
-  padding: 0rem 0 3rem;
+  padding: 1rem 0 3rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 1.2rem;
@@ -6826,12 +6834,20 @@ body.item header {
   border-top: 4px solid #1D8DB0;
 }
 
+@media (max-width: 767px) {
+  .home-section .section-title span {
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 4px solid #1D8DB0;
+  }
+}
+
 .home-section img {
   width: 100%;
 }
 
 .home-section .link-to-all {
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 0.8rem 0;
   text-align: right;
   font-weight: bold;
 }
@@ -6922,12 +6938,6 @@ body.item header {
   text-decoration: none;
 }
 
-@media (max-width: 1299px) {
-  .home-section .card .card-img-overlay h4 {
-    font-size: 1.8rem;
-  }
-}
-
 .home-section .card .card-img-overlay .tag {
   text-transform: uppercase;
   background: #1D8DB0;
@@ -6999,7 +7009,7 @@ body.item header {
 
 .showcase-section .section-title {
   color: white;
-  padding: 0rem 0 3rem;
+  padding: 1rem 0 3rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 1.2rem;
@@ -7060,7 +7070,7 @@ body.item header {
 
 .showcase-section .link-to-all {
   background: none;
-  padding: 0;
+  padding: 0 0 0.8rem 0;
 }
 
 .showcase-section .link-to-all a {
@@ -7922,7 +7932,8 @@ body.item header {
 .solr-section-results #solr-facets .facet .facet-name::before {
   font-weight: bold;
   font-size: 1.2rem;
-  padding-right: 5px;
+  width: 18px;
+  display: inline-block;
 }
 
 .solr-section-results #solr-facets .facet .facet-name[aria-expanded="true"]::before {

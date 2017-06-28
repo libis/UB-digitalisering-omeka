@@ -107,9 +107,9 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
         if($post = $args['post']):
             $post = $args['post'];
 
-            if($post['known-pid']):
-                $pids[] = $post['known-pid'];
-            elseif($post['pid']):
+            var_dump($post['pid']);
+
+            if($post['pid']):
                 $pids[] = $post['pid'];
             endif;
 

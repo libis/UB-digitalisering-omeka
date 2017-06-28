@@ -33,6 +33,7 @@
   <div class="container-fluid solr-container">
     <!-- Applied facets. -->
     <div id="solr-applied-facets" class="row">
+        <div class="col-xs-12">
       <ul>
         <!-- Get the applied facets. -->
         <?php foreach (SolrSearch_Helpers_Facet::parseFacets() as $f) : ?>
@@ -48,6 +49,7 @@
           </li>
         <?php endforeach; ?>
       </ul>
+    </div>
     </div>
 
     <div class="row">
