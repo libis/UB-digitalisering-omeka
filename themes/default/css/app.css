@@ -7283,7 +7283,7 @@ body.item header {
 }
 
 .metadata-section .content h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
 }
@@ -7329,7 +7329,7 @@ body.item header {
 }
 
 .metadata-section .content h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   float: left;
   line-height: 1.5;
