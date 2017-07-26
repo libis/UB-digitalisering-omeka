@@ -8024,12 +8024,14 @@ footer ul {
 
 footer ul li {
   list-style: none;
-  font-weight: bold;
+  padding: 0.3rem;
   font-size: 1rem;
 }
 
 footer a {
   color: rgba(51, 51, 51, 0.8);
+  padding: 0.2rem;
+  border-bottom: 3px solid rgba(51, 51, 51, 0.1);
 }
 
 footer a:hover {

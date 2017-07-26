@@ -11,46 +11,16 @@
                         <img src="<?php echo img("libis_logo.png");?>">
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
-                        <h4>Locatie titel</h4>
-                        <p>Straatstraat 22<br>
-                            3000 Leuven<br>
-                            016222222<br>
-                        .....</p>
+                    <div class="col-xs-12 col-sm-12 col-sm-6 col-lg-6">
+                        <ul>
+                          <li><a href="<?php echo url("contact");?>">Contact</a></li>
+                          <li><a href="<?php echo url("collectiehouders_partners");?>">Collectiehouders & partners</a></li>
+                          <li><a href="<?php echo url("copyright");?>">Copyright</a></li>
+                          <li><a href="<?php echo url("over-de-website");?>">About the website</a></li>
+                          <li><a href="https://bib.kuleuven.be/">KU Leuven Bibliotheken</a></li>
+                        </ul>
                     </div>
 
-                    <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2 hidden-sm-down">
-                        <ul>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2 hidden-sm-down">
-                        <ul>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2 hidden-sm-down">
-                        <ul>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-                            <li><a href="">Menu item 1</a></li>
-
-                        </ul>
-                    </div>
                 </div>
             </div>
 
