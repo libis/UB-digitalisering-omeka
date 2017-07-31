@@ -16,7 +16,7 @@
 </section>
 </header>
 <section class="general-section exhibit-show-section">
-  <div id="content" class='container-fluid' role="main" tabindex="-1">
+  <div id="content" class='container' role="main" tabindex="-1">
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-5 page">
             <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
@@ -34,7 +34,7 @@
 
             <?php endif; ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4 col-xl-5 cover">
+        <div class="col-xs-12 col-sm-6 col-lg-4 col-xl-4 cover">
             <?php if (($exhibit->cover_image_file_id)): ?>
             <?php
               $file = get_record_by_id('File',$exhibit->cover_image_file_id);
@@ -43,7 +43,7 @@
             <?php endif; ?>
             <img src="<?php echo $cover_url ?>">
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3 col-xl-2 nav">
+        <div class="col-xs-12 col-sm-6 col-lg-3 col-xl-3 nav">
           <?php echo exhibit_builder_page_nav(); ?>
           <?php
           $pageTree = exhibit_builder_page_tree();
