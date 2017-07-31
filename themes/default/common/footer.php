@@ -6,12 +6,7 @@
                     <p><?php echo $copyright; ?></p>
                 <?php endif; ?>
                 <div class="row">
-                    <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
-                        <img src="<?php echo img("KULEUVEN.png");?>">
-                        <img src="<?php echo img("libis_logo.png");?>">
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-sm-6 col-lg-6">
+                    <div class="col-xs-12 offset-lg-1 col-lg-10">
                         <ul>
                           <li><a href="<?php echo url("contact");?>">Contact</a></li>
                           <li><a href="<?php echo url("collectiehouders_partners");?>">Collectiehouders & partners</a></li>
@@ -20,7 +15,12 @@
                           <li><a href="https://bib.kuleuven.be/">KU Leuven Bibliotheken</a></li>
                         </ul>
                     </div>
-
+                    <div class="col-xs-12 offset-lg-1 col-lg-10">
+                      <div class="footer-images">
+                        <img src="<?php echo img("KULEUVEN.png");?>">
+                        <img src="<?php echo img("libis_logo.png");?>">
+                      </div>
+                    </div>
                 </div>
             </div>
 
