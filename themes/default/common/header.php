@@ -29,6 +29,7 @@
 
     <?php
       queue_js_file('masonry');
+      queue_js_file('jquery.bg');
       queue_js_file('jquery.detect_swipe');
       echo head_js();
     ?>
@@ -41,7 +42,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
@@ -49,17 +50,17 @@
             <div class="container-fluid nav-container">
                 <nav class="navbar public-nav">
                     <div class="row">
-                        <button class="navbar-toggler easy-sidebar-toggle pull-xs-left" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler easy-sidebar-toggle pull-xs-right" type="button" aria-expanded="false" aria-label="Toggle navigation">
                           &#9776;
                         </button>
                         <a class="navbar-brand" href="<?php echo WEB_ROOT;?>"><span>Expo</span></a>
-                        <div class="logo" class=""><img src="<?php echo img("KULEUVEN.png") ?>"></div>
+                        <div class="logo pull-xs-left"><img src="<?php echo img("KULEUVEN.png") ?>"></div>
                     </div>
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="collapse navbar-toggleable-xl" id="exCollapsingNavbar2">
                           <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
                         </div>
-                    </div>
+                    </div>-->
                 </nav>
             </div>
             <?php fire_plugin_hook('public_header', array('view' => $this)); ?>

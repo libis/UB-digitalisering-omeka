@@ -55,6 +55,14 @@ jQuery('html').on('swipeleft', function(){
   jQuery('body').removeClass('toggled');
 });
 
+jQuery('header').backstretch(
+  [
+      "<?php echo img('bg/bg1.jpg');?>",
+      "<?php echo img('bg/bg2.jpg');?>",
+      "<?php echo img('bg/bg3.jpg');?>",
+      "<?php echo img('bg/bg4.jpg');?>"
+], {duration: 12000, fade: 1500});
+
 
 </script>
 </html>

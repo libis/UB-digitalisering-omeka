@@ -2,10 +2,12 @@
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-          <div class="grid-sizer col-xs-12 intro">
+          <div class="col-xs-12 intro">
             <div class="row">
-                <div class="grid-sizer col-lg-8 col-xs-12 intro-box">
+                <div class="col-lg-12 col-xs-12">
+                  <div class="intro-box">
                     <?php echo libis_get_simple_page_content('homepage-intro');?>
+                  </div>
                 </div>
               </div>
           </div>
@@ -30,10 +32,10 @@
 </section>
 <!-- tentoonstellingen -->
 <?php
-    $exhibits = libis_get_exhibits_home(5,"tentoonstelling");
+    $exhibits = libis_get_exhibits_home(4,"tentoonstelling");
     if($exhibits):
         $exhibit = $exhibits[0];
-        $size = 4 - sizeof($exhibits);
+        $size = 3 - sizeof($exhibits);
 ?>
 <section class="feature-section">
     <div id="content" class='container' role="main" tabindex="-1">
@@ -70,23 +72,21 @@
         </div>
         <div class="row">
             <?php foreach(array_slice($exhibits,1) as $exhibit):?>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
+                        <?php //var_dump($file);?>
                         <?php if ($file): ?>
-                            <img class="card-img" src="<?php echo $file->getWebPath(); ?>">
+                            <img class="card-img" src="<?php echo $file->getWebPath("fullsize"); ?>">
                         <?php endif; ?>
-                        <div class="card-img-overlay">
-                            <div class="overlay-text">
-                              <hr class="top">
+                        <div class="card-block">
                               <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
-                            </div>
                         </div>
                     </div>
                 </div>
             <?php endforeach;?>
             <?php for($i=0;$i<=$size;$i++){?>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="no-exhibit"></div>
                 </div>
             <?php } ?>
