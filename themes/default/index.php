@@ -18,11 +18,11 @@
 <section class="front-search-section">
     <div class="container">
         <div class="row row-search">
-            <div class="col-lg-8 col-xs-12 front-search">
+            <div class="col-xs-12 front-search">
                  <!-- Search form. -->
                  <div class="solr">
                    <form action="<?php echo url("/solr-search/");?>" id="solr-search-form">
-                       <input type="text" placeholder="ZOEK IN DE COLLECTIE" title="<?php echo __('Search keywords') ?>" name="q" />
+                       <input type="text" placeholder="ZOEK IN DE WEBSITE" title="<?php echo __('Search keywords') ?>" name="q" />
                      <button type="submit" /><i class="material-icons">&#xE8B6;</i></button>
                    </form>
                  </div>

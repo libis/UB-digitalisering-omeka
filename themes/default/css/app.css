@@ -6423,18 +6423,19 @@ body.item header {
   border-radius: 0px;
   padding: 1rem 1rem;
   z-index: 1000;
-  color: white;
+  color: #1d8db0;
   font-size: 1.5rem;
+  background: white;
   vertical-align: top;
   transition: all .2s ease-in-out;
 }
 
 .public-nav .navbar-toggler i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .public-nav .navbar-toggler:hover {
-  color: rgba(51, 51, 51, 0.8);
+  color: rgba(29, 141, 176, 0.9);
 }
 
 .public-nav #exCollapsingNavbar2 {
@@ -6678,10 +6679,9 @@ body.item header {
   background: none;
   font-size: 1.3rem;
   line-height: 1;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   width: 100%;
   border: none;
-  border-radius: 20px;
 }
 
 @media (max-width: 543px) {
