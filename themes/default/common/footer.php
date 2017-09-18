@@ -12,7 +12,7 @@
                           <li><a href="<?php echo url("collectiehouders_partners");?>">Collectiehouders & partners</a></li>
                           <li><a href="<?php echo url("copyright");?>">Copyright</a></li>
                           <li><a href="<?php echo url("over-de-website");?>">About the website</a></li>
-                          <li><a href="https://bib.kuleuven.be/">KU Leuven Bibliotheken</a></li>
+                          <li><a href="http://bib.kuleuven.be/english/">KU Leuven Bibliotheken</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 offset-lg-1 col-lg-10">
