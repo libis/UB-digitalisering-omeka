@@ -8,8 +8,11 @@
                   <h3><?php echo $exhibitCredits; ?></h3>
             </div>
             <?php endif; ?>
-
             <h1><?php echo metadata('exhibit', 'title'); ?></h1>
+            <?php $tags = tag_string($exhibit,'exhibits/browse');?>
+            <?php if($tags):?>
+              <h4><?php echo $tags;?></h4>
+            <?php endif;?>
           </div>
       </div>
     </div>
