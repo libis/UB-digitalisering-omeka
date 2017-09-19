@@ -7435,95 +7435,74 @@ body.item header {
 .simple-page-section h3 {
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .exhibit-show-section h4,
 .simple-page-section h4 {
   font-weight: 100;
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
-.exhibit-show-section .card-columns,
-.simple-page-section .card-columns {
-  column-gap: 3rem;
-  column-rule: 1px solid rgba(29, 141, 176, 0.1);
-  -moz-column-rule: 1px solid rgba(29, 141, 176, 0.1);
-  -moz-column-count: 3;
-  -moz-column-gap: 3rem !important;
-}
-
-@media (max-width: 991px) {
-  .exhibit-show-section .card-columns,
-  .simple-page-section .card-columns {
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-
-@media (max-width: 543px) {
-  .exhibit-show-section .card-columns,
-  .simple-page-section .card-columns {
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-}
-
-.exhibit-show-section .card-columns .card,
-.simple-page-section .card-columns .card {
+.exhibit-show-section .card,
+.simple-page-section .card {
   border: none;
   background: none;
   padding: 0;
 }
 
-.exhibit-show-section .card-columns .card img,
-.simple-page-section .card-columns .card img {
+.exhibit-show-section .card img,
+.simple-page-section .card img {
   width: 100%;
 }
 
-.exhibit-show-section .card-columns .card .card-title,
-.simple-page-section .card-columns .card .card-title {
+.exhibit-show-section .card .card-title,
+.simple-page-section .card .card-title {
   text-transform: none;
   font-weight: bold;
 }
 
-.exhibit-show-section .card-columns .card .card-block,
-.simple-page-section .card-columns .card .card-block {
+.exhibit-show-section .card .card-img,
+.simple-page-section .card .card-img {
+  border-radius: 0;
+  padding-top: 50%;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 16em;
+}
+
+.exhibit-show-section .card .card-block,
+.simple-page-section .card .card-block {
   background: none;
   padding: 1rem 0 1rem;
 }
 
-.exhibit-show-section .card-columns .card .card-footer,
-.simple-page-section .card-columns .card .card-footer {
-  border-top: 2px solid rgba(29, 141, 176, 0.2);
+.exhibit-show-section .card .card-footer,
+.simple-page-section .card .card-footer {
+  border-top: 1px solid rgba(29, 141, 176, 0.2);
   padding: 0;
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
   background: none;
 }
 
-.exhibit-show-section .card-columns .card .card-footer .lees-meer,
-.simple-page-section .card-columns .card .card-footer .lees-meer {
+.exhibit-show-section .card .card-footer .lees-meer,
+.simple-page-section .card .card-footer .lees-meer {
   line-height: 1rem;
   text-align: right;
 }
 
-.exhibit-show-section .card-columns .card .card-footer .lees-meer a,
-.simple-page-section .card-columns .card .card-footer .lees-meer a {
-  background: rgba(29, 141, 176, 0.8);
-  color: white;
-  border-radius: 5px;
+.exhibit-show-section .card .card-footer .lees-meer a,
+.simple-page-section .card .card-footer .lees-meer a {
   margin: 0;
-  padding: 0.3rem 0.5rem;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
-.exhibit-show-section .card-columns .card .card-footer .lees-meer a:hover,
-.simple-page-section .card-columns .card .card-footer .lees-meer a:hover {
+.exhibit-show-section .card .card-footer .lees-meer a:hover,
+.simple-page-section .card .card-footer .lees-meer a:hover {
   text-decoration: none;
-  background: #1d8db0;
 }
 
 .exhibit-show-section .cover,
