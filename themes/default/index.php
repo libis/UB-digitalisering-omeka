@@ -4,7 +4,7 @@
       <div class="row">
           <div class="col-xs-12 intro">
             <div class="row">
-                <div class="col-lg-12 col-xs-12">
+                <div class="col-lg-8 offset-lg-2 col-xs-12">
                   <div class="intro-box">
                     <?php echo libis_get_simple_page_content('homepage-intro');?>
                   </div>
@@ -13,23 +13,25 @@
           </div>
       </div>
     </div>
-  </div>
-</header>
-<section class="front-search-section">
-    <div class="container">
-        <div class="row row-search">
-            <div class="col-xs-12 front-search">
-                 <!-- Search form. -->
-                 <div class="solr">
-                   <form action="<?php echo url("/solr-search/");?>" id="solr-search-form">
-                       <input type="text" placeholder="ZOEK IN DE WEBSITE" title="<?php echo __('Search keywords') ?>" name="q" />
-                     <button type="submit" /><i class="material-icons">&#xE8B6;</i></button>
-                   </form>
-                 </div>
+    <section class="front-search-section">
+        <div class="container">
+            <div class="row row-search">
+                <div class="col-xs-12 offset-lg-2 col-lg-8 front-search">
+                     <!-- Search form. -->
+                     <div class="solr">
+                       <form action="<?php echo url("/solr-search/");?>" id="solr-search-form">
+                           <input type="text" placeholder="ZOEK IN DE WEBSITE" title="<?php echo __('Search keywords') ?>" name="q" />
+                         <button type="submit" /><i class="material-icons">&#xE8B6;</i></button>
+                       </form>
+                     </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+  </div>
+
+</header>
+
 <!-- tentoonstellingen -->
 <?php
     $exhibits = libis_get_exhibits_home(4,"tentoonstelling");
@@ -40,20 +42,21 @@
 <section class="feature-section">
     <div id="content" class='container' role="main" tabindex="-1">
         <div class="row featured">
-            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+            <div class="col-sm-12 col-md-5 col-lg-6 col-xl-6">
                 <?php $file = $exhibit->getFile();?>
                 <div class="card">
                     <?php if ($file): ?>
-                        <img class="card-img" src="<?php echo $file->getWebPath(); ?>">
+                      <div class="card-img" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
+                      <!--  <img class="card-img" src="<?php echo $file->getWebPath(); ?>">-->
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 featured-column">
-              <div class="title-kijker">
-                  <p class="featured-tag"><span>Tentoonstelling</span> <span>in de kijker</span></p>
-              </div>
+            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 featured-column">
               <div class="feature-text">
                 <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
+                <div class="title-kijker">
+                    <p class="featured-tag"><span><a href="">Tentoonstelling</a></span> <span><a href="">in de kijker</a></span></p>
+                </div>
                 <div class="description"><?php echo $exhibit->description;?></div>
                 <div class="to-exhibit">
                     <p><a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>">Start tentoonstelling</a></p>
@@ -75,9 +78,8 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
-                        <?php //var_dump($file);?>
                         <?php if ($file): ?>
-                            <img class="card-img" src="<?php echo $file->getWebPath("fullsize"); ?>">
+                            <div class="card-img" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
                         <?php endif; ?>
                         <div class="card-block">
                               <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
@@ -103,33 +105,34 @@
 <?php endif;?>
 <!-- projecten -->
 <?php
-    $exhibits = libis_get_exhibits_home(5,"project");
+    $exhibits = libis_get_exhibits_home(4,"project");
     if($exhibits):
         $exhibit = $exhibits[0];
-        $size = 4 - sizeof($exhibits);
+        $size = 3 - sizeof($exhibits);
 ?>
 <section class="feature-section">
     <div id="content" class='container' role="main" tabindex="-1">
         <div class="row featured">
-            <div class="col-sm-12 col-md-7 col-lg-5 col-xl-5">
+            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6">
                 <?php $file = $exhibit->getFile();?>
                 <div class="card">
                     <?php if ($file): ?>
-                        <img class="card-img" src="<?php echo $file->getWebPath(); ?>">
+                        <div class="card-img" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
+                        <!--<img class="card-img" src="<?php echo $file->getWebPath(); ?>">-->
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-7 col-lg-5 col-xl-7 featured-column">
-              <div class="title-kijker">
-                  <p class="featured-tag"><span>Project</span> <span>in de kijker</span></p>
-              </div>
-              <div class="feature-text">
-                <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
-                <div class="description"><?php echo $exhibit->description;?></div>
-                <div class="to-exhibit">
-                    <p><a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>">Bekijk project</a></p>
+            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 featured-column">
+                <div class="feature-text">
+                    <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
+                    <div class="title-kijker">
+                        <p class="featured-tag"><span><a href="">Project</a></span> <span><a href="">in de kijker</a></span></p>
+                    </div>
+                    <div class="description"><?php echo $exhibit->description;?></div>
+                    <div class="to-exhibit">
+                        <p><a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>">Bekijk project</a></p>
+                    </div>
                 </div>
-              </div>
             </div>
         </div>
       </div>
@@ -143,26 +146,21 @@
         </div>
         <div class="row">
             <?php foreach(array_slice($exhibits,1) as $exhibit):?>
-                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
-                            <img class="card-img" src="<?php echo $file->getWebPath(); ?>">
+                            <div class="card-img" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
                         <?php endif; ?>
-                        <div class="card-img-overlay">
-                            <div class="overlay-text">
-                              <hr class="top">
+                        <div class="card-block">
                               <h4 class="card-title"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
-                            </div>
                         </div>
                     </div>
                 </div>
             <?php endforeach;?>
             <?php for($i=0;$i<=$size;$i++){?>
-                <div class="col-sm-12 col-md-5 col-lg-3 col-xl-3">
-                    <div class="no-exhibit">
-
-                    </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="no-exhibit"></div>
                 </div>
             <?php } ?>
         </div>
