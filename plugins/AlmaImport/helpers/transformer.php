@@ -26,11 +26,16 @@ class Transformer{
             $record = json_decode($record,true);
             //simplify the array
             $fields = $this->parse_fields($record['fields']);
-            //echo "<pre>";
-            //var_dump($fields);
-            //echo "</pre>";
-            //die();
-            $result = $this->transform($fields);
+            if(isset($record['representation'])):
+              foreach($record['representation'] as $rep):
+                $fields[]['representation'] = $rep;
+              endforeach;
+              $representation = true;
+            else:
+              $representation = false;
+            endif;
+
+            $result = $this->transform($fields,$representation);
             $final['results'][]= $result;
         endforeach;
 
@@ -58,7 +63,7 @@ class Transformer{
         return $this->array_to_json();
     }
 
-    public function transform($fields){
+    public function transform($fields,$representation){
         $result="";
 
         /*
@@ -102,7 +107,9 @@ class Transformer{
                 endif;
             endif;
 
-            if(isset($field["856"])):
+            if(isset($field["representation"])):
+              $result["pid"][]= $field["representation"]["linking_parameter_1"];
+            elseif(isset($field["856"]) && !$representation):
                 if($field["856"]["ind1"]=='4'&&$field["856"]["ind2"]=='0'):
                     if (strpos($field["856"]['subfields']['u'], 'pid=') !== false) {
                         $pid = explode('pid=', $field["856"]['subfields']['u']);
