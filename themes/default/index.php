@@ -4,7 +4,7 @@
       <div class="row">
           <div class="col-xs-12 intro">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-xs-12">
+                <div class="col-lg-8 col-xs-12">
                   <div class="intro-box">
                     <?php echo libis_get_simple_page_content('homepage-intro');?>
                   </div>
@@ -16,7 +16,7 @@
     <section class="front-search-section">
         <div class="container">
             <div class="row row-search">
-                <div class="col-xs-12 offset-lg-2 col-lg-8 front-search">
+                <div class="col-xs-12 col-lg-8 front-search">
                      <!-- Search form. -->
                      <div class="solr">
                        <form action="<?php echo url("/solr-search/");?>" id="solr-search-form">
