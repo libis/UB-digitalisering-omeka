@@ -149,6 +149,8 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
             return;
         }
 
+        return;
+
         $file = $args['record'];
 
         $base_url = get_option('rosetta_resolver');
