@@ -10,20 +10,17 @@ echo head(array(
     'bodyid' => metadata('simple_pages_page', 'slug')
 ));
 ?>
-<section class="item-title-section">
-    <div id="content" class='container' role="main" tabindex="-1">
-      <div class="row">
-          <div class="col-sm-12 col-xs-12 page">
-              <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
-          </div>
-      </div>
+<div class="jumbotron">
+  <section class="overlay">
+    <div class="container">
+      <h1 class="white"><?php echo metadata('simple_pages_page', 'title'); ?></h1>
     </div>
-</section>
-</header>
+  </section>
+</div>
 <div class="content-wrapper simple-page-section ">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-9 col-xs-12 page">                
+            <div class="col-xs-12 col-md-9 col-xs-12 page">
                 <?php
                     $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
                     echo $this->shortcodes($text);

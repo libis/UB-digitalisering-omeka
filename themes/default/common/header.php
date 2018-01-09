@@ -19,65 +19,77 @@
     <!-- Plugin Stuff -->
     <?php fire_plugin_hook('public_head', array('view' => $this)); ?>
 
-    <!-- Stylesheets -->
-    <?php
-      queue_css_file(array('iconfonts', 'app'));
-      queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
-      echo head_css();
-      echo theme_header_background();
-    ?>
-
     <?php
       queue_js_file('masonry');
       queue_js_file('jquery.bg');
       queue_js_file('jquery.detect_swipe');
+      queue_js_file("lightbox");
       echo head_js();
     ?>
-
-    <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Google Fonts used in the housestyle -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons|Open+Sans:400italic,600italic,700italic,400,700,600|Merriweather:400italic,400,700">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//stijl.kuleuven.be/2016/css/main.css">
+
+    <!-- Stylesheets -->
+    <?php
+      queue_css_file(array('iconfonts', 'app','lightbox'));
+      queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
+      echo head_css();
+      echo theme_header_background();
+    ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
-    <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
-        <header role="banner">
-            <div class="container-fluid nav-container">
-                <nav class="navbar public-nav">
-                    <div class="row">
-                        <button class="navbar-toggler easy-sidebar-toggle pull-xs-right" type="button" aria-expanded="false" aria-label="Toggle navigation">
-                          &#9776;
-                        </button>
-                        <a class="navbar-brand" href="<?php echo WEB_ROOT;?>"><span>Expo</span></a>
-                        <div class="logo pull-xs-left"><img src="<?php echo img("KULEUVEN.png") ?>"></div>
-                    </div>
-                    <!--<div class="row">
-                        <div class="collapse navbar-toggleable-xl" id="exCollapsingNavbar2">
-                          <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
-                        </div>
-                    </div>-->
-                </nav>
+<?php fire_plugin_hook('public_body', array('view' => $this)); ?>
+<header role="banner">
+    <div class="container nav-container">
+        <nav class="navbar public-nav">
+            <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="modal" data-target="#modalNav" aria-controls="exCollapsingNavbar2">
+              &#9776;
+            </button>
+            <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">EXPO</a>
+            <div class="logo"><img src="<?php echo img("KULEUVEN.png") ?>"></div>
+
+            <div class="pull-xs-right">
+              <button type="button" class="btn search-btn" data-toggle="modal" data-target="#exampleModal">
+                <i class="material-icons">search</i>
+              </button>
             </div>
-            <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
-
-            <nav class="navbar navbar-inverse easy-sidebar">
-                <div class="container-fluid">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                  </div>
-
-                  <form action="<?php echo url("/solr-search/");?>" class="form-inline">
-                    <input class="form-control" name="q" type="text" placeholder="Search">
-                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
+            <div class="pull-xs-right hidden-sm-down">
+              <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
+            </div>
+        </nav>
+    </div>
+    <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-11">
+                  <form id="search-modal" action="<?php echo url('/search');?>">
+                    <div class="input-group">
+                      <input type="search" class="form-control" name="query" value="" placeholder="Zoek..." />
+                      <span class="input-group-btn">
+                        <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                      </span>
+                    </div>
                   </form>
-
-                  <?php echo public_nav_main(array('role' => 'navigation')); ?>
                 </div>
-                <!-- /.container-fluid -->
-              </nav>
-        <?php //echo search_form();?>
+                <div class="col-xs-1 close-col">
+                  <a class="close" href="#" data-dismiss="modal"><i class="material-icons">close</i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>

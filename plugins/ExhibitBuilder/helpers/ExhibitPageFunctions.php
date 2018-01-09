@@ -15,7 +15,7 @@ function exhibit_builder_render_exhibit_page($exhibitPage = null)
     if ($exhibitPage === null) {
         $exhibitPage = get_current_record('exhibit_page');
     }
-    
+
     $blocks = $exhibitPage->ExhibitPageBlocks;
     $rawAttachments = $exhibitPage->getAllAttachments();
     $attachments = array();
@@ -88,18 +88,18 @@ function exhibit_builder_page_nav($exhibitPage = null)
     $html .= '<li>';
     $html .= '<a class="exhibit-title" href="'. html_escape(exhibit_builder_exhibit_uri($exhibit)) . '">';
     $html .= html_escape($exhibit->title) .'</a></li>' . "\n";
-    
+
     $levelNumber = 1;
-    
+
     foreach ($pagesTrail as $page) {
         $linkText = $page->title;
         $pageExhibit = $page->getExhibit();
         $pageParent = $page->getParent();
-        $pageSiblings = ($pageParent ? exhibit_builder_child_pages($pageParent) : $pageExhibit->getTopPages()); 
+        $pageSiblings = ($pageParent ? exhibit_builder_child_pages($pageParent) : $pageExhibit->getTopPages());
 
         $html .= "<li>\n<ul class=\"exhibit-nav-level-$levelNumber\">\n";
         $levelNumber +=1;
-        
+
         foreach ($pageSiblings as $pageSibling) {
             $html .= '<li' . ($pageSibling->id == $page->id ? ' class="current"' : '') . '>';
             $html .= '<a class="exhibit-page-title" href="' . html_escape(exhibit_builder_exhibit_uri($exhibit, $pageSibling)) . '">';
@@ -160,9 +160,9 @@ function exhibit_builder_link_to_next_page($text = null, $props = array(), $exhi
             $props['class'] = 'next-page';
         }
         if ($text === null) {
-            $text = metadata($targetPage, 'title') . ' &rarr;';
+            $text = 'VOLGENDE STAP <i class="material-icons">&#xE5C8;</i>';
         }
-        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $targetPage);
+        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $targetPage)."<br>".metadata($targetPage, 'title');
     }
 
     return null;
@@ -191,9 +191,9 @@ function exhibit_builder_link_to_previous_page($text = null, $props = array(), $
             $props['class'] = 'previous-page';
         }
         if ($text === null) {
-            $text = '&larr; ' . metadata($previousPage, 'title');
+            $text = '<i class="material-icons">&#xE5C4;</i> VORIGE STAP ';
         }
-        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $previousPage);
+        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $previousPage).'<br>'.metadata($previousPage, 'title');
     }
 
     return null;
@@ -290,7 +290,7 @@ function set_exhibit_pages_for_loop_by_exhibit($exhibit = null)
 
 /**
  * Get the children of a page.
- * 
+ *
  * @param ExhibitPage $exhibitPage The exhibit page. If null, uses the current page.
  * @return array[ExhibitPage]
  */
