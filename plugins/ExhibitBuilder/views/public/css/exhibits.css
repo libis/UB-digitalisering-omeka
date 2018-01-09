@@ -31,7 +31,13 @@
 
 .exhibit-block {
     clear: both;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3rem;
+}
+
+.layout-gallery{
+  padding-bottom: 1rem;
 }
 
 .exhibit-block:last-child {
@@ -52,6 +58,18 @@
 .download-file {
     vertical-align: top;
     display: block;
+}
+
+.exhibit-gallery-item{
+  margin-bottom: 2rem;
+}
+
+.layout-file-text img{
+  width: 100%;
+}
+
+.gallery-text{
+  margin-bottom: 2em;
 }
 
 .exhibit-item-link *,

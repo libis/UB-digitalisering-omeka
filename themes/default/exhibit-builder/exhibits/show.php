@@ -26,6 +26,7 @@ echo head(array(
        > <?php echo exhibit_builder_link_to_exhibit($exhibit); ?>
        > <?php echo metadata('exhibit_page', 'title'); ?>
      </p>
+       <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
     <div id="exhibit-blocks">
       <?php exhibit_builder_render_exhibit_page(); ?>
     </div>

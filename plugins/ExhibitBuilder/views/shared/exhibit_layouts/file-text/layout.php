@@ -9,17 +9,15 @@ $captionPosition = isset($options['captions-position'])
     ? html_escape($options['captions-position'])
     : 'center';
 ?>
+<div class="captions-<?php echo $captionPosition; ?>">
 <div class="row">
 <?php if($position == "left"):?>
-  <div class="col-xs-12 col-md-5">
-    <div class="cover">
+  <div class="col-xs-12 col-md-6">
         <?php foreach ($attachments as $attachment): ?>
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
         <?php endforeach; ?>
-    </div>
   </div>
-  <div class="col-xs-12 col-md-7">
-    <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
+  <div class="col-xs-12 col-md-6">
     <?php echo $text; ?>
   </div>
 <?php else: ?>
@@ -34,4 +32,5 @@ $captionPosition = isset($options['captions-position'])
     </div>
   </div>
 <?php endif;?>
+</div>
 </div>

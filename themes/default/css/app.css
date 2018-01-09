@@ -7196,6 +7196,19 @@ section.gray {
   background: rgba(8, 167, 235, 0);
 }
 
+.exhibit-show-section .card-columns,
+.simple-page-section .card-columns {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+@media (max-width: 991px) {
+  .exhibit-show-section .card-columns,
+  .simple-page-section .card-columns {
+    column-count: 2;
+  }
+}
+
 .exhibit-show-section .exhibit-description p,
 .simple-page-section .exhibit-description p {
   margin: 0rem 0 2rem 0;
@@ -7203,66 +7216,15 @@ section.gray {
   text-align: justify;
 }
 
-.exhibit-show-section .page .exhibit-item-caption,
-.simple-page-section .page .exhibit-item-caption {
-  padding-top: 0rem;
+.exhibit-show-section .exhibit-item-caption,
+.simple-page-section .exhibit-item-caption {
+  padding-top: 0.5rem;
   font-weight: bold;
 }
 
-.exhibit-show-section .page .exhibit-block,
-.simple-page-section .page .exhibit-block {
-  overflow: auto;
-}
-
-.exhibit-show-section .page .exhibit-block p,
-.simple-page-section .page .exhibit-block p {
-  line-height: 1.7;
-}
-
-.exhibit-show-section .page .exhibit-block .left,
-.simple-page-section .page .exhibit-block .left {
-  margin-right: 4%;
-}
-
-.exhibit-show-section .page .exhibit-block .right,
-.simple-page-section .page .exhibit-block .right {
-  margin-left: 4%;
-}
-
-.exhibit-show-section .page hr.top-exhibit,
-.simple-page-section .page hr.top-exhibit {
-  width: 10px;
-  border-color: rgba(8, 167, 235, 0.3);
-  border-width: 10px;
-  margin: 0.2rem 0;
-}
-
-.exhibit-show-section .page .layout-file .exhibit-items > *,
-.simple-page-section .page .layout-file .exhibit-items > * {
-  margin-bottom: 0.2em;
-}
-
-.exhibit-show-section .page .exhibit,
-.simple-page-section .page .exhibit {
-  clear: both;
-  margin-bottom: 2rem;
-}
-
-.exhibit-show-section .page .exhibit .image,
-.simple-page-section .page .exhibit .image {
-  float: left;
-  padding-right: 1rem;
-}
-
-.exhibit-show-section .page #exhibit-page-navigation,
-.simple-page-section .page #exhibit-page-navigation {
-  overflow: auto;
-  margin-bottom: 0;
-}
-
-.exhibit-show-section .page #exhibit-page-navigation a:hover,
-.simple-page-section .page #exhibit-page-navigation a:hover {
-  text-decoration: none;
+.exhibit-show-section .layout-gallery .card,
+.simple-page-section .layout-gallery .card {
+  box-shadow: none;
 }
 
 .exhibit-show-section .content,

@@ -13,17 +13,18 @@ $captionPosition = isset($options['captions-position'])
     ? html_escape($options['captions-position'])
     : 'center';
 ?>
-<?php if ($showcaseFile): ?>
-<div class="gallery-showcase <?php echo $showcasePosition; ?> with-<?php echo $galleryPosition; ?> captions-<?php echo $captionPosition; ?>">
-    <?php
-        $attachment = array_shift($attachments);
-        echo $this->exhibitAttachment($attachment, array('imageSize' => 'fullsize'));
-    ?>
-</div>
-<?php endif; ?>
 <div class="gallery <?php if ($showcaseFile || !empty($text)) echo "with-showcase $galleryPosition"; ?> captions-<?php echo $captionPosition; ?>">
-  <div class="card-columns">
-    <?php echo $this->exhibitAttachmentGallery($attachments, array('imageSize' => $galleryFileSize)); ?>
+<?php if(!empty($text)):?>
+  <div class="gallery-text">
+    <?php echo $text; ?>
+  </div>
+<?php endif; ?>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="card-columns">
+        
+        <?php echo $this->exhibitAttachmentGallery($attachments, array('imageSize' => 'fullsize')); ?>
+      </div>
+    </div>
   </div>
 </div>
-<?php echo $text; ?>
