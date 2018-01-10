@@ -50,24 +50,24 @@
 <header role="banner">
     <div class="container nav-container">
         <nav class="navbar public-nav">
-            <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="modal" data-target="#modalNav" aria-controls="exCollapsingNavbar2">
+            <button class="navbar-toggler pull-xs-right hidden-lg-up" type="button" data-toggle="modal" data-target="#modalNav" aria-controls="exCollapsingNavbar2">
               &#9776;
             </button>
             <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">EXPO</a>
             <div class="logo"><img src="<?php echo img("KULEUVEN.png") ?>"></div>
 
-            <div class="pull-xs-right">
+            <div class="pull-xs-right hidden-md-down">
               <button type="button" class="btn search-btn" data-toggle="modal" data-target="#exampleModal">
                 <i class="material-icons">search</i>
               </button>
             </div>
-            <div class="pull-xs-right hidden-sm-down">
+            <div class="pull-xs-right hidden-md-down">
               <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
             </div>
         </nav>
     </div>
     <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
-    <!-- Modal -->
+    <!-- Modals -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -87,9 +87,32 @@
                 <div class="col-xs-1 close-col">
                   <a class="close" href="#" data-dismiss="modal"><i class="material-icons">close</i></a>
                 </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="modal fade" id="modalNav" tabindex="-1" role="dialog" aria-labelledby="modalNav" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <a class="close" href="#" data-dismiss="modal">Menu <i class="material-icons">close</i></a>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+                  <form id="search-modal" action="<?php echo url('/search');?>">
+                    <div class="input-group">
+                      <input type="search" class="form-control" name="query" value="" placeholder="Zoek..." />
+                      <span class="input-group-btn">
+                        <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                      </span>
+                    </div>
+                  </form>    
+              <?php echo public_nav_main(array('role' => 'navigation')); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

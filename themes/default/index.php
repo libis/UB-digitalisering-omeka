@@ -4,7 +4,7 @@
   <section class="overlay">
     <div class="container">
       <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-8 col-lg-6">
             <div class="card card-block card_banner">
               <h1>Ontdek enkele topstukken digitaal</h1>
                 <p class="spacer">
