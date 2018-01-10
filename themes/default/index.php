@@ -35,7 +35,7 @@
 <section class="feature-section">
     <div id="content" class='container' tabindex="-1">
         <div class="row featured">
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6">
+          <div class="col-xs-12 col-md-6">
               <?php $file = $exhibit->getFile();?>
               <div class="card">
                   <?php if ($file): ?>
@@ -44,7 +44,7 @@
                   <?php endif; ?>
               </div>
           </div>
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 featured-column">
+          <div class="col-sm-12 col-md-6 featured-column">
             <div class="feature-text">
               <h1>Bezoek onze virtuele tentoonstellingen</h1>
 
@@ -62,7 +62,7 @@
 <section class="feature-section gray">
     <div id="content" class='container' tabindex="-1">
         <div class="row featured">
-            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 featured-column">
+            <div class="col-xs-12 col-md-6 featured-column">
                 <div class="feature-text">
                     <h1>Ontdek wat wij digitaliseren</h1>
                     <p class="description">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6">
+            <div class="col-xs-12 col-md-6">
                 <?php $file = $exhibit->getFile();?>
                 <div class="card">
                     <?php if ($file): ?>
@@ -88,7 +88,7 @@
 <section class="feature-section">
     <div id="content" class='container' tabindex="-1">
         <div class="row featured">
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6">
+          <div class="col-xs-12 col-md-6">
               <?php $file = $exhibit->getFile();?>
               <div class="card">
                   <?php if ($file): ?>
@@ -97,7 +97,7 @@
                   <?php endif; ?>
               </div>
           </div>
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 featured-column">
+          <div class="col-xs-12 col-md-6 featured-column">
             <div class="feature-text">
               <h1>Onze showcases</h1>
               <p class="description">
@@ -123,7 +123,7 @@
         <hr align=left>
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
@@ -160,7 +160,7 @@
         <hr align=left>
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
@@ -196,7 +196,7 @@
         <hr align=left>
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>

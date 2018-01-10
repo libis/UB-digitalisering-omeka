@@ -6340,7 +6340,7 @@ a:hover {
 }
 
 .card-img {
-  height: 20vw;
+  height: 100%;
   border-radius: 0;
   background-size: cover;
   background-position: 50% 50%;
@@ -6737,9 +6737,21 @@ body.item header {
   padding: 0rem;
 }
 
+@media (max-width: 991px) {
+  .feature-section .featured div:first-of-type {
+    margin-bottom: 1rem;
+  }
+}
+
 .feature-section .feature-text p {
   margin: 1.5rem 0 1.7rem 0;
   line-height: 1.7;
+}
+
+@media (max-width: 991px) {
+  .feature-section .feature-text h1 {
+    font-size: 1.5rem;
+  }
 }
 
 section.gray {
@@ -6768,7 +6780,7 @@ section.gray {
 }
 
 .home-section .link-to-all {
-  padding: 2rem 0 0.8rem 0;
+  padding: 1rem 0 0.8rem 0;
   text-align: center;
 }
 
@@ -6787,7 +6799,7 @@ section.gray {
 
 .home-section .card {
   border: none;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 0rem;
   background: white;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
@@ -7796,11 +7808,12 @@ footer .footer-images img {
   max-width: 100%;
   margin-right: 30px;
   max-height: 55px;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 543px) {
   footer .footer-images img {
-    margin: 10px auto;
+    margin: 10px auto 1.5rem auto;
   }
 }
 

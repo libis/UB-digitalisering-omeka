@@ -6,13 +6,13 @@
                     <p><?php echo $copyright; ?></p>
                 <?php endif; ?>
                 <div class="row">
-                    <div class="col-xs-12 col-lg-8">
+                    <div class="col-xs-12 col-md-7 col-lg-8">
                       <div class="footer-images">
                         <img src="<?php echo img("KULEUVEN.png");?>">
                         <img src="<?php echo img("libis_logo.png");?>">
                       </div>
                     </div>
-                    <div class="col-xs-12 col-lg-4">
+                    <div class="col-xs-12 col-md-5 col-lg-4">
                         <ul>
                           <li><a href="<?php echo url("contact");?>">Contact</a></li>
                           <li><a href="<?php echo url("collectiehouders_partners");?>">Collectiehouders & partners</a></li>
