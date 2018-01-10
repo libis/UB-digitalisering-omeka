@@ -3,24 +3,11 @@
     margin-bottom: 1.2em !important;
 }
 
-#exhibit-page-navigation {
-    clear: both;
-    width: 100%;
-    margin: 1em 0;
-    line-height: 1.2;
-}
-
-#exhibit-page-navigation div {
-    width: 33%;
-}
-
 #exhibit-nav-prev {
-    float: left;
     text-align: left;
 }
 
 #exhibit-nav-next {
-    float: right;
     text-align: right;
 }
 
@@ -34,6 +21,10 @@
     margin-bottom: 3em;
     border-bottom: 1px solid #eee;
     padding-bottom: 3rem;
+}
+
+.exhibit-block:last-of-type{
+    border:none;
 }
 
 .layout-gallery{

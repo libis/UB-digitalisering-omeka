@@ -33,14 +33,14 @@ echo head(array(
 
     <div id="exhibit-page-navigation">
       <div class="row">
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
           <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
               <div id="exhibit-nav-prev">
                 <?php echo $prevLink; ?>
               </div>
           <?php endif; ?>
         </div>
-        <div class="col-sm-6 offset-md-4 col-md-4">
+        <div class="col-sm-6 col-md-5 offset-md-2 offset-lg-4 offset-xl-6 col-lg-4 col-lg-4 col-xl-3">
           <?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
             <div id="exhibit-nav-next">
             <?php echo $nextLink; ?>
