@@ -180,7 +180,7 @@
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=project"); ?>">Alle showcases</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=project"); ?>">Alle projecten</a>
         </div>
     </div>
 </section>
@@ -216,7 +216,7 @@
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=showcase"); ?>">Alle tentoonstellingen</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=showcase"); ?>">Alle showcases</a>
         </div>
     </div>
 </section>
