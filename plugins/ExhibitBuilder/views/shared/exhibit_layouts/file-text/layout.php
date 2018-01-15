@@ -21,10 +21,10 @@ $captionPosition = isset($options['captions-position'])
     <?php echo $text; ?>
   </div>
 <?php else: ?>
-  <div class="col-xs-12 col-md-7">
+  <div class="col-xs-12 col-md-6">
     <?php echo $text; ?>
   </div>
-  <div class="col-xs-12 col-md-5">
+  <div class="col-xs-12 col-md-6">
         <?php foreach ($attachments as $attachment): ?>
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
         <?php endforeach; ?>
