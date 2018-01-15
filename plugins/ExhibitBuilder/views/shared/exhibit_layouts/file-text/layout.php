@@ -25,11 +25,9 @@ $captionPosition = isset($options['captions-position'])
     <?php echo $text; ?>
   </div>
   <div class="col-xs-12 col-md-5">
-    <div class="cover">
         <?php foreach ($attachments as $attachment): ?>
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
         <?php endforeach; ?>
-    </div>
   </div>
 <?php endif;?>
 </div>
