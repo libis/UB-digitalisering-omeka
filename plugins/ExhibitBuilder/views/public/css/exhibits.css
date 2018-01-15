@@ -16,19 +16,8 @@
     text-align: center;
 }
 
-.exhibit-block {
-    clear: both;
-    margin-bottom: 3em;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 3rem;
-}
-
 .exhibit-block:last-of-type{
     border:none;
-}
-
-.layout-gallery{
-  padding-bottom: 1rem;
 }
 
 .exhibit-block:last-child {

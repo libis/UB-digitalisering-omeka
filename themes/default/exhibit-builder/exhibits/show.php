@@ -21,11 +21,11 @@ echo head(array(
 
 <section class="exhibit-show-section">
   <div id="content" class='container' tabindex="-1">
-    <p id="breadcrumbs">
+    <!--<p id="breadcrumbs">
       <span><a href="<?php echo url('/');?>">Home</a></span>
        > <?php echo exhibit_builder_link_to_exhibit($exhibit); ?>
        > <?php echo metadata('exhibit_page', 'title'); ?>
-     </p>
+     </p>-->
        <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
     <div id="exhibit-blocks">
       <?php exhibit_builder_render_exhibit_page(); ?>
