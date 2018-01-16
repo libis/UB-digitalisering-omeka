@@ -108,7 +108,7 @@
                         <button class="btn" type="submit"><i class="material-icons">search</i></button>
                       </span>
                     </div>
-                  </form>    
+                  </form>
               <?php echo public_nav_main(array('role' => 'navigation')); ?>
           </div>
         </div>

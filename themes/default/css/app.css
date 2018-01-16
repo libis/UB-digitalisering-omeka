@@ -6365,11 +6365,6 @@ header .nav-container {
   padding: 0;
 }
 
-body.item header {
-  background: #2b2b2b;
-  min-height: 0;
-}
-
 .public-nav {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
@@ -6514,10 +6509,6 @@ body.item header {
   vertical-align: middle;
   font-size: 1.7rem;
   float: right;
-}
-
-.item .public-nav {
-  background: #2b2b2b;
 }
 
 .btn {

@@ -1,25 +1,22 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
 </header>
 <section class="item-section">
-    <div class="container-fluid">
-        <div class="row image-row">
+        <div class="image-row">
             <a id="prev" class="image-control"><i class="material-icons">&#xE5CB;</i></a>
             <a id="next" class="image-control"><i class="material-icons">&#xE5CC;</i></a>
             <?php echo $this->openLayersZoom()->zoom(get_current_record('Item')); ?>
         </div>
-    </div>
 </section>
 
 <section class="metadata-section">
-    <div id="content" class='container' role="main" tabindex="-1">
+    <div id="content" class='container' tabindex="-1">
         <div class="row">
             <div class="offset-sm-1 col-sm-10 col-xs-12 page">
               <?php $texts =  all_element_texts('item',array('return_type'=>'array'));?>
 
                 <div class='content'>
                     <h1 class="section-title projecten-title">
-                        <span><?php echo metadata('item', array('Dublin Core', 'Title')); ?></span>
-
+                        <?php echo metadata('item', array('Dublin Core', 'Title')); ?>
                     </h1>
                     <?php if(isset($texts['Object Item Type Metadata']['IE nummer'])):?>
                       <p class="digital-copy-link">
