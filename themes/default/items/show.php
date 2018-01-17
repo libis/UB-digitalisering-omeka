@@ -1,5 +1,5 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
-</header>
+
 <section class="item-section">
         <div class="image-row">
             <a id="prev" class="image-control"><i class="material-icons">&#xE5CB;</i></a>

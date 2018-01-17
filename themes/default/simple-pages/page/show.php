@@ -20,7 +20,7 @@ echo head(array(
 <div class="content-wrapper simple-page-section ">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-9 col-xs-12 page">
+            <div class="col-xs-12 col-md-9 page">
                 <?php
                     $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
                     echo $this->shortcodes($text);
