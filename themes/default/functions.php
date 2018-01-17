@@ -60,3 +60,24 @@ function libis_get_simple_page_content($title) {
         return false;
     endif;
 }
+
+function libis_link_to_related_exhibits($item) {
+
+    $db = get_db();
+
+    $select = "
+    SELECT e.* FROM {$db->prefix}exhibits AS e
+    INNER JOIN {$db->prefix}exhibit_pages AS ep on ep.exhibit_id = e.id
+    INNER JOIN {$db->prefix}exhibit_page_blocks AS epb ON epb.page_id = ep.id
+    INNER JOIN {$db->prefix}exhibit_block_attachments AS epba ON epba.block_id = epb.id
+    WHERE epba.item_id = ?";
+
+    $exhibits = $db->getTable("Exhibit")->fetchObjects($select,array($item->id));
+
+    if(!empty($exhibits)) {
+        echo '';
+        foreach($exhibits as $exhibit) {
+            echo '<p class="in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.url($exhibit->slug).'">Bekijk in tentoonstelling <em>'.$exhibit->title.'</em></a></p>';
+        }
+    }
+}

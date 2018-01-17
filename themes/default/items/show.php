@@ -16,7 +16,7 @@
 
                 <div class='content'>
                     <h1 class="section-title projecten-title">
-                        <?php echo metadata('item', array('Dublin Core', 'Title')); ?>
+                        <?php echo strip_tags(metadata('item', array('Dublin Core', 'Title'))); ?>
                     </h1>
                     <?php if(isset($texts['Object Item Type Metadata']['IE nummer'])):?>
                       <p class="digital-copy-link">
@@ -33,12 +33,6 @@
                     </div>
                     <?php endif; ?>
 
-                    <!--<?php if (isset($texts['Dublin Core']['Title'])): ?>
-                    <div id="collection" class="element">
-                        <h3><?php echo __('Title'); ?></h3>
-                        <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Title']); ?></p></div>
-                    </div>
-                  <?php endif; ?>-->
 
                     <?php if (isset($texts['Dublin Core']['Subject'])): ?>
                     <div class="element">
@@ -122,7 +116,7 @@
                         <div class="element-text"><?php echo tag_string('item'); ?></div>
                     </div>
                     <?php endif;?>
-
+                    <?php echo libis_link_to_related_exhibits($item);?>
                 </div>
             </div>
         </div>

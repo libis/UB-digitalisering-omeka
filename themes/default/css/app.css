@@ -7186,6 +7186,14 @@ section.gray {
   }
 }
 
+.metadata-section .content .in-exhibit {
+  color: #08A7EB;
+}
+
+.metadata-section .content .in-exhibit i {
+  margin-right: 5px;
+}
+
 .metadata-section .item-pagination {
   overflow: auto;
   padding: 0;
