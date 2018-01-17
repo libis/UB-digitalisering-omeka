@@ -14,7 +14,7 @@
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Zoek in de website" aria-label="Zoek..." name="q">
                     <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button">zoeken</button>
+                      <button class="btn btn-primary" type="submit">zoeken</button>
                     </span>
                   </div>
                 </form>

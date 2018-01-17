@@ -8,32 +8,35 @@
 <?php queue_css_file('results'); ?>
 <?php echo head(array('title' => __('Solr Search'))); ?>
 
-<div class="content-wrapper bs-docs-section solr-section-search">
-  <div class="container solr-container">
-    <h1>De collectie <span>(<?php echo $results->response->numFound; ?> resultaten)</span></h1>
-  </div>
-</div>
-</header>
-<section class="front-search-section">
+
+<div class="jumbotron">
+  <section class="overlay">
     <div class="container">
+      <section class="front-search-section">
+        <h1 class="white">De collectie <span>(<?php echo $results->response->numFound; ?> resultaten)</span></h1>
         <div class="row row-search">
             <div class="col-lg-8 col-xs-12 front-search">
                  <!-- Search form. -->
                  <div class="solr">
                    <form id="solr-search-form">
-                       <input type="text" placeholder="ZOEK IN DE COLLECTIE" title="<?php echo __('Search keywords') ?>" name="q" />
-                     <button type="submit" /><i class="material-icons">&#xE8B6;</i></button>
+                     <div class="input-group">
+                       <input type="text" class="form-control" placeholder="Zoek in de collectie" aria-label="Zoek..." name="q">
+                       <span class="input-group-btn">
+                         <button class="btn btn-primary" type="submit">zoeken</button>
+                       </span>
+                     </div>
                    </form>
                  </div>
             </div>
         </div>
+      </section>
     </div>
-</section>
-<div class="content-wrapper bs-docs-section solr-section-results">
+  </section>
+</div>
+<div class="solr-section-results">
   <div class="container-fluid solr-container">
     <!-- Applied facets. -->
-    <div id="solr-applied-facets" class="row">
-        <div class="col-xs-12">
+    <div id="solr-applied-facets">
       <ul>
         <!-- Get the applied facets. -->
         <?php foreach (SolrSearch_Helpers_Facet::parseFacets() as $f) : ?>
@@ -49,7 +52,6 @@
           </li>
         <?php endforeach; ?>
       </ul>
-    </div>
     </div>
 
     <div class="row">
@@ -125,7 +127,7 @@
                         if (empty($title)) {
                             $title = '<i>'.__('Untitled').'</i>';
                         }
-                        echo $title;
+                        echo strip_tags($title);
                     ?>
                     </a></h2>
                 </div>

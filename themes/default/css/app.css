@@ -7586,15 +7586,19 @@ section.gray {
 
 .solr-section-results {
   background: white;
-  z-index: 101;
-  position: relative;
-  padding: 2rem 0;
+  padding: 3rem 0;
+}
+
+.solr-section-results h1 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .solr-section-results .card-columns {
   column-count: 4;
   column-gap: 3rem;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 @media (max-width: 1199px) {
@@ -7616,16 +7620,6 @@ section.gray {
     column-count: 1;
     column-gap: 2rem;
   }
-}
-
-.solr-section-results h1 {
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.solr-section-results .content {
-  padding: 3rem 0;
 }
 
 .solr-section-results #solr-applied-facets ul {
@@ -7671,20 +7665,8 @@ section.gray {
   margin-bottom: 2rem;
 }
 
-.solr-section-results .result h2 {
-  padding-top: 0.5rem;
-  font-weight: 700;
-  margin-bottom: 0px;
-  font-size: 1.5rem;
-}
-
-.solr-section-results .result p {
-  margin-top: 10px;
-  color: #666;
-}
-
 .solr-section-results .result .col-text, .solr-section-results .result .col-img {
-  padding: 0;
+  padding: 0 0 0.5rem 0;
 }
 
 .solr-section-results .result .col-text img, .solr-section-results .result .col-img img {
@@ -7698,11 +7680,17 @@ section.gray {
 }
 
 .solr-section-results .result .result-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  text-transform: none;
+  font-weight: 500;
 }
 
 .solr-section-results #solr-facets {
   margin-bottom: 2rem;
+}
+
+.solr-section-results #solr-facets h5 {
+  color: rgba(51, 51, 51, 0.5);
 }
 
 .solr-section-results #solr-facets .facet:first-of-type {
@@ -7714,13 +7702,10 @@ section.gray {
   padding: 0.5rem 0;
 }
 
-.solr-section-results #solr-facets .facet strong {
-  font-size: 1.1rem;
-  color: #666;
-}
-
 .solr-section-results #solr-facets .facet .facet-name {
   color: #666;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .solr-section-results #solr-facets .facet .facet-name:hover, .solr-section-results #solr-facets .facet .facet-name:focus {
@@ -7745,8 +7730,7 @@ section.gray {
 .solr-section-results #solr-facets .facet ul {
   margin: 5px 0;
   list-style: none;
-  margin-left: 0.3rem;
-  padding-left: 0.6rem;
+  padding-left: 1.1rem;
 }
 
 .solr-section-results #solr-facets .facet ul li {

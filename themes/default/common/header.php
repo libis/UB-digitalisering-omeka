@@ -101,9 +101,9 @@
           </div>
           <div class="modal-body">
             <div class="container">
-                  <form id="search-modal" action="<?php echo url('/search');?>">
+                  <form id="search-modal" action="<?php echo url('/solr-search');?>">
                     <div class="input-group">
-                      <input type="search" class="form-control" name="query" value="" placeholder="Zoek..." />
+                      <input type="search" class="form-control" name="q" value="" placeholder="Zoek..." />
                       <span class="input-group-btn">
                         <button class="btn" type="submit"><i class="material-icons">search</i></button>
                       </span>
