@@ -6695,8 +6695,13 @@ header .nav-container {
   padding: 1.5rem;
 }
 
-.jumbotron .card_banner .input-group {
-  max-width: 400px;
+.jumbotron .card_banner input {
+  border-radius: 2px !important;
+}
+
+.jumbotron .card_banner .btn {
+  border-radius: 3px;
+  margin-left: 10px;
 }
 
 .jumbotron .overlay {
