@@ -7501,87 +7501,13 @@ section.gray {
   display: block;
 }
 
-.solr-section-search {
-  z-index: 101;
-  padding: 3rem 0 3rem 0;
+#solr-search-form input {
+  border-radius: 2px;
 }
 
-@media (max-width: 767px) {
-  .solr-section-search {
-    padding: 2rem 0 2rem 0;
-  }
-}
-
-.solr-section-search h1 {
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-}
-
-@media (max-width: 767px) {
-  .solr-section-search h1 {
-    font-size: 2rem;
-    padding: 0 2rem;
-  }
-}
-
-.solr-section-search h1 span {
-  font-weight: 100;
-}
-
-.solr-section-search #solr-search-form {
-  border: 1px solid rgba(8, 167, 235, 0.2);
-  background: #fff;
-  border-radius: 20px;
-  position: relative;
-}
-
-@media (max-width: 767px) {
-  .solr-section-search #solr-search-form {
-    width: 100%;
-    min-width: 260px;
-  }
-}
-
-.solr-section-search #solr-search-form button {
-  background: none;
-  text-transform: uppercase;
-  color: #08A7EB;
-  border: none;
-  padding: 0px 12px 4px 8px;
-  height: 2.8rem;
-  font-size: 2rem;
-  margin: 0 0 0 -5px;
-  line-height: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 0 20px 20px 0;
-}
-
-.solr-section-search #solr-search-form button i {
-  vertical-align: middle;
-  font-size: 2rem;
-}
-
-.solr-section-search #solr-search-form input[type="text"] {
-  padding: 0 20px;
-  padding-right: 8rem;
-  height: 2.8rem;
-  font-size: 1.3rem;
-  line-height: 1;
-  color: rgba(8, 167, 235, 0.8);
-  width: 100%;
-  border: none;
-  border-radius: 20px;
-}
-
-@media (max-width: 543px) {
-  .solr-section-search #solr-search-form input[type="text"] {
-    width: 220px;
-    padding: 0 10px;
-  }
+#solr-search-form .btn {
+  border-radius: 3px;
+  margin-left: 10px;
 }
 
 .solr-section-results {
