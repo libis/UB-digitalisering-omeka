@@ -6289,7 +6289,7 @@ html {
 body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  background: #067DB0;
+  background: white;
   font-size: 1rem;
 }
 
@@ -6471,7 +6471,7 @@ header .nav-container {
 }
 
 .public-nav .navbar-nav li a {
-  color: rgba(51, 51, 51, 0.85);
+  color: rgba(51, 51, 51, 0.7);
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 60px;
@@ -7711,14 +7711,14 @@ section.gray {
   text-align: right;
 }
 
-footer {
+footer .info {
   background: #067DB0;
   padding: 4rem 0;
   color: white;
 }
 
 @media (max-width: 543px) {
-  footer {
+  footer .info {
     padding: 2rem 0;
   }
 }
@@ -7768,6 +7768,21 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
+}
+
+footer .made-by {
+  padding: 0.8rem 0;
+  background: white;
+  color: rgba(102, 102, 102, 0.6);
+  font-style: italic;
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+footer .made-by img {
+  height: 30px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

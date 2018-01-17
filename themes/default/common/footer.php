@@ -1,4 +1,5 @@
-    <footer role="contentinfo">
+    <footer>
+      <section class="info">
         <div class="container">
             <div id="footer-text">
                 <?php echo get_theme_option('Footer Text'); ?>
@@ -8,8 +9,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-7 col-lg-8">
                       <div class="footer-images">
-                        <img src="<?php echo img("KULEUVEN.png");?>">
-                        <img src="<?php echo img("libis_logo.png");?>">
+                        <a href="http://bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png");?>"></a>
                       </div>
                     </div>
                     <div class="col-xs-12 col-md-5 col-lg-4">
@@ -23,12 +23,16 @@
                     </div>
                 </div>
             </div>
-
             <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
         </div>
-
+      </section>
+      <section class="made-by">
+        <div class="container">
+            Website door
+            <a href="http://libis.be"><img src="<?php echo img("libis_logo.png");?>"></a>
+        </div>
+      </section>
     </footer><!-- end footer -->
-
 </body>
 <script>
 jQuery('.grid').masonry({
