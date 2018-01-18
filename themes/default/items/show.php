@@ -18,20 +18,13 @@
                     <h1 class="section-title projecten-title">
                         <?php echo strip_tags(metadata('item', array('Dublin Core', 'Title'))); ?>
                     </h1>
-                    <?php if(isset($texts['Object Item Type Metadata']['IE nummer'])):?>
-                      <p class="digital-copy-link">
-                        <a href="http://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['IE nummer'][0];?>/representation">
-                          <i class="material-icons">&#xE3B6;</i>Bekijk online
-                        </a>
-                      </p>
-                    <?php endif;?>
 
                     <!-- If the item belongs to a collection, the following creates a link to that collection. -->
-                    <?php if (metadata('item', 'Collection Name')): ?>
+                    <!--<?php if (metadata('item', 'Collection Name')): ?>
                     <div id="collection">
                         <p><?php echo __('Collection'); ?>: <a href='<?php echo url('/solr-search?q=&facet=collection:"'.metadata('item', 'Collection Name').'"'); ?>'><?php echo metadata('item', 'Collection Name');?></a></p>
                     </div>
-                    <?php endif; ?>
+                  <?php endif; ?>-->
 
 
                     <?php if (isset($texts['Dublin Core']['Subject'])): ?>
@@ -90,20 +83,6 @@
                     </div>
                     <?php endif; ?>
 
-                    <?php if (isset($texts['Object Item Type Metadata']['LIMO'])): ?>
-                    <div class="element">
-                        <i class="material-icons">&#xE02F;</i><a href="<?php echo $texts['Object Item Type Metadata']['LIMO'][0]; ?>"><?php echo __('Bekijk uitgebreide beschrijving');?></a>
-                    </div>
-                    <?php endif; ?>
-
-                    <?php if (isset($texts['Object Item Type Metadata']['Rosetta ID'])): ?>
-                    <div class="element">
-                        <i class="material-icons">&#xE3B6;</i><a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['Rosetta ID']; ?>"><?php echo __('Bekijk het volledige object');?></a>
-                    </div>
-                    <?php endif; ?>
-
-                    <?php echo libis_link_to_related_exhibits($item);?>
-
                     <?php if (isset($texts['Object Item Type Metadata']['Call number'])): ?>
                     <div class="element">
                         <h3><?php echo __('Subject'); ?></h3>
@@ -118,6 +97,30 @@
                         <div class="element-text"><?php echo tag_string('item'); ?></div>
                     </div>
                     <?php endif;?>
+
+                    <!--<?php if(isset($texts['Object Item Type Metadata']['IE nummer'])):?>
+                        <div class="element">
+                        <i class="material-icons">&#xE3B6;</i><a href="http://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['IE nummer'][0];?>/representation">
+                          Bekijk het volledige object
+                        </a>
+                      </div>
+                    <?php endif;?>-->
+
+                    <br>
+
+                    <?php if (isset($texts['Object Item Type Metadata']['LIMO'])): ?>
+                    <div class="element">
+                        <i class="material-icons">&#xE02F;</i><a href="<?php echo $texts['Object Item Type Metadata']['LIMO'][0]; ?>"><?php echo __('Bekijk uitgebreide beschrijving');?></a>
+                    </div>
+                    <?php endif; ?>
+
+                    <?php if (isset($texts['Object Item Type Metadata']['IE nummer'])): ?>
+                    <div class="element">
+                        <i class="material-icons">&#xE3B6;</i><a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['Rosetta ID']; ?>/representation"><?php echo __('Bekijk het volledige object');?></a>
+                    </div>
+                    <?php endif; ?>
+
+                    <?php echo libis_link_to_related_exhibits($item);?>
                 </div>
             </div>
         </div>

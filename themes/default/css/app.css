@@ -7125,9 +7125,11 @@ section.gray {
 }
 
 .metadata-section .content h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
+  font-size: 1.6rem;
+  font-weight: 100;
 }
 
 .metadata-section .content h2 {
