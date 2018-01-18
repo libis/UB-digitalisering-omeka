@@ -92,13 +92,13 @@
 
                     <?php if (isset($texts['Object Item Type Metadata']['LIMO'])): ?>
                     <div class="element">
-                        <i class="material-icons">&#xE02F;</i> <a href="<?php echo $texts['Object Item Type Metadata']['LIMO'][0]; ?>"><?php echo __('Bekijk uitgebreide beschrijving');?></a>
+                        <i class="material-icons">&#xE02F;</i><a href="<?php echo $texts['Object Item Type Metadata']['LIMO'][0]; ?>"><?php echo __('Bekijk uitgebreide beschrijving');?></a>
                     </div>
                     <?php endif; ?>
 
                     <?php if (isset($texts['Object Item Type Metadata']['Rosetta ID'])): ?>
                     <div class="element">
-                        <i class="material-icons">&#xE3B6;</i> <a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['Rosetta ID']; ?>"><?php echo __('Bekijk het volledige object');?></a>
+                        <i class="material-icons">&#xE3B6;</i><a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['Rosetta ID']; ?>"><?php echo __('Bekijk het volledige object');?></a>
                     </div>
                     <?php endif; ?>
 
