@@ -79,7 +79,7 @@
                     <?php if (isset($texts['Dublin Core']['Coverage'])): ?>
                     <div class="element">
                         <h3><?php echo 'Plaats'; ?></h3>
-                        <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Spatial coverage']); ?></p></div>
+                        <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Coverage']); ?></p></div>
                     </div>
                     <?php endif; ?>
 
