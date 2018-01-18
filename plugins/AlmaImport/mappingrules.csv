@@ -3,9 +3,9 @@ object_id|Item Type Metadata|MMS ID
 source|Dublin Core|Source
 IdentifierCallnumber|Item Type Metadata|Plaatskenmerk
 title|Dublin Core|Title
-Creator|Dublin Core|Creator
+creator|Dublin Core|Creator
 date|Dublin Core|Date
-Spatial|Dublin Core|Spatial
-Publisher|Dublin Core|Publisher
+spatial|Dublin Core|Coverage
+publisher|Dublin Core|Publisher
 LIMO|Item Type Metadata|LIMO
 pid|Item Type Metadata|IE nummer
