@@ -7151,6 +7151,10 @@ section.gray {
   vertical-align: text-bottom;
 }
 
+.metadata-section .content #collection {
+  margin-bottom: 1rem;
+}
+
 .metadata-section .content #collection p {
   font-weight: 100;
   color: #08A7EB;
@@ -7176,6 +7180,7 @@ section.gray {
   float: left;
   line-height: 1.5;
   width: 200px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {

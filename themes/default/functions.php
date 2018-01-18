@@ -70,7 +70,7 @@ function libis_link_to_related_exhibits($item) {
     INNER JOIN {$db->prefix}exhibit_pages AS ep on ep.exhibit_id = e.id
     INNER JOIN {$db->prefix}exhibit_page_blocks AS epb ON epb.page_id = ep.id
     INNER JOIN {$db->prefix}exhibit_block_attachments AS epba ON epba.block_id = epb.id
-    WHERE epba.item_id = ?";
+    WHERE epba.item_id = ? group by e.id";
 
     $exhibits = $db->getTable("Exhibit")->fetchObjects($select,array($item->id));
 
