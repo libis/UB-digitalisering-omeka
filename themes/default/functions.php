@@ -77,7 +77,7 @@ function libis_link_to_related_exhibits($item) {
     if(!empty($exhibits)) {
         echo '';
         foreach($exhibits as $exhibit) {
-            echo '<p class="in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.url($exhibit->slug).'">Bekijk in tentoonstelling <em>'.$exhibit->title.'</em></a></p>';
+            echo '<div class="element in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.url($exhibit->slug).'">Bekijk in tentoonstelling <em>'.$exhibit->title.'</em></a></div>';
         }
     }
 }

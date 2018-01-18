@@ -7194,11 +7194,8 @@ section.gray {
   }
 }
 
-.metadata-section .content .in-exhibit {
+.metadata-section .content i {
   color: #08A7EB;
-}
-
-.metadata-section .content .in-exhibit i {
   margin-right: 5px;
 }
 
