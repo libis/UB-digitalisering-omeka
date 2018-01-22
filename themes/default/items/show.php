@@ -116,7 +116,7 @@
 
                     <?php if (isset($texts['Object Item Type Metadata']['IE nummer'])): ?>
                     <div class="element">
-                        <i class="material-icons">&#xE3B6;</i><a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['Rosetta ID']; ?>/representation"><?php echo __('Bekijk het volledige object');?></a>
+                        <i class="material-icons">&#xE3B6;</i><a href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['IE nummer']; ?>/representation"><?php echo __('Bekijk het volledige object');?></a>
                     </div>
                     <?php endif; ?>
 
