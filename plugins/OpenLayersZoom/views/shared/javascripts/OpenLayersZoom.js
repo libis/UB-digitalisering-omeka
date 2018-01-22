@@ -31,7 +31,7 @@ function open_layers_zoom(target, imgWidth, imgHeight, url)
         projection: projection,
         imageExtent: extent,
         attributions: '© <a href="http://xkcd.com/license.html">xkcd</a>',
-        maxZoom: 1
+        maxZoom: 2
     });
 
     var map = new ol.Map({
@@ -54,7 +54,7 @@ function open_layers_zoom(target, imgWidth, imgHeight, url)
             //center: imgCenter,
             center: ol.extent.getCenter(extent),
             zoom: 0,
-            maxZoom: 1
+            maxZoom: 2
         })
     });
 }
