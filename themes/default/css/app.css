@@ -7342,17 +7342,28 @@ section.gray {
   }
 }
 
+.exhibit-show-section .exhibit-block .exhibit-item-caption,
+.simple-page-section .exhibit-block .exhibit-item-caption {
+  padding-top: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+}
+
+.exhibit-show-section .exhibit-block .exhibit-file-item,
+.simple-page-section .exhibit-block .exhibit-file-item {
+  margin-bottom: 1.5rem;
+}
+
+.exhibit-show-section .exhibit-block .exhibit-file-item .exhibit-item-caption,
+.simple-page-section .exhibit-block .exhibit-file-item .exhibit-item-caption {
+  margin-bottom: 0;
+}
+
 .exhibit-show-section .exhibit-description p,
 .simple-page-section .exhibit-description p {
   margin: 0rem 0 2rem 0;
   line-height: 1.7;
   text-align: justify;
-}
-
-.exhibit-show-section .exhibit-item-caption,
-.simple-page-section .exhibit-item-caption {
-  padding-top: 0.5rem;
-  font-weight: bold;
 }
 
 .exhibit-show-section .layout-gallery .card,
