@@ -25,24 +25,11 @@
   </section>
 </div>
 
-<!-- tentoonstellingen -->
-<?php
-    $exhibits = libis_get_exhibits_home(3,"tentoonstelling");
-    if($exhibits):
-        $exhibit = $exhibits[0];
-?>
-<?php endif;?>
 <section class="feature-section">
     <div id="content" class='container' tabindex="-1">
         <div class="row featured">
           <div class="col-xs-12 col-md-6">
-              <?php $file = $exhibit->getFile();?>
-              <div class="card">
-                  <?php if ($file): ?>
-                      <div class="card-img" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
-                      <!--<img class="card-img" src="<?php echo $file->getWebPath(); ?>">-->
-                  <?php endif; ?>
-              </div>
+              <img src="<?php echo img("ph/bg4.jpg");?>">
           </div>
           <div class="col-sm-12 col-md-6 featured-column">
             <div class="feature-text">
@@ -74,13 +61,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-6">
-                <?php $file = $exhibit->getFile();?>
-                <div class="card">
-                    <?php if ($file): ?>
-                        <div class="card-img" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
-                        <!--<img class="card-img" src="<?php echo $file->getWebPath(); ?>">-->
-                    <?php endif; ?>
-                </div>
+                <img src="<?php echo img("ph/bg1.jpg");?>">
             </div>
         </div>
     </div>
@@ -89,13 +70,7 @@
     <div id="content" class='container' tabindex="-1">
         <div class="row featured">
           <div class="col-xs-12 col-md-6">
-              <?php $file = $exhibit->getFile();?>
-              <div class="card">
-                  <?php if ($file): ?>
-                      <div class="card-img" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
-                      <!--<img class="card-img" src="<?php echo $file->getWebPath(); ?>">-->
-                  <?php endif; ?>
-              </div>
+              <img src="<?php echo img("ph/bg5.jpg");?>">
           </div>
           <div class="col-xs-12 col-md-6 featured-column">
             <div class="feature-text">
@@ -173,7 +148,7 @@
                               <?php endif; ?>
                         </div>
                         <div class="card-footer">
-                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("Bekijk tentoonstelling")); ?>
+                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("Bekijk project")); ?>
                         </div>
                     </div>
                 </div>

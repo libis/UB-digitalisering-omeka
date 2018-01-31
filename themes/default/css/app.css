@@ -6798,6 +6798,7 @@ section.gray {
 
 .home-section .card .card-block {
   padding: 1.5rem;
+  min-height: 200px;
 }
 
 .home-section .card .card-block .description {
