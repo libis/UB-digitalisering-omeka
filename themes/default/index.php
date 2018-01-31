@@ -39,7 +39,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sem eget libero pellentesque dignissim. Aliquam tempus tortor dapibus metus consectetur laoreet. Etiam risus nulla, cursus et erat in, molestie rutrum eros. Suspendisse potenti. Mauris nec elit auctor, faucibus felis sit amet, mollis leo.
               </p>
               <div class="link">
-                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=tentoonstelling'); ?>">Ontdek de tentoonstellingen</a></p>
+                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=tentoonstelling&sort_field=added&sort_dir=d'); ?>">Ontdek de tentoonstellingen</a></p>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sem eget libero pellentesque dignissim. Aliquam tempus tortor dapibus metus consectetur laoreet. Etiam risus nulla, cursus et erat in, molestie rutrum eros. Suspendisse potenti. Mauris nec elit auctor, faucibus felis sit amet, mollis leo.
                     </p>
                     <div class="link">
-                        <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=project'); ?>">Bekijk de digitaliseringsprojecten</a></p>
+                        <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=project&sort_field=added&sort_dir=d'); ?>">Bekijk de digitaliseringsprojecten</a></p>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sem eget libero pellentesque dignissim. Aliquam tempus tortor dapibus metus consectetur laoreet. Etiam risus nulla, cursus et erat in, molestie rutrum eros. Suspendisse potenti. Mauris nec elit auctor, faucibus felis sit amet, mollis leo.
               </p>
               <div class="link">
-                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=showcase'); ?>">Meer over onze showcases</a></p>
+                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=showcase&sort_field=added&sort_dir=d'); ?>">Meer over onze showcases</a></p>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=tentoonstelling"); ?>">Alle tentoonstellingen</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=tentoonstelling&sort_field=added&sort_dir=d"); ?>">Alle tentoonstellingen</a>
         </div>
     </div>
 </section>
@@ -155,7 +155,7 @@
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=project"); ?>">Alle projecten</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=project&sort_field=added&sort_dir=d"); ?>">Alle projecten</a>
         </div>
     </div>
 </section>
@@ -191,7 +191,7 @@
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=showcase"); ?>">Alle showcases</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=showcase&sort_field=added&sort_dir=d"); ?>">Alle showcases</a>
         </div>
     </div>
 </section>

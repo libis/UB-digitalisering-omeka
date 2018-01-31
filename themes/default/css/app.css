@@ -7266,6 +7266,18 @@ section.gray {
   }
 }
 
+.exhibit-show-section #sort-links,
+.simple-page-section #sort-links {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.exhibit-show-section #sort-links i,
+.simple-page-section #sort-links i {
+  font-size: 0.9rem;
+  top: -2px;
+}
+
 .exhibit-show-section .cover,
 .simple-page-section .cover {
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
@@ -7292,6 +7304,7 @@ section.gray {
 .exhibit-show-section .card .card-block,
 .simple-page-section .card .card-block {
   padding: 1.5rem;
+  min-height: 200px;
 }
 
 .exhibit-show-section .card .card-block .description,
