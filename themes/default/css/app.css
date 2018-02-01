@@ -6667,10 +6667,22 @@ header .nav-container {
 
 .jumbotron h4 {
   color: white;
+  font-size: 1.3rem;
+}
+
+.jumbotron h4 a {
+  border-bottom: 2px solid white;
+  text-transform: capitalize;
 }
 
 .jumbotron h4 a:hover {
   color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.jumbotron .exhibit-credits h3 {
+  color: white;
+  font-size: 1.3rem;
 }
 
 .jumbotron .white {
@@ -7424,7 +7436,7 @@ section.gray {
 .exhibit-show-section .nav ul,
 .simple-page-section .nav ul {
   margin: 0;
-  margin-left: 1.5rem;
+  margin-left: 1.53rem;
   padding: 0;
   border-left: 2px solid rgba(8, 167, 235, 0.8);
   padding-left: 0.71rem;

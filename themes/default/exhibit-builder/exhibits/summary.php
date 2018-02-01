@@ -4,16 +4,17 @@
     <div class="container">
       <div class="row">
           <div class="col-sm-12">
+
+            <h1 class="white"><?php echo metadata('exhibit', 'title'); ?></h1>
+            <?php $tags = tag_string($exhibit,'exhibits/browse');?>
+            <!--<?php if($tags):?>
+              <h4><?php echo $tags;?></h4>
+            <?php endif;?>-->
             <?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
             <div class="exhibit-credits">
                   <h3><?php echo $exhibitCredits; ?></h3>
             </div>
             <?php endif; ?>
-            <h1 class="white"><?php echo metadata('exhibit', 'title'); ?></h1>
-            <?php $tags = tag_string($exhibit,'exhibits/browse');?>
-            <?php if($tags):?>
-              <h4><?php echo $tags;?></h4>
-            <?php endif;?>
           </div>
       </div>
     </div>
