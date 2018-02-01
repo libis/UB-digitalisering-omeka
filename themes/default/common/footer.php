@@ -35,20 +35,22 @@
     </footer><!-- end footer -->
 </body>
 <script>
-jQuery('.grid').masonry({
-  itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
 
+  if(typeof slug !== 'undefined'){
+    jQuery('.jumbotron').backstretch(
+      [
+          "<?php echo WEB_PUBLIC_THEME;?>/default/images/exhibits/"+slug+".jpg"
+    ], {duration: 12000, fade: 1500});
+  }else{
+    jQuery('.jumbotron').backstretch(
+      [
+          "<?php echo img('bg/bg1.jpg');?>",
+          "<?php echo img('bg/bg2.jpg');?>",
+          "<?php echo img('bg/bg3.jpg');?>",
+          "<?php echo img('bg/bg4.jpg');?>"
+    ], {duration: 12000, fade: 1500});
+  }
 
-jQuery('.jumbotron').backstretch(
-  [
-      "<?php echo img('bg/bg1.jpg');?>",
-      "<?php echo img('bg/bg2.jpg');?>",
-      "<?php echo img('bg/bg3.jpg');?>",
-      "<?php echo img('bg/bg4.jpg');?>"
-], {duration: 12000, fade: 1500});
 </script>
 
 <!-- Latest compiled and minified JS -->

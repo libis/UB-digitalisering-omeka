@@ -21,7 +21,7 @@
 </div>
 <section class="general-section exhibit-show-section">
   <div id="content" class='container' tabindex="-1">
-    
+
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-7 page">
           <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
@@ -59,4 +59,8 @@
       </div>
   </div>
 </section>
+<script>
+  var slug = "<?php echo $exhibit->slug;?>";
+</script>
+
 <?php echo foot(); ?>
