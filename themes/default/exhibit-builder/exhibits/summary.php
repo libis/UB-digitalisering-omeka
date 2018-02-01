@@ -1,4 +1,17 @@
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
+<?php
+  $tags = tag_string($exhibit,null);
+  $tags = explode(",",$tags);
+  $type = "";
+
+  if(in_array("tentoonstelling",$tags)):
+    $type = "tentoonstelling";
+  elseif(in_array("project",$tags)):
+    $type = "project";
+  else:
+    $type = "showcase";
+  endif;
+?>
 <div class="jumbotron">
   <section class="overlay">
     <div class="container">
@@ -6,10 +19,7 @@
           <div class="col-sm-12">
 
             <h1 class="white"><?php echo metadata('exhibit', 'title'); ?></h1>
-            <?php $tags = tag_string($exhibit,'exhibits/browse');?>
-            <!--<?php if($tags):?>
-              <h4><?php echo $tags;?></h4>
-            <?php endif;?>-->
+
             <?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
             <div class="exhibit-credits">
                   <h3><?php echo $exhibitCredits; ?></h3>
@@ -26,14 +36,14 @@
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-7 page">
           <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-            <h1>Overzicht tentoonstelling</h1>
+            <h1>Overzicht <?php echo $type;?></h1>
             <div class="exhibit-description">
                 <?php echo $exhibitDescription; ?>
                 <?php
                   $page = $exhibit->TopPages[0];
                 ?>
             </div>
-            <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Start tentoonstelling</a></p>
+            <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Start <?php echo $type;?></a></p>
           <?php endif; ?>
           <div class="nav">
 
