@@ -10,9 +10,6 @@ echo head(array(
           <div class="col-sm-12">
             <h1 class="white"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
             <?php $tags = tag_string($exhibit,'exhibits/browse');?>
-            <?php if($tags):?>
-              <h4><?php echo $tags;?></h4>
-            <?php endif;?>
           </div>
       </div>
     </div>
