@@ -1,13 +1,5 @@
-<?php
-/**
- * @copyright   2012 Rector and Board of Visitors, University of Virginia
- * @license     http://www.apache.org/licenses/LICENSE-2.0.html
- */
-?>
-
 <?php queue_css_file('results'); ?>
 <?php echo head(array('title' => __('Solr Search'))); ?>
-
 
 <div class="jumbotron">
   <section class="overlay">
@@ -112,7 +104,29 @@
                             );
                             ?>
                         </div>
+                    <?php else:?>
+                      <div class="col-img">
+                        <img src="<?php echo img("dummy.png") ?>">
+                      </div>
                     <?php endif; ?>
+                  <?php elseif ($doc->resulttype == 'Exhibit') :
+                    $exhibit = get_db()->getTable($doc->model)->find($doc->modelid);
+                    if ($exhibit->cover_image_file_id):
+                      $file = get_record_by_id('File',$exhibit->cover_image_file_id);
+                      $cover_url = $file->getWebPath('fullsize');
+                    ?>
+                        <div class="col-img">
+                          <img src="<?php echo $cover_url ?>">
+                        </div>
+                    <?php else:?>
+                      <div class="col-img">
+                        <img src="<?php echo img("dummy.png") ?>">
+                      </div>
+                    <?php endif; ?>
+                <?php else:?>
+                  <div class="col-img">
+                    <img src="<?php echo img("dummy.png") ?>">
+                  </div>
                 <?php endif;?>
 
                 <!-- Header. -->
