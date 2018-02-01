@@ -6988,18 +6988,19 @@ section.gray {
 }
 
 .item-section {
-  z-index: 50;
-  position: relative;
+  background: rgba(51, 51, 51, 0.95);
   padding-top: 0;
 }
 
 .item-section .container-fluid {
+  width: 100%;
   max-width: 100%;
 }
 
 .item-section .image-row {
   overflow: hidden;
   background: #333;
+  position: relative;
 }
 
 .item-section .image-row .image-control {
@@ -7026,7 +7027,7 @@ section.gray {
 }
 
 .item-section .map {
-  max-height: 600px !important;
+  max-height: 800px !important;
   min-height: 400px !important;
 }
 
@@ -7094,10 +7095,10 @@ section.gray {
 }
 
 .item-section .ol-zoom {
-  bottom: 1em;
+  bottom: auto;
   right: 1em;
   left: auto !important;
-  top: auto;
+  top: 4.5em;
 }
 
 .item-section .ol-rotate {
@@ -7116,133 +7117,113 @@ section.gray {
 
 .item-section .ol-full-screen {
   right: 1em;
-  bottom: 5em;
-  top: auto;
+  top: 2em;
+  bottom: auto;
 }
 
 .item-section .ol-overviewmap {
   right: 1em;
   left: auto;
-  bottom: 7.5em;
-  top: auto;
+  top: 7.5em;
 }
 
-.metadata-section {
-  z-index: 101;
-  background: #fff;
-  position: relative;
+.item-section .metadata {
+  color: white;
+  padding: 2rem 1rem;
 }
 
-.metadata-section .content {
-  padding: 4rem 0 3rem 0;
+@media (max-width: 543px) {
+  .item-section .metadata {
+    padding: 2rem 0;
+  }
 }
 
-.metadata-section .content h1 {
+.item-section .metadata h1 {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(247, 247, 247, 0.2);
   font-size: 1.6rem;
   font-weight: 100;
 }
 
-.metadata-section .content h2 {
+.item-section .metadata h2 {
   display: none;
 }
 
-.metadata-section .content .digital-copy-link {
+.item-section .metadata .digital-copy-link {
   font-size: 1rem;
   font-weight: 800;
   text-align: right;
 }
 
-.metadata-section .content .digital-copy-link a {
+.item-section .metadata .digital-copy-link a {
   line-height: 2rem;
   font-size: 1.2rem;
 }
 
-.metadata-section .content .digital-copy-link a i {
+.item-section .metadata .digital-copy-link a i {
   font-size: 1.4rem;
   padding-right: 4px;
   vertical-align: text-bottom;
 }
 
-.metadata-section .content #collection {
+.item-section .metadata #collection {
   margin-bottom: 1rem;
 }
 
-.metadata-section .content #collection p {
+.item-section .metadata #collection p {
   font-weight: 100;
   color: #08A7EB;
 }
 
-.metadata-section .content #collection p a {
+.item-section .metadata #collection p a {
   font-weight: bold;
 }
 
-.metadata-section .content .element {
+.item-section .metadata .element {
   clear: both;
   margin-bottom: 15px;
-  overflow: auto;
-}
-
-.metadata-section .content .element .element-text {
-  color: #666;
-}
-
-.metadata-section .content h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
+}
+
+.item-section .metadata .element .element-text {
+  color: white;
+}
+
+.item-section .metadata h3 {
+  font-size: 0.9rem;
+  font-weight: normal;
   float: left;
   line-height: 1.5;
-  width: 200px;
+  width: 120px;
   margin-bottom: 0;
 }
 
-@media (max-width: 991px) {
-  .metadata-section .content h3 {
+@media (max-width: 767px) {
+  .item-section .metadata h3 {
     float: none;
   }
 }
 
-.metadata-section .content .element-text {
-  margin-left: 200px;
+.item-section .metadata .element-text {
+  margin-left: 140px;
 }
 
-@media (max-width: 991px) {
-  .metadata-section .content .element-text {
+@media (max-width: 767px) {
+  .item-section .metadata .element-text {
     margin-left: 0;
   }
 }
 
-.metadata-section .content i {
+.item-section .metadata a {
+  color: #08A7EB !important;
+  font-weight: normal;
+}
+
+.item-section .metadata i {
   color: #08A7EB;
   margin-right: 5px;
-}
-
-.metadata-section .item-pagination {
-  overflow: auto;
-  padding: 0;
-}
-
-.metadata-section .item-pagination li {
-  list-style: none;
-  display: inline;
-  background: #ccc;
-  padding: 0.5rem;
-  border-radius: 20px;
-}
-
-.metadata-section .item-pagination li a {
-  color: white;
-}
-
-.metadata-section .item-pagination .previous {
-  float: left;
-}
-
-.metadata-section .item-pagination .next {
-  text-align: right;
-  float: right;
 }
 
 #breadcrumbs {
