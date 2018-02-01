@@ -51,4 +51,7 @@ echo head(array(
     </div>
   </div>
 </section>
+<script>
+  var slug = "<?php echo $exhibit->slug;?>";
+</script>
 <?php echo foot(); ?>
