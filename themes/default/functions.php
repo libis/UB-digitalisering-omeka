@@ -81,3 +81,22 @@ function libis_link_to_related_exhibits($item) {
         }
     }
 }
+
+function solr_tag_string()
+{
+    // Set the tag_delimiter option if no delimiter was passed.
+    $delimiter =", ";
+
+    $tags = get_current_record('item')->Tags;
+
+    if (empty($tags)) {
+        return '';
+    }
+
+    $tagStrings = array();
+    foreach ($tags as $tag) {
+        $name = $tag['name'];
+        $tagStrings[] = '<a href="'.url('/solr-search/?facet=tag:') . html_escape($name) . '" rel="tag">' . html_escape($name) . '</a>';
+    }
+    return join(html_escape($delimiter), $tagStrings);
+}
