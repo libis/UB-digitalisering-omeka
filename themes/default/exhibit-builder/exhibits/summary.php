@@ -43,7 +43,11 @@
                   $page = $exhibit->TopPages[0];
                 ?>
             </div>
-            <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Start <?php echo $type;?></a></p>
+            <?php if($type == "project"):?>
+              <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Bekijk <?php echo $type;?></a></p>
+            <?php else:?>
+              <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Start <?php echo $type;?></a></p>
+            <?php endif;?>
           <?php endif; ?>
           <div class="nav">
 
