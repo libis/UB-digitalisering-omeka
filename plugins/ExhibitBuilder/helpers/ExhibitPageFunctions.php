@@ -161,8 +161,9 @@ function exhibit_builder_link_to_next_page($text = null, $props = array(), $exhi
         }
         if ($text === null) {
             $text = 'VOLGENDE STAP <i class="material-icons">&#xE315;</i>';
+              return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $targetPage).metadata($targetPage, 'title');
         }
-        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $targetPage).metadata($targetPage, 'title');
+        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $targetPage);
     }
 
     return null;
@@ -192,8 +193,9 @@ function exhibit_builder_link_to_previous_page($text = null, $props = array(), $
         }
         if ($text === null) {
             $text = '<i class="material-icons">&#xE314;</i> VORIGE STAP ';
+            return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $previousPage).metadata($previousPage, 'title');
         }
-        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $previousPage).metadata($previousPage, 'title');
+        return exhibit_builder_link_to_exhibit($exhibit, $text, $props, $previousPage);
     }
 
     return null;

@@ -28,6 +28,17 @@ echo head(array(
       <?php exhibit_builder_render_exhibit_page(); ?>
     </div>
 
+    <?php if ($prevLink = exhibit_builder_link_to_previous_page('<i class="material-icons">&#xE314;</i>')): ?>
+    <div id="abs-exhibit-nav-prev">
+    <?php echo $prevLink; ?>
+    </div>
+    <?php endif; ?>
+    <?php if ($nextLink = exhibit_builder_link_to_next_page('<i class="material-icons">&#xE315;</i>')): ?>
+    <div id="abs-exhibit-nav-next">
+    <?php echo $nextLink; ?>
+    </div>
+    <?php endif; ?>
+
     <div id="exhibit-page-navigation">
       <div class="row">
         <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
