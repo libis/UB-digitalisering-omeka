@@ -20,17 +20,27 @@
     <?php fire_plugin_hook('public_head', array('view' => $this)); ?>
 
     <?php
-      queue_js_file('masonry');
       queue_js_file('jquery.bg');
       queue_js_file('jquery.detect_swipe');
       queue_js_file("lightbox");
+      queue_js_file("lightgallery-all.min");
+        queue_js_file("slick.min");
+
       echo head_js();
     ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
+
 
     <!-- Google Fonts used in the housestyle -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons|Open+Sans:400italic,600italic,700italic,400,700,600|Merriweather:400italic,400,700">
@@ -39,7 +49,7 @@
 
     <!-- Stylesheets -->
     <?php
-      queue_css_file(array('iconfonts', 'app','lightbox'));
+      queue_css_file(array('iconfonts', 'app','lightbox','lightGallery.min','slick','slick-theme'));
       queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
       echo head_css();
       echo theme_header_background();

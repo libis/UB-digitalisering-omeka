@@ -3,14 +3,20 @@
 <section class="item-section">
   <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12  col-lg-8 col-xl-9 image-row">
-            <div class="">
-                <a id="prev" class="image-control"><i class="material-icons">&#xE5CB;</i></a>
-                <a id="next" class="image-control"><i class="material-icons">&#xE5CC;</i></a>
-                <?php echo $this->openLayersZoom()->zoom(get_current_record('Item')); ?>
-            </div>
+        <div class="col-md-12  col-lg-7 col-xl-8 image-row">
+
+          <div id="lightgallery">
+            <?php
+              $files = get_current_record('item')->getFiles();
+              foreach($files as $file):
+            ?>
+                <a href="<?php echo $file->getWebPath('fullsize');?>">
+                    <img src="<?php echo $file->getWebPath('fullsize');?>" />
+                </a>
+            <?php endforeach;?>
+          </div>
         </div>
-        <div class="col-md-12 col-lg-4 col-xl-3">
+        <div class="col-md-12 col-lg-5 col-xl-4">
           <?php $texts =  all_element_texts('item',array('return_type'=>'array'));?>
             <div class='metadata'>
               <h1 class="">
@@ -130,6 +136,20 @@
         jQuery("#prev").delay( 800 ).fadeIn();
         jQuery("#next").delay( 800 ).fadeIn();
     });
+
+    jQuery('#lightgallery').slick({
+      dots: false,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      infinite: false
+    });
+
+    jQuery("#lightgallery").lightGallery(
+      {
+        selector:'a'
+      }
+    );
 </script>
 
 <?php echo foot(); ?>

@@ -6997,6 +6997,17 @@ section.gray {
   max-width: 100%;
 }
 
+.item-section #lightgallery {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding: 3rem 1rem;
+}
+
+.item-section #lightgallery img {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .item-section .image-row {
   overflow: hidden;
   background: #333;
@@ -7004,7 +7015,6 @@ section.gray {
 }
 
 .item-section .image-row .image-control {
-  display: none;
   z-index: 1000;
 }
 

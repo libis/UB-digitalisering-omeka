@@ -55,4 +55,6 @@
 
 <!-- Latest compiled and minified JS -->
 <script src="//stijl.kuleuven.be/2016/js/all.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+
 </html>
