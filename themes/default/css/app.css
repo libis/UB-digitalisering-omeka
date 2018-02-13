@@ -7008,6 +7008,10 @@ section.gray {
   margin: 0 auto;
 }
 
+.item-section .slick-next, .item-section .slick-prev {
+  background: rgba(41, 41, 41, 0.8) !important;
+}
+
 .item-section .image-row {
   overflow: hidden;
   background: #333;
