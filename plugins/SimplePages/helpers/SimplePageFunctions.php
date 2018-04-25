@@ -130,7 +130,7 @@ function simple_pages_display_hierarchy($parentPageId = 0, $partialFilePath = 'i
 {
     $html = '';
     $childrenPages = get_db()->getTable('SimplePagesPage')->findChildrenPages($parentPageId);
-    if (count($childrenPages)) {        
+    if (count($childrenPages)) {
         $html .= '<ul>';
         foreach($childrenPages as $childPage) {
             $html .= '<li>';
