@@ -6600,6 +6600,15 @@ header .nav-container {
   line-height: 1.8;
 }
 
+.modal-open .modal-content .search-tips {
+  margin-top: 0.2rem;
+}
+
+.modal-open .modal-content .search-tips a {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
 #modalNav .modal-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 14px 15px 8px 15px;

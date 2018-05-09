@@ -90,6 +90,11 @@
                   <a class="close" href="#" data-dismiss="modal"><i class="material-icons">close</i></a>
                 </div>
               </div>
+              <div class="search-tips">
+                <i class="material-icons">
+chevron_right
+</i><a href="<?php echo url("search-tips");?>">Zoektips</a>
+              </div>
             </div>
           </div>
         </div>
