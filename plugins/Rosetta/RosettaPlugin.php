@@ -60,7 +60,7 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
         //get the POST variables from config_form and set them in the DB
         set_option('rosetta_proxy',$_POST['proxy']);
         $url = $_POST['resolver'];
-        $url = substr($str, -1) == '/' ? '' : '/';
+        //$url = substr($str, -1) == '/' ? '' : '/';
         set_option('rosetta_resolver',$url);
     }
 
@@ -117,14 +117,15 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
                 foreach($pids as $pid):
                     $obj = rosetta_download_image(get_option('rosetta_resolver').'/'.$pid.'/stream?quality=low');
 
-                    file_put_contents('/tmp/'.$pid.'_resolver',$obj);
+                    $name = uniqid();
+                    file_put_contents('/tmp/'.$name,$obj);
 
                     $file = new File();
                     $file->item_id = $item->id;
-                    $file->filename = $pid.'_resolver';
+                    $file->filename = $name;//$pid.'_resolver';
                     $file->has_derivative_image = 1;
                     $file->mime_type = rosetta_get_mime_type($obj);
-                    $file->original_filename = $pid;
+                    $file->original_filename = $name."-orig";
                     $file->metadata = "";
                     $file->save();
 
