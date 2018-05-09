@@ -96,9 +96,11 @@
 
               <br>
 
-              <?php if (isset($texts['Object Item Type Metadata']['LIMO'])): ?>
+              <?php if (isset($texts['Object Item Type Metadata']['MMS ID'])): ?>
               <div class="element">
-                  <i class="material-icons">&#xE02F;</i><a href="<?php echo $texts['Object Item Type Metadata']['LIMO'][0]; ?>"><?php echo __('Bekijk uitgebreide beschrijving');?></a>
+                  <i class="material-icons">&#xE02F;</i>
+                  <a href="https://limo.libis.be/primo-explore/search?query=any,contains,<?php echo $texts['Object Item Type Metadata']['MMS ID'][0]; ?>&tab=all_content_tab&search_scope=ALL_CONTENT&vid=KULeuven_UX&lang=en_US&offset=0">
+                    <?php echo __('Bekijk uitgebreide beschrijving');?></a>
               </div>
               <?php endif; ?>
 

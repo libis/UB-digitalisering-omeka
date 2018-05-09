@@ -78,7 +78,7 @@ class Transformer{
 
             if(isset($field["001"])):
                 $result["object_id"][]=$field["001"];
-                $result["LIMO"][]="https://services.libis.be/query?institution=KUL&view=KULeuven&query=any:".$field["001"];
+                $result["LIMO"][]="https://limo.libis.be/primo-explore/search?query=any,contains,".$field["001"]."&tab=all_content_tab&search_scope=ALL_CONTENT&vid=KULeuven_UX&lang=en_US&offset=0";
             endif;
 
             if(isset($field["245"])):
