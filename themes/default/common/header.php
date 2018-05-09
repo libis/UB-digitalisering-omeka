@@ -56,7 +56,7 @@
               &#9776;
             </button>
             <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">EXPO</a>
-            <div class="logo"><img src="<?php echo img("KULEUVEN.png") ?>"></div>
+            <div class="logo"><a target="_blank" href="//bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png") ?>"></a></div>
 
             <div class="pull-xs-right hidden-md-down">
               <button type="button" class="btn search-btn" data-toggle="modal" data-target="#exampleModal">
