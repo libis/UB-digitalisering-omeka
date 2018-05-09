@@ -125,7 +125,7 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
                     $file->filename = $name;//$pid.'_resolver';
                     $file->has_derivative_image = 1;
                     $file->mime_type = rosetta_get_mime_type($obj);
-                    $file->original_filename = $name."-orig";
+                    $file->original_filename = $pid;
                     $file->metadata = "";
                     $file->save();
 
