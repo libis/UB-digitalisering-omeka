@@ -72,12 +72,10 @@ endif;
               <div class="card">
                 <?php $exhibitCount++;$i++; ?>
 
-                <?php if($exhibit->cover_image_file_id):
-                  $file = $exhibit->getCoverImage();
-                ?>
-                  <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
-                  <!--<img class="card-img" src="<?php echo $file->getWebPath(); ?>">-->
-                <?php endif; ?>
+                <?php $file = $exhibit->getFile();?>
+                <?php if ($file): ?>
+                          <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
+                <?php endif;?>
 
                 <div class="card-block browse-block page">
                   <h2><a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>"><?php echo metadata($exhibit, 'title'); ?></a></h2>
