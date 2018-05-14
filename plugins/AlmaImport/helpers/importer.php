@@ -116,7 +116,7 @@ class Importer{
                 $element_texts = explode('$$',$metadata);
                 $element = get_db()->getTable('Element')->findByElementSetNameAndElementName($element_set, $element_name);
             else:
-                $element == null;
+                $element = null;
             endif;
 
             //delete if exists

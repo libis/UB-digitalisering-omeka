@@ -297,11 +297,8 @@ class Transformer{
             endif;
         endforeach;
 
-        //temp ontdubbelen sommige velden
-        $result["IdentifierCallnumber"] = array_unique ($result["IdentifierCallnumber"]);
-        $result["publisher"] = array_unique ($result["publisher"]);
-
         foreach($result as $key=>$value):
+            $value = array_unique($value);
             $result_imploded[$key]=implode("$$",$value);
         endforeach;
 
