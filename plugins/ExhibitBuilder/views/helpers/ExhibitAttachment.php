@@ -33,8 +33,8 @@ class ExhibitBuilder_View_Helper_ExhibitAttachment extends Zend_View_Helper_Abst
               $caption = "";
             endif;
 
-            $fileOptions['linkAttributes']['data-lightbox'] = "set";
-            $fileOptions['linkAttributes']['data-title'] = $caption." ". exhibit_builder_link_to_exhibit_item(null, $linkProps, $item);
+            //$fileOptions['linkAttributes']['data-lightbox'] = "set";
+            $fileOptions['linkAttributes']['data-sub-html'] = $caption." ". exhibit_builder_link_to_exhibit_item(null, $linkProps, $item);
             $fileOptions['linkAttributes']['href'] = file_display_url($file);
 
 

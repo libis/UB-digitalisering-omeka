@@ -10,21 +10,21 @@ $captionPosition = isset($options['captions-position'])
     : 'center';
 ?>
 <div class="captions-<?php echo $captionPosition; ?>">
-<div class="row">
+<div class="row no-gutters">
 <?php if($position == "left"):?>
-  <div class="col-xs-12 col-md-6">
+  <div class="col-xs-12 col-md-5">
         <?php foreach ($attachments as $attachment): ?>
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
         <?php endforeach; ?>
   </div>
-  <div class="col-xs-12 col-md-6">
+  <div class="col-xs-12 offset-md-1 col-md-6">
     <?php echo $text; ?>
   </div>
 <?php else: ?>
   <div class="col-xs-12 col-md-6">
     <?php echo $text; ?>
   </div>
-  <div class="col-xs-12 col-md-6">
+  <div class="col-xs-12 offset-md-1 col-md-5">
         <?php foreach ($attachments as $attachment): ?>
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
         <?php endforeach; ?>

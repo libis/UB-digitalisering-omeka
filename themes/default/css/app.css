@@ -7254,6 +7254,17 @@ section.gray {
   margin-bottom: 2rem;
 }
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .exhibit-show-section,
 .simple-page-section {
   background: white;
@@ -7265,6 +7276,8 @@ section.gray {
 .exhibit-show-section h1,
 .simple-page-section h1 {
   margin-bottom: 2rem;
+  text-transform: none;
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {
@@ -7363,6 +7376,13 @@ section.gray {
 .simple-page-section .exhibit-block {
   clear: both;
   margin-bottom: 3em;
+}
+
+.exhibit-show-section .exhibit-block p,
+.simple-page-section .exhibit-block p {
+  line-height: 1.7;
+  color: #666;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 991px) {

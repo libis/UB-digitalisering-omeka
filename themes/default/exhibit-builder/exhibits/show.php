@@ -61,5 +61,11 @@ echo head(array(
 </section>
 <script>
   var slug = "<?php echo $exhibit->slug;?>";
+
+  jQuery("#exhibit-blocks").lightGallery(
+    {
+      selector:'a.download-file'
+    }
+  );
 </script>
 <?php echo foot(); ?>
