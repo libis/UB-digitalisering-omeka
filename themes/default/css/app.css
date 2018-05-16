@@ -7395,8 +7395,13 @@ section.gray {
 .exhibit-show-section .exhibit-block .exhibit-item-caption,
 .simple-page-section .exhibit-block .exhibit-item-caption {
   padding-top: 0.5rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 1.2em;
+}
+
+.exhibit-show-section .exhibit-block .exhibit-item-caption p,
+.simple-page-section .exhibit-block .exhibit-item-caption p {
+  font-size: 0.8rem;
 }
 
 .exhibit-show-section .exhibit-block .exhibit-file-item,
