@@ -7362,7 +7362,7 @@ section.gray {
 .exhibit-show-section .card-columns,
 .simple-page-section .card-columns {
   column-count: 2;
-  column-gap: 2rem;
+  column-gap: 4rem;
 }
 
 @media (max-width: 991px) {

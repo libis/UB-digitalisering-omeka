@@ -21,8 +21,7 @@ $captionPosition = isset($options['captions-position'])
 <?php endif; ?>
 <div class="row">
   <div class="col-xs-12">
-    <div class="card-columns">
-        
+    <div class="card-columns">        
         <?php echo $this->exhibitAttachmentGallery($attachments, array('imageSize' => 'fullsize')); ?>
       </div>
     </div>
