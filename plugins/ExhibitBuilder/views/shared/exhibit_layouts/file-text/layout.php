@@ -19,18 +19,18 @@ $captionPosition = isset($options['captions-position'])
           </div>
         <?php endforeach; ?>
   </div>
-  <div class="col-xs-12 offset-md-1 col-md-6">
+  <div class="col-xs-12 col-md-6 offset-md-1">
     <?php echo $text; ?>
   </div>
 <?php else: ?>
   <div class="col-xs-12 col-md-6">
     <?php echo $text; ?>
   </div>
-  <div class="col-xs-12 offset-md-1 col-md-5">
+  <div class="col-xs-12 col-md-5 offset-md-1">
         <?php foreach ($attachments as $attachment): ?>
           <div class="text-file">
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
-          </div>  
+          </div>
         <?php endforeach; ?>
   </div>
 <?php endif;?>
