@@ -19,8 +19,10 @@ class ExhibitBuilder_View_Helper_ExhibitAttachmentGallery extends Zend_View_Help
     public function exhibitAttachmentGallery($attachments, $fileOptions = array(), $linkProps = array())
     {
         if (!isset($fileOptions['imageSize'])) {
-            $fileOptions['imageSize'] = 'square_thumbnail';
+            $fileOptions['imageSize'] = 'fullsize';
         }
+
+        $fileOptions['imageSize'] = 'fullsize';
 
         $html = '';
         foreach  ($attachments as $attachment) {

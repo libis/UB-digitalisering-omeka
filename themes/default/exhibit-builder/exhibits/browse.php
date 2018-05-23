@@ -34,14 +34,14 @@ endif;
               case "project":
                 $title = "Projecten";
                 break;
-              case "showcase":
-                $title = "Showcases";
+              case "galerij":
+                $title = "Galerij";
                 break;
               default:
                 $title = "Alles";
             }
         ?>
-        <h1 class="white"><?php echo $title; ?> <?php echo __('(%s total)', $total_results); ?></h1>
+        <h1 class="white"><?php echo $title; ?></h1>
     </div>
   </section>
 </div>

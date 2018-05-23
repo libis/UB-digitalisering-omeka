@@ -75,9 +75,19 @@ function libis_link_to_related_exhibits($item) {
     $exhibits = $db->getTable("Exhibit")->fetchObjects($select,array($item->id));
 
     if(!empty($exhibits)) {
-        echo '';
         foreach($exhibits as $exhibit) {
-            echo '<div class="element in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.exhibit_builder_exhibit_uri($exhibit).'">Bekijk in tentoonstelling <em>'.$exhibit->title.'</em></a></div>';
+            $tags = tag_string($exhibit,null);
+            $tags = explode(",",$tags);
+            $type = "";
+
+            if(in_array("tentoonstelling",$tags)):
+              $type = "tentoonstelling";
+            elseif(in_array("project",$tags)):
+              $type = "project";
+            else:
+              $type = "bijzonder werk";
+            endif;
+            echo '<div class="element in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.exhibit_builder_exhibit_uri($exhibit).'">Maakt deel uit van '.$type.' <em>'.$exhibit->title.'</em></a></div>';
         }
     }
 }

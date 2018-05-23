@@ -14,7 +14,9 @@ $captionPosition = isset($options['captions-position'])
 <?php if($position == "left"):?>
   <div class="col-xs-12 col-md-5">
         <?php foreach ($attachments as $attachment): ?>
+          <div class="text-file">
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
+          </div>
         <?php endforeach; ?>
   </div>
   <div class="col-xs-12 offset-md-1 col-md-6">
@@ -26,7 +28,9 @@ $captionPosition = isset($options['captions-position'])
   </div>
   <div class="col-xs-12 offset-md-1 col-md-5">
         <?php foreach ($attachments as $attachment): ?>
+          <div class="text-file">
             <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
+          </div>  
         <?php endforeach; ?>
   </div>
 <?php endif;?>

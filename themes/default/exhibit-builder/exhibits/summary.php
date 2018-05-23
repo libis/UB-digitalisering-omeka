@@ -9,7 +9,7 @@
   elseif(in_array("project",$tags)):
     $type = "project";
   else:
-    $type = "showcase";
+    $type = "galerij";
   endif;
 ?>
 <div class="jumbotron">
@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-7 page">
           <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-            <h1>Overzicht <?php echo $type;?></h1>
+            <h1>Intro</h1>
             <div class="exhibit-description">
                 <?php echo $exhibitDescription; ?>
                 <?php
@@ -44,11 +44,11 @@
             </div>
             <?php if($page):?>
               <?php if($type == "project"):?>
-                <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Bekijk <?php echo $type;?></a></p>
+                <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Start</a></p>
               <?php else:?>
-                <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Start <?php echo $type;?></a></p>
+                <p><a class="btn btn-primary" href="<?php echo html_escape($page->getRecordUrl()); ?>">Start</a></p>
               <?php endif;?>
-            <?php endif;?>  
+            <?php endif;?>
           <?php endif; ?>
           <div class="nav">
             <?php echo exhibit_builder_page_nav(); ?>

@@ -7361,21 +7361,28 @@ section.gray {
 
 .exhibit-show-section .card-columns,
 .simple-page-section .card-columns {
-  column-count: 2;
-  column-gap: 4rem;
+  column-count: 3;
+  column-gap: 3rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .exhibit-show-section .card-columns,
   .simple-page-section .card-columns {
     column-count: 2;
   }
 }
 
+@media (max-width: 767px) {
+  .exhibit-show-section .card-columns,
+  .simple-page-section .card-columns {
+    column-count: 1;
+  }
+}
+
 .exhibit-show-section .exhibit-block,
 .simple-page-section .exhibit-block {
   clear: both;
-  margin-bottom: 3em;
+  margin-bottom: 2rem;
 }
 
 .exhibit-show-section .exhibit-block p,
@@ -7383,6 +7390,13 @@ section.gray {
   line-height: 1.7;
   color: #666;
   font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+  .exhibit-show-section .exhibit-block p,
+  .simple-page-section .exhibit-block p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -7402,6 +7416,11 @@ section.gray {
 .exhibit-show-section .exhibit-block .exhibit-item-caption p,
 .simple-page-section .exhibit-block .exhibit-item-caption p {
   font-size: 0.8rem;
+}
+
+.exhibit-show-section .exhibit-block .text-file,
+.simple-page-section .exhibit-block .text-file {
+  margin-bottom: 1.5rem;
 }
 
 .exhibit-show-section .exhibit-block .exhibit-file-item,

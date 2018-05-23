@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-7 col-lg-8">
                       <div class="footer-images">
-                        <a href="http://bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png");?>"></a>
+                        <a target="_blank" href="http://bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png");?>"></a>
                       </div>
                     </div>
                     <div class="col-xs-12 col-md-5 col-lg-4">
@@ -29,7 +29,7 @@
       <section class="made-by">
         <div class="container">
             Website door
-            <a href="http://libis.be"><img src="<?php echo img("libis_logo.png");?>"></a>
+            <a target="_blank" href="http://libis.be"><img src="<?php echo img("libis_logo.png");?>"></a>
         </div>
       </section>
     </footer><!-- end footer -->
