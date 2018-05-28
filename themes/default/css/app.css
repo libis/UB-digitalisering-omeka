@@ -7361,14 +7361,14 @@ section.gray {
   float: left;
 }
 
-.exhibit-show-section .column .download-file,
-.simple-page-section .column .download-file {
+.exhibit-show-section .column .salv-item,
+.simple-page-section .column .salv-item {
   margin: 0 1.5rem 3rem 1.5rem;
 }
 
 @media (max-width: 767px) {
-  .exhibit-show-section .column .download-file,
-  .simple-page-section .column .download-file {
+  .exhibit-show-section .column .salv-item,
+  .simple-page-section .column .salv-item {
     margin: 0 0 2rem 0;
   }
 }
