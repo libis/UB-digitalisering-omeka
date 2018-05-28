@@ -7275,6 +7275,7 @@ section.gray {
   z-index: 101;
   position: relative;
   padding: 3rem 0 3rem 0;
+  /* These are the classes that are going to be applied: */
 }
 
 .exhibit-show-section h1,
@@ -7322,6 +7323,69 @@ section.gray {
 .exhibit-show-section .cover img,
 .simple-page-section .cover img {
   width: 100%;
+}
+
+.exhibit-show-section #grid,
+.simple-page-section #grid {
+  margin: 0 -1.5rem;
+}
+
+@media (max-width: 767px) {
+  .exhibit-show-section #grid,
+  .simple-page-section #grid {
+    margin: 0;
+  }
+}
+
+.exhibit-show-section #grid[data-columns]::before,
+.simple-page-section #grid[data-columns]::before {
+  content: '2 .column.size-1of2';
+}
+
+@media (max-width: 991px) {
+  .exhibit-show-section #grid[data-columns]::before,
+  .simple-page-section #grid[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+
+@media (max-width: 767px) {
+  .exhibit-show-section #grid[data-columns]::before,
+  .simple-page-section #grid[data-columns]::before {
+    content: '1 .column.size-1of1';
+  }
+}
+
+.exhibit-show-section .column,
+.simple-page-section .column {
+  float: left;
+}
+
+.exhibit-show-section .column .download-file,
+.simple-page-section .column .download-file {
+  margin: 0 1.5rem 3rem 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .exhibit-show-section .column .download-file,
+  .simple-page-section .column .download-file {
+    margin: 0 0 2rem 0;
+  }
+}
+
+.exhibit-show-section .size-1of1,
+.simple-page-section .size-1of1 {
+  width: 100%;
+}
+
+.exhibit-show-section .size-1of2,
+.simple-page-section .size-1of2 {
+  width: 50%;
+}
+
+.exhibit-show-section .size-1of3,
+.simple-page-section .size-1of3 {
+  width: 33.333%;
 }
 
 .exhibit-show-section .card,
