@@ -18,7 +18,7 @@
                           <li><a href="<?php echo url("collectiehouders_partners");?>">Collectiehouders & partners</a></li>
                           <li><a href="<?php echo url("copyright");?>">Copyright</a></li>
                           <li><a href="<?php echo url("over-de-website");?>">Over de website</a></li>
-                          <li><a href="http://bib.kuleuven.be/english/">KU Leuven Bibliotheken</a></li>
+                          <li><a target="_blank" href="http://bib.kuleuven.be/english/">KU Leuven Bibliotheken</a></li>
                         </ul>
                     </div>
                 </div>
