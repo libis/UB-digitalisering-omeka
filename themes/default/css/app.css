@@ -7666,13 +7666,15 @@ section.gray {
 @media (max-width: 767px) {
   .exhibit-show-section .nav,
   .simple-page-section .nav {
-    margin-top: 2rem;
-    padding: 0 1rem 1rem;
+    margin-top: 1rem;
   }
   .exhibit-show-section .nav #exhibit-pages,
   .simple-page-section .nav #exhibit-pages {
-    background: #f7f7f7;
-    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  .exhibit-show-section .nav #exhibit-pages ul,
+  .simple-page-section .nav #exhibit-pages ul {
+    margin-left: 0.5rem;
   }
 }
 
@@ -7779,7 +7781,7 @@ section.gray {
   display: inline-block;
   margin: 0 15px 25px 0;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
   vertical-align: middle;
   line-height: 1.2rem;
 }
@@ -7876,7 +7878,7 @@ section.gray {
 }
 
 .solr-section-results #solr-facets .facet ul li {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .solr-section-results .pagination {
