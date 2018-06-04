@@ -29,6 +29,7 @@ class ExhibitBuilder_View_Helper_ExhibitAttachment extends Zend_View_Helper_Abst
 
             if($attachment['caption']):
               $caption = $attachment['caption'];
+              $caption = str_replace(array("\r\n", "\r", "\n"), "", $caption);
             else:
               $caption = "";
             endif;
