@@ -150,7 +150,7 @@
                               <?php endif; ?>
                         </div>
                         <div class="card-footer">
-                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("Bekijk galerij")); ?>
+                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("Bekijk dit werk")); ?>
                         </div>
                     </div>
                 </div>
