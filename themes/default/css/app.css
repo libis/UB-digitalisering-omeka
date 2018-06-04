@@ -7328,6 +7328,7 @@ section.gray {
 .exhibit-show-section #grid,
 .simple-page-section #grid {
   margin: 0 -1.5rem;
+  min-height: 1%;
 }
 
 @media (max-width: 767px) {
