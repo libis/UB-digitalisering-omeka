@@ -5,16 +5,16 @@
   <section class="overlay">
     <div class="container">
       <section class="front-search-section">
-        <h1 class="white">De collectie <span>(<?php echo $results->response->numFound; ?> resultaten)</span></h1>
+        <h1 class="white"><?php echo __("The collection");?> <span>(<?php echo $results->response->numFound; ?> <?php echo __("results");?>)</span></h1>
         <div class="row row-search">
             <div class="col-lg-8 col-xs-12 front-search">
                  <!-- Search form. -->
                  <div class="solr">
                    <form id="solr-search-form">
                      <div class="input-group">
-                       <input type="text" class="form-control" placeholder="Zoek in de collectie" aria-label="Zoek..." name="q">
+                       <input type="text" class="form-control" placeholder="<?php echo __("Search the collection");?>" aria-label="Zoek..." name="q">
                        <span class="input-group-btn">
-                         <button class="btn btn-primary" type="submit">zoeken</button>
+                         <button class="btn btn-primary" type="submit"><?php echo __("search");?></button>
                        </span>
                      </div>
                    </form>
@@ -35,7 +35,7 @@
           <li>
             <!-- Facet label. -->
             <?php $label = SolrSearch_Helpers_Facet::keyToLabel($f[0]); ?>
-            <span class="applied-facet-label"><?php echo $label; ?></span> >
+            <span class="applied-facet-label"><?php echo __($label); ?></span> >
             <span class="applied-facet-value"><?php echo $f[1]; ?></span>
 
             <!-- Remove link. -->
@@ -49,7 +49,7 @@
     <div class="row">
       <div id="solr-facets" class="col-xs-12 col-sm-12 col-md-3 col-xl-2">
           <!-- Facets. -->
-          <h5><?php echo __('Filter op:'); ?></h5>
+          <h5><?php echo __('Filter'); ?></h5>
           <?php $i=0;?>
           <?php foreach ($results->facet_counts->facet_fields as $name => $facets) : ?>
               <!-- Does the facet have any hits? -->
@@ -57,7 +57,7 @@
                   <!-- Facet label. -->
                   <?php $label = SolrSearch_Helpers_Facet::keyToLabel($name); ?>
                   <div class="facet">
-                      <a class="facet-name" data-toggle="collapse" href="#list<?php echo $i;?>" aria-expanded="false" aria-controls="#list<?php echo $i;?>"><?php echo $label; ?></a>
+                      <a class="facet-name" data-toggle="collapse" href="#list<?php echo $i;?>" aria-expanded="false" aria-controls="#list<?php echo $i;?>"><?php echo __($label); ?></a>
                       <ul class="collapse" id="list<?php echo $i;?>">
                           <!-- Facets. -->
                           <?php foreach ($facets as $value => $count) : ?>
@@ -67,7 +67,7 @@
 
                               <!-- Facet link. -->
                               <a href="<?php echo $url; ?>" class="facet-value">
-                                  <?php echo $value; ?>
+                                  <?php echo _($value); ?>
                               </a>
 
                               <!-- Facet count. -->

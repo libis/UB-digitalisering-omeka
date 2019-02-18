@@ -1,4 +1,5 @@
 <?php
+add_translation_source(dirname(__FILE__) . '/languages');
 function public_nav_main_bootstrap() {
     $partial = array('common/menu-partial.phtml', 'default');
     $nav = public_nav_main();  // this looks like $this->navigation()->menu() from Zend
@@ -16,7 +17,7 @@ function simple_nav(){
 
     $html="<ul class='simple-nav'>";
     foreach($links as $link):
-        $html .= "<li><a href='".$link['uri']."'>".$link['label']."</a></li>";
+        $html .= "<li><a href='".$link['uri']."'>".__($link['label'])."</a></li>";
     endforeach;
     $html .="</ul>";
 
@@ -37,7 +38,7 @@ function libis_get_featured_exhibits()
           <H3><span>In de kijker</span></h3>
           <h1><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
           <p><?php echo snippet_by_word_count(metadata($exhibit, 'description', array('no_escape' => true))); ?></p>
-          <p class="caption-auteur">Door: <strong>Tester</strong></p>
+          <p class="caption-auteur"><?php echo __("By:");?><strong>Tester</strong></p>
         </div>
       </div>
       <?php $i++; ?>
@@ -87,7 +88,7 @@ function libis_link_to_related_exhibits($item) {
             else:
               $type = "bijzonder werk";
             endif;
-            echo '<div class="element in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.exhibit_builder_exhibit_uri($exhibit).'">Maakt deel uit van '.$type.' <em>'.$exhibit->title.'</em></a></div>';
+            echo '<div class="element in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.exhibit_builder_exhibit_uri($exhibit).'">'.__("Is part of").' '.__($type).' <em>'.$exhibit->title.'</em></a></div>';
         }
     }
 }
@@ -106,7 +107,7 @@ function solr_tag_string()
     $tagStrings = array();
     foreach ($tags as $tag) {
         $name = $tag['name'];
-        $tagStrings[] = '<a href="'.url('/solr-search/?facet=tag:') . html_escape($name) . '" rel="tag">' . html_escape($name) . '</a>';
+        $tagStrings[] = '<a href="'.url('/solr-search/?facet=tag:') . html_escape($name) . '" rel="tag">' . __(html_escape($name)) . '</a>';
     }
     return join(html_escape($delimiter), $tagStrings);
 }

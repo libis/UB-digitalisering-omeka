@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-7 page">
           <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-            <h1>Intro</h1>
+            <h1><?php echo __("Intro");?></h1>
             <div class="exhibit-description">
                 <?php echo $exhibitDescription; ?>
                 <?php

@@ -6,15 +6,15 @@
       <div class="row">
           <div class="col-md-8 col-lg-6">
             <div class="card card-block card_banner">
-              <h1>EXPO collectie</h1>
+              <h1><?php echo __('EXPO collection');?></h1>
                 <p class="spacer">
-                    <?php echo libis_get_simple_page_content('homepage-intro');?>
+                    <?php echo __(libis_get_simple_page_content('homepage-intro'));?>
                 </p>
                 <form class="" role="search" action="<?php echo url("/solr-search/");?>" name="searchform">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Zoek in de website" aria-label="Zoek..." name="q">
+                    <input type="text" class="form-control" placeholder="<?php echo __("Search the website");?>" aria-label="Zoek..." name="q">
                     <span class="input-group-btn">
-                      <button class="btn btn-primary" type="submit">zoeken</button>
+                      <button class="btn btn-primary" type="submit"><?php echo __('search');?></button>
                     </span>
                   </div>
                 </form>
@@ -33,13 +33,13 @@
           </div>
           <div class="col-sm-12 col-md-6 featured-column">
             <div class="feature-text">
-              <h1>Virtuele tentoonstellingen</h1>
+              <h1><?php echo __("Virtual exhibitions");?></h1>
 
               <p class="description">
-                Curatoren putten uit de rijke collecties van KU Leuven Bibliotheken en nemen je mee in hun geschiedenis. Ontdek onze online exposities.
+                <?php echo __("Collection curators draw inspiration from KU Leuven Libraries' rich collections and guide you through their histories. Discover our online exhibitions.");?>
               </p>
               <div class="link">
-                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=tentoonstelling&sort_field=added&sort_dir=d'); ?>">Bezoek de tentoonstellingen</a></p>
+                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=tentoonstelling&sort_field=added&sort_dir=d'); ?>"><?php echo __("Visit the exhibitions");?></a></p>
               </div>
             </div>
           </div>
@@ -52,12 +52,12 @@
 
           <div class="col-xs-12 col-md-6 featured-column">
             <div class="feature-text">
-              <h1>Galerij</h1>
+              <h1><?php echo __("Gallery");?></h1>
               <p class="description">
-                De veelzijdige collecties van KU Leuven Bibliotheken bevatten zowel gekende topstukken als minder bekende, maar minstens even fascinerende werken. Laat je verrassen door het verhaal dat zij vertellen.
+                <?php echo __("The diverse collections of KU Leuven Libraries hold many fascinating works, both famous masterpieces and hidden treasures. Dive into our gallery of showcases and their stories.");?>
               </p>
               <div class="link">
-                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=galerij&sort_field=added&sort_dir=d'); ?>">Ontdek bijzondere werken</a></p>
+                  <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=galerij&sort_field=added&sort_dir=d'); ?>"><?php echo __("Discover selected showcases");?></a></p>
               </div>
             </div>
           </div>
@@ -75,12 +75,12 @@
           </div>
             <div class="col-xs-12 col-md-6 featured-column">
                 <div class="feature-text">
-                    <h1>Projecten</h1>
+                    <h1><?php echo __("Projects");?></h1>
                     <p class="description">
-                        Voor KU Leuven Bibliotheken is het digitaal beschikbaar maken van haar collecties een topprioriteit. Maak kennis met onze digitaliseringsprojecten en –programma’s.
+                        <?php echo __("The digital availability of its collections is a top priority for KU Leuven Libraries. Find out more about our digitisation projects and programmes.");?>
                     </p>
                     <div class="link">
-                        <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=project&sort_field=added&sort_dir=d'); ?>">Bekijk de digitaliseringsprojecten</a></p>
+                        <p><a class="btn btn-primary" href="<?php echo url('exhibits/?tag=project&sort_field=added&sort_dir=d'); ?>"><?php echo __("View the digitisation projects");?></a></p>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
 ?>
 <section class="home-section gray">
     <div id="content" class='container'>
-        <h2>Recente tentoonstellingen</h2>
+        <h2><?php echo __("Recent exhibits");?></h2>
         <hr align=left>
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
@@ -113,14 +113,14 @@
                               <?php endif; ?>
                         </div>
                         <div class="card-footer">
-                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("Bekijk tentoonstelling")); ?>
+                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View exhibit")); ?>
                         </div>
                     </div>
                 </div>
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=tentoonstelling&sort_field=added&sort_dir=d"); ?>">Alle tentoonstellingen</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=tentoonstelling&sort_field=added&sort_dir=d"); ?>"><?php echo __("All exhibits");?></a>
         </div>
     </div>
 </section>
@@ -133,7 +133,7 @@
 ?>
 <section class="home-section">
     <div id="content" class='container'>
-        <h2>Recente bijzondere werken</h2>
+        <h2><?php echo __("Recent selected showcases");?></h2>
         <hr align=left>
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
@@ -150,14 +150,14 @@
                               <?php endif; ?>
                         </div>
                         <div class="card-footer">
-                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("Bekijk dit werk")); ?>
+                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View this selected showcase")); ?>
                         </div>
                     </div>
                 </div>
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=galerij&sort_field=added&sort_dir=d"); ?>">Alle bijzondere werken</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=galerij&sort_field=added&sort_dir=d"); ?>"><?php echo __("All selected showcases");?></a>
         </div>
     </div>
 </section>
@@ -170,7 +170,7 @@
 ?>
 <section class="home-section gray">
     <div id="content" class='container'>
-        <h2>Recente projecten</h2>
+        <h2><?php echo __("Recent projects");?></h2>
         <hr align=left>
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
@@ -187,14 +187,14 @@
                               <?php endif; ?>
                         </div>
                         <div class="card-footer">
-                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("Bekijk project")); ?>
+                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View project")); ?>
                         </div>
                     </div>
                 </div>
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=project&sort_field=added&sort_dir=d"); ?>">Alle projecten</a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=project&sort_field=added&sort_dir=d"); ?>"><?php echo __("All projects");?></a>
         </div>
     </div>
 </section>

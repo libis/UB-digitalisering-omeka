@@ -66,7 +66,37 @@
             </button>
             <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">EXPO</a>
             <div class="logo"><a target="_blank" href="//bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png") ?>"></a></div>
+            <div class="pull-xs-right hidden-md-down">
+              <div id="lang-switcher" class="ui-dropdown-list">
+                  <?php
+                    $languages = array('en'=> 'EN','nl_BE' => 'NL');
+                    $path = url();
+                    $request = Zend_Controller_Front::getInstance()->getRequest();
+                    $currentLocale = Zend_Registry::get('bootstrap')->getResource('Locale')->toString();
+                    $currentUrl = $request ->getRequestUri();
+                    $query = array();
+                  ?>
 
+                  <h2 class="visuallyhidden">Sprache wählen</h2>
+                  <?php foreach ($languages as $locale => $language): ?>
+                    <?php if ($locale == $currentLocale): ?>
+                        <p class="ui-dropdown-list-trigger">
+                        <span class="visuallyhidden">Aktuelle Sprache: </span> <strong><?php echo $language ?></strong></p>
+                    <?php endif; ?>
+                  <?php endforeach; ?>
+                  <ul>
+                  <?php foreach ($languages as $locale => $language): ?>
+                      <?php $url = url('setlocale', array('locale' => $locale, 'redirect' => $currentUrl) + $query); ?>
+                      <?php if ($locale != $currentLocale): ?>
+                           <li><a href="<?php echo $url;?>">
+                               <?php echo $language ?>
+                           </a></li>
+                      <?php endif;?>
+
+                  <?php endforeach; ?>
+                  </ul>
+              </div>
+            </div>
             <div class="pull-xs-right hidden-md-down">
               <button type="button" class="btn search-btn" data-toggle="modal" data-target="#exampleModal">
                 <i class="material-icons">search</i>
@@ -75,6 +105,7 @@
             <div class="pull-xs-right hidden-md-down">
               <?php echo public_nav_main(array('role' => 'navigation')) -> setUlClass('nav navbar-nav'); ?>
             </div>
+
         </nav>
     </div>
     <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
@@ -88,7 +119,7 @@
                 <div class="col-xs-11">
                   <form id="search-modal" action="<?php echo url('/solr-search');?>">
                     <div class="input-group">
-                      <input type="search" class="form-control" name="q" value="" placeholder="Zoek..." />
+                      <input type="search" class="form-control" name="q" value="" placeholder="<?php echo __("Search...");?> "/>
                       <span class="input-group-btn">
                         <button class="btn" type="submit"><i class="material-icons">search</i></button>
                       </span>
@@ -102,7 +133,7 @@
               <div class="search-tips">
                 <i class="material-icons">
 chevron_right
-</i><a href="<?php echo url("search-tips");?>">Zoektips</a>
+</i><a href="<?php echo url("search-tips");?>"><?php echo __("Search tips");?></a>
               </div>
             </div>
           </div>
@@ -126,6 +157,32 @@ chevron_right
                     </div>
                   </form>
               <?php echo public_nav_main(array('role' => 'navigation')); ?>
+              <div class="pull-xs-right">
+              <div class="lang-switcher-modal">
+                  <?php
+                    $languages = array('en'=> 'EN','nl_BE' => 'NL');
+                    $path = url();
+                    $request = Zend_Controller_Front::getInstance()->getRequest();
+                    $currentLocale = Zend_Registry::get('bootstrap')->getResource('Locale')->toString();
+                    $currentUrl = $request ->getRequestUri();
+                    $query = array();
+                  ?>
+
+                  <?php foreach ($languages as $locale => $language): ?>
+                    <?php if ($locale == $currentLocale): ?>
+                        <span><?php echo __('Language');?>: </span> <strong><?php echo $language ?></strong>
+                    <?php endif; ?>
+                  <?php endforeach; ?>
+                  <?php foreach ($languages as $locale => $language): ?>
+                      <?php $url = url('setlocale', array('locale' => $locale, 'redirect' => $currentUrl) + $query); ?>
+                      <?php if ($locale != $currentLocale): ?>
+                           <a href="<?php echo $url;?>">
+                               <?php echo $language ?>
+                           </a>
+                      <?php endif;?>
+                  <?php endforeach; ?>
+              </div>
+            </div>
           </div>
         </div>
       </div>

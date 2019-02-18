@@ -29,19 +29,19 @@ endif;
 
             switch($tag){
               case "tentoonstelling":
-                $title = "Tentoonstellingen";
+                $title = "Exhibits";
                 break;
               case "project":
-                $title = "Projecten";
+                $title = "Projects";
                 break;
               case "galerij":
-                $title = "Galerij";
+                $title = "Gallery";
                 break;
               default:
-                $title = "Alles";
+                $title = "All";
             }
         ?>
-        <h1 class="white"><?php echo $title; ?></h1>
+        <h1 class="white"><?php echo __($title); ?></h1>
     </div>
   </section>
 </div>
@@ -53,7 +53,7 @@ endif;
            <?php echo __('Filter: '); ?></span>
            <?php if($show_featured):?>
              <a href="<?php echo url('exhibits/browse?tag='.$tags.'&sort_field=added&sort_dir=d');?>">
-               <?php echo __("Alles"); ?>
+               <?php echo __("All"); ?>
              </a>
            <?php else:?>
              <a href="<?php echo url('exhibits/browse?featured=1&tag='.$tags.'&sort_field=added&sort_dir=d');?>">
@@ -90,7 +90,7 @@ endif;
 
                 </div>
                 <div class="card-footer">
-                  <a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>">lees meer</a>
+                  <a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>"><?php echo __("read more");?></a>
                 </div>
               </div>
           </div>
