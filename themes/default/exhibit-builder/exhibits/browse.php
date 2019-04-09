@@ -75,7 +75,7 @@ endif;
 
                 <?php $file = $exhibit->getFile();?>
                 <?php if ($file): ?>
-                          <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
+                          <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("thumbnail"); ?>)"></div>
                 <?php endif;?>
 
                 <div class="card-block browse-block page">

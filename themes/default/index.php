@@ -104,7 +104,7 @@
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
-                            <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
+                            <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("thumbnail"); ?>)"></div>
                         <?php endif; ?>
                         <div class="card-block">
                               <h2><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h2>
@@ -141,7 +141,7 @@
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
-                            <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
+                            <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("thumbnail"); ?>)"></div>
                         <?php endif; ?>
                         <div class="card-block">
                               <h2><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h2>
@@ -178,7 +178,7 @@
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
-                            <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("fullsize"); ?>)"></div>
+                            <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("thumbnail"); ?>)"></div>
                         <?php endif; ?>
                         <div class="card-block">
                               <h2><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h2>
