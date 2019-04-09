@@ -61,9 +61,10 @@ endif;
              </a>
            <?php endif;?>
     </div>
+    <?php echo pagination_links(); ?>
       <div class="row">
         <?php if (count($exhibits) > 0): ?>
-          <?php echo pagination_links(); ?>
+
 
           <?php $exhibitCount = 0;$i=0; ?>
 

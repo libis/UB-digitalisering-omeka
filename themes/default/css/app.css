@@ -7922,6 +7922,46 @@ section.gray {
   text-align: right;
 }
 
+.exhibit-show-section .pagination {
+  list-style: none;
+  width: 300px;
+  float: right;
+  text-align: right;
+  margin: 0 0 15px 0;
+  font-weight: 100;
+}
+
+@media (max-width: 543px) {
+  .exhibit-show-section .pagination {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.exhibit-show-section .pagination li {
+  display: inline-block;
+  text-align: center;
+}
+
+.exhibit-show-section .pagination li a {
+  line-height: inherit;
+}
+
+.exhibit-show-section .pagination li a i {
+  font-size: 1.9rem;
+  line-height: 0.7;
+  vertical-align: text-top;
+}
+
+.exhibit-show-section .pagination li input {
+  background: rgba(8, 167, 235, 0.1);
+  border: none;
+  padding: 3px 5px;
+  margin: 0 4px;
+  width: 60px;
+  text-align: right;
+}
+
 footer .info {
   background: #067DB0;
   padding: 4rem 0;
