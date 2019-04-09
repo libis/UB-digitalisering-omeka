@@ -14,7 +14,7 @@
                       </div>
                     </div>
                     <div class="col-xs-12 col-md-5 col-lg-4">
-                      <?php if($lang = 'nl_BE'):?>
+                      <?php if($lang == 'nl_BE'):?>
                         <ul>
                           <li><a href="<?php echo url("contact");?>"><?php echo __("Contact");?></a></li>
                           <li><a href="<?php echo url("collectiehouders_partners");?>"><?php echo __("Collection holders & partners");?></a></li>
