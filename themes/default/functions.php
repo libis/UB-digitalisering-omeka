@@ -111,3 +111,14 @@ function solr_tag_string()
     }
     return join(html_escape($delimiter), $tagStrings);
 }
+
+function libis_get_sigil($code){
+  $string = file_get_contents(PLUGIN_DIR."/AlmaImport/sigil_mapping.json");
+  $json_a = json_decode($string, true);
+
+  foreach($json_a as $sigil):
+    if($sigil["Location Code"] == $code):
+      echo $sigil["Location Code"]." - ".$sigil["Dutch"];
+    endif;
+  endforeach;
+}

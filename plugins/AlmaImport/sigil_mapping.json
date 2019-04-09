@@ -1,0 +1,2116 @@
+[
+ {
+   "Location Code": "ARDO",
+   "Library Code": "ARDO",
+   "nl_BE": "KU Leuven Sportimonium",
+   "en": "KU Leuven Sportimonium",
+   "Location Name": "ARDO: Sportimonium"
+ },
+ {
+   "Location Code": "BAVD",
+   "Library Code": "BAVD",
+   "nl_BE": "KU Leuven Dienst Media en Leren",
+   "en": "KU Leuven Dienst Media en Leren",
+   "Location Name": "BAVD: AVNet"
+ },
+ {
+   "Location Code": "COURSE",
+   "Library Code": "BBIB",
+   "nl_BE": "KU Leuven 2Bergen - Campus Brugge",
+   "en": "KU Leuven Libraries 2Bergen Campus Bruges",
+   "Location Name": "Handboekencollectie"
+ },
+ {
+   "Location Code": "LAB",
+   "Library Code": "BBIB",
+   "nl_BE": "KU Leuven 2Bergen - Campus Brugge",
+   "en": "KU Leuven Libraries 2Bergen Campus Bruges",
+   "Location Name": "Labo-Collectie"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "BBIB",
+   "nl_BE": "KU Leuven 2Bergen - Campus Brugge",
+   "en": "KU Leuven Libraries 2Bergen Campus Bruges",
+   "Location Name": "BIBB: Resource Sharing"
+ },
+ {
+   "Location Code": "WAIT",
+   "Library Code": "BBIB",
+   "nl_BE": "KU Leuven 2Bergen - Campus Brugge",
+   "en": "KU Leuven Libraries 2Bergen Campus Bruges",
+   "Location Name": "Depot personeel"
+ },
+ {
+   "Location Code": "BEXT",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "BEXT: Extern Magazijn"
+ },
+ {
+   "Location Code": "BRES",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "BRES: Tabularium - Magazijn"
+ },
+ {
+   "Location Code": "BTAB",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "BTAB: Tabularium - Open kast"
+ },
+ {
+   "Location Code": "KLZC",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "KLZC: Kleine Leeszaal C"
+ },
+ {
+   "Location Code": "KLZD",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "KLZD: Kleine Leeszaal D"
+ },
+ {
+   "Location Code": "KLZE",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "KLZE: Kleine Leeszaal E"
+ },
+ {
+   "Location Code": "KLZX",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "KLZX: Kleine Leeszaal - Extern Magazijn"
+ },
+ {
+   "Location Code": "MAGA1",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "MAGA1: Magazijn"
+ },
+ {
+   "Location Code": "MAGA5",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "MAGA5: Magazijn"
+ },
+ {
+   "Location Code": "MAGA6",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "MAGA6: Magazijn"
+ },
+ {
+   "Location Code": "MAGA7",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "MAGA7: Magazijn"
+ },
+ {
+   "Location Code": "MAGAK",
+   "Library Code": "BCOL",
+   "nl_BE": " KU Leuven Libraries Special Collections",
+   "en": "KU Leuven Bibliotheken Bijzondere Collecties",
+   "Location Name": "MAGAK: Magazijn"
+ },
+ {
+   "Location Code": "BALA",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "BALA: Alamire Foundation"
+ },
+ {
+   "Location Code": "BCLZ",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "BCLZ: Grote Leeszaal"
+ },
+ {
+   "Location Code": "BEXT",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "BEXT: Extern Magazijn"
+ },
+ {
+   "Location Code": "BRES",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "BRES: Tabularium - Magazijn"
+ },
+ {
+   "Location Code": "BTAB",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "BTAB: Tabularium - Open kast"
+ },
+ {
+   "Location Code": "BVAK",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "BVAK: Bib- en infowetenschappen"
+ },
+ {
+   "Location Code": "GLLAD",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "GLLAD: Grote Leeszaal - Ladeuzezaal"
+ },
+ {
+   "Location Code": "GLMER",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "GLMER: Grote Leeszaal - Mercierzaal"
+ },
+ {
+   "Location Code": "IBIBC",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "INTERNAL - No display in OPAC"
+ },
+ {
+   "Location Code": "ILLUM",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "ILLUM: Illuminare"
+ },
+ {
+   "Location Code": "KLZA",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "KLZA: Kleine Leeszaal A"
+ },
+ {
+   "Location Code": "KLZB",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "KLZB: Kleine Leeszaal B"
+ },
+ {
+   "Location Code": "KLZC",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "KLZC: Kleine Leeszaal C"
+ },
+ {
+   "Location Code": "KLZD",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "KLZD: Kleine Leeszaal D"
+ },
+ {
+   "Location Code": "KLZE",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "KLZE: Kleine Leeszaal E"
+ },
+ {
+   "Location Code": "KLZX",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "KLZX: Kleine Leeszaal - Extern Magazijn"
+ },
+ {
+   "Location Code": "LSIN",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "LSIN: Oost-Aziatische Bibliotheek"
+ },
+ {
+   "Location Code": "MAGA",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGA: Magazijn"
+ },
+ {
+   "Location Code": "MAGA0",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGA0: Magazijn"
+ },
+ {
+   "Location Code": "MAGA1",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGA1: Magazijn"
+ },
+ {
+   "Location Code": "MAGA3",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGA3: Magazijn"
+ },
+ {
+   "Location Code": "MAGA5",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGA5: Magazijn"
+ },
+ {
+   "Location Code": "MAGA6",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGA6: Magazijn"
+ },
+ {
+   "Location Code": "MAGA7",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGA7: Magazijn"
+ },
+ {
+   "Location Code": "MAGAK",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "MAGAK: Magazijn"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "BIBC: Resource Sharing"
+ },
+ {
+   "Location Code": "XLBS",
+   "Library Code": "BIBC",
+   "nl_BE": "KU Leuven Bibliotheken Artes Universiteitsbibliotheek",
+   "en": "KU Leuven Libraries Artes University Library",
+   "Location Name": "XLBS: LIBIS Bibliotheekautomatisering"
+ },
+ {
+   "Location Code": "KOAR",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOAR: Archief en bijzondere collecties"
+ },
+ {
+   "Location Code": "KOFN",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOFN: Bibliotheek De Franse Nederlanden"
+ },
+ {
+   "Location Code": "KOHB",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOHB: Handboekencollectie"
+ },
+ {
+   "Location Code": "KOHU",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOHU: Bibliotheek Humane Wetenschappen"
+ },
+ {
+   "Location Code": "KOLP",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOLP: Leesplank balie bibliotheek"
+ },
+ {
+   "Location Code": "KOMA",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOMA: Boekenmagazijn"
+ },
+ {
+   "Location Code": "KOME",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOME: Bibliotheek IRC"
+ },
+ {
+   "Location Code": "KOPO",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOPO: Positieve & Biomedische Wetenschappen"
+ },
+ {
+   "Location Code": "KOPP",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KOPP: Bibliotheek Psychologie & Pedagogische Wetenschappen"
+ },
+ {
+   "Location Code": "KORE",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KORE: Rechtsbibliotheek"
+ },
+ {
+   "Location Code": "KORW",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KORW: Werkbibliotheek Rechten"
+ },
+ {
+   "Location Code": "KTEW",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "KTEW: Bibliotheek Economische & Toegepaste Economische Wetenschappen"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "BIBK",
+   "nl_BE": "KU Leuven Bibliotheken Campus Kulak Kortrijk ",
+   "en": "KU Leuven Libraries Campus Kulak Kortrijk",
+   "Location Name": "BIBK: Resource Sharing"
+ },
+ {
+   "Location Code": "BSCH",
+   "Library Code": "BSCH",
+   "nl_BE": "KU Leuven Belgische schoolboek",
+   "en": "KU Leuven Belgische schoolboek",
+   "Location Name": "BSCH: Belgische schoolboek"
+ },
+ {
+   "Location Code": "BSML",
+   "Library Code": "BSML",
+   "nl_BE": "Scheut Memorial Library",
+   "en": "Scheut Memorial Library",
+   "Location Name": "BSML"
+ },
+ {
+   "Location Code": "BSMP",
+   "Library Code": "BSML",
+   "nl_BE": "Scheut Memorial Library",
+   "en": "Scheut Memorial Library",
+   "Location Name": "Preciosa"
+ },
+ {
+   "Location Code": "BUAR",
+   "Library Code": "BUAR",
+   "nl_BE": "KU Leuven Universiteitsarchief",
+   "en": "KU Leuven Universiteitsarchief",
+   "Location Name": "BUAR: Universiteitsarchief - Open kast"
+ },
+ {
+   "Location Code": "RUAR",
+   "Library Code": "BUAR",
+   "nl_BE": "KU Leuven Universiteitsarchief",
+   "en": "KU Leuven Universiteitsarchief",
+   "Location Name": "RUAR: Universiteitsarchief - Magazijn"
+ },
+ {
+   "Location Code": "EBIBA",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Aggregaat"
+ },
+ {
+   "Location Code": "EBIBC",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Course library"
+ },
+ {
+   "Location Code": "EBIBD",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Doctoraten"
+ },
+ {
+   "Location Code": "EBIBE",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Eindwerken"
+ },
+ {
+   "Location Code": "EBIBJ",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Jaarverslagen"
+ },
+ {
+   "Location Code": "EBIBK",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Kranten"
+ },
+ {
+   "Location Code": "EBIBM",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Magazijn"
+ },
+ {
+   "Location Code": "EBIBS",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Statistieken"
+ },
+ {
+   "Location Code": "EBIBT",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Tijdschriften"
+ },
+ {
+   "Location Code": "EBIBW",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Working papers"
+ },
+ {
+   "Location Code": "ETEW",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Economie en bedrijfswetenschappen"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Resource Sharing"
+ },
+ {
+   "Location Code": "VLERI",
+   "Library Code": "ETEW",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Leuven",
+   "en": "KU Leuven Libraries Economics and Business Leuven",
+   "Location Name": "EBIB: Vlerick"
+ },
+ {
+   "Location Code": "FBIB",
+   "Library Code": "FBIB",
+   "nl_BE": "KU Leuven Bibliotheken Hoger Instituut voor Wijsbegeerte",
+   "en": "KU Leuven Libraries Philosophy",
+   "Location Name": "FBIB: Academische collectie"
+ },
+ {
+   "Location Code": "FDWM",
+   "Library Code": "FBIB",
+   "nl_BE": "KU Leuven Bibliotheken Hoger Instituut voor Wijsbegeerte",
+   "en": "KU Leuven Libraries Philosophy",
+   "Location Name": "FDWM: Antieke en middeleeuwse filosofie"
+ },
+ {
+   "Location Code": "FHIW",
+   "Library Code": "FBIB",
+   "nl_BE": "KU Leuven Bibliotheken Hoger Instituut voor Wijsbegeerte",
+   "en": "KU Leuven Libraries Philosophy",
+   "Location Name": "FHIW: Moderne en hedendaagse filosofie"
+ },
+ {
+   "Location Code": "FHUA",
+   "Library Code": "FBIB",
+   "nl_BE": "KU Leuven Bibliotheken Hoger Instituut voor Wijsbegeerte",
+   "en": "KU Leuven Libraries Philosophy",
+   "Location Name": "FHUA: Fenomenologie"
+ },
+ {
+   "Location Code": "FHUS",
+   "Library Code": "FBIB",
+   "nl_BE": "KU Leuven Bibliotheken Hoger Instituut voor Wijsbegeerte",
+   "en": "KU Leuven Libraries Philosophy",
+   "Location Name": "FHUS: Husserl-Archief"
+ },
+ {
+   "Location Code": "FLFW",
+   "Library Code": "FBIB",
+   "nl_BE": "KU Leuven Bibliotheken Hoger Instituut voor Wijsbegeerte",
+   "en": "KU Leuven Libraries Philosophy",
+   "Location Name": "FLFW: Logica en filosofie van de wetenschappen"
+ },
+ {
+   "Location Code": "FMAG",
+   "Library Code": "FBIB",
+   "nl_BE": "KU Leuven Bibliotheken Hoger Instituut voor Wijsbegeerte",
+   "en": "KU Leuven Libraries Philosophy",
+   "Location Name": "FMAG: Magazijn - Closed stack"
+ },
+ {
+   "Location Code": "GBER",
+   "Library Code": "GBER",
+   "nl_BE": "KU Leuven Biomed.Ethiek & Recht",
+   "en": "KU Leuven Biomed.Ethiek & Recht",
+   "Location Name": "GBER: Biomedische Ethiek en Recht"
+ },
+ {
+   "Location Code": "FACKR",
+   "Library Code": "GBIB",
+   "nl_BE": "KU Leuven Bibliotheken Maurits Sabbebibliotheek",
+   "en": "KU Leuven Libraries Maurits Sabbe Library",
+   "Location Name": "Faculteit Kerkelijk Recht"
+ },
+ {
+   "Location Code": "GBIB",
+   "Library Code": "GBIB",
+   "nl_BE": "KU Leuven Bibliotheken Maurits Sabbebibliotheek",
+   "en": "KU Leuven Libraries Maurits Sabbe Library",
+   "Location Name": "GBIB: Godgeleerdheid"
+ },
+ {
+   "Location Code": "INTAM",
+   "Library Code": "GBIB",
+   "nl_BE": "KU Leuven Bibliotheken Maurits Sabbebibliotheek",
+   "en": "KU Leuven Libraries Maurits Sabbe Library",
+   "Location Name": "INTAMS"
+ },
+ {
+   "Location Code": "MUJAN",
+   "Library Code": "GBIB",
+   "nl_BE": "KU Leuven Bibliotheken Maurits Sabbebibliotheek",
+   "en": "KU Leuven Libraries Maurits Sabbe Library",
+   "Location Name": "GBIB: Maastricht University Jansenistica Collection"
+ },
+ {
+   "Location Code": "MUJES",
+   "Library Code": "GBIB",
+   "nl_BE": "KU Leuven Bibliotheken Maurits Sabbebibliotheek",
+   "en": "KU Leuven Libraries Maurits Sabbe Library",
+   "Location Name": "GBIB: Maastricht University Jesuitica Collection"
+ },
+ {
+   "Location Code": "GBSJ",
+   "Library Code": "GBSJ",
+   "nl_BE": "Jezuïeten Heverlee",
+   "en": "Jezuïeten Heverlee",
+   "Location Name": "GBSJ"
+ },
+ {
+   "Location Code": "GCLDB",
+   "Library Code": "GCLD",
+   "nl_BE": "Centre Léon Dehon",
+   "en": "Centre Léon Dehon",
+   "Location Name": "Bruxelles: Centre International de Formation"
+ },
+ {
+   "Location Code": "GCLDC",
+   "Library Code": "GCLD",
+   "nl_BE": "Centre Léon Dehon",
+   "en": "Centre Léon Dehon",
+   "Location Name": "Clairefontaine: Centre d'accueil pour animation et formation spirituelle"
+ },
+ {
+   "Location Code": "GCLDL",
+   "Library Code": "GCLD",
+   "nl_BE": "Centre Léon Dehon",
+   "en": "Centre Léon Dehon",
+   "Location Name": "La Capelle: Lieu de naissance du P�re Dehon"
+ },
+ {
+   "Location Code": "GMML",
+   "Library Code": "GMML",
+   "nl_BE": "Montfort Marian Library",
+   "en": "Montfort Marian Library",
+   "Location Name": "GMML"
+ },
+ {
+   "Location Code": "GOCB",
+   "Library Code": "GOCB",
+   "nl_BE": "Karmelieten Brugge",
+   "en": "Karmelieten Brugge",
+   "Location Name": "GOCB"
+ },
+ {
+   "Location Code": "GOSA",
+   "Library Code": "GOSA",
+   "nl_BE": "Augustijns Historisch Instit.",
+   "en": "Augustijns Historisch Instit.",
+   "Location Name": "GOSA"
+ },
+ {
+   "Location Code": "GPAR",
+   "Library Code": "GPAR",
+   "nl_BE": "Abdij van Park",
+   "en": "Abdij van Park",
+   "Location Name": "GPAR"
+ },
+ {
+   "Location Code": "GROL",
+   "Library Code": "GROL",
+   "nl_BE": "Groot Seminarie Rolduc",
+   "en": "Groot Seminarie Rolduc",
+   "Location Name": "GROL"
+ },
+ {
+   "Location Code": "GSDB",
+   "Library Code": "GSDB",
+   "nl_BE": "Don Boscobibliotheek",
+   "en": "Don Boscobibliotheek",
+   "Location Name": "GSDB"
+ },
+ {
+   "Location Code": "GSMM",
+   "Library Code": "GSMM",
+   "nl_BE": "Montfortbibliotheek",
+   "en": "Montfortbibliotheek",
+   "Location Name": "GSMM: Montfortbibliotheek"
+ },
+ {
+   "Location Code": "CCED",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "CCED"
+ },
+ {
+   "Location Code": "CEDTS",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "CEDTS"
+ },
+ {
+   "Location Code": "CEDUS",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Cedus"
+ },
+ {
+   "Location Code": "CI",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "CI"
+ },
+ {
+   "Location Code": "HHA",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "HHA"
+ },
+ {
+   "Location Code": "IIA",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Leeszaal: IIA-collectie"
+ },
+ {
+   "Location Code": "JVS",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Leeszaal: Jaarverslagen"
+ },
+ {
+   "Location Code": "LACA",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LACA"
+ },
+ {
+   "Location Code": "LACAD",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LACAD"
+ },
+ {
+   "Location Code": "LIC",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Magazijn: Licentiaatsverhandelingen"
+ },
+ {
+   "Location Code": "LIT",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LIT"
+ },
+ {
+   "Location Code": "LJA",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LJA"
+ },
+ {
+   "Location Code": "LJBF",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LJBF"
+ },
+ {
+   "Location Code": "LJO",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LJO"
+ },
+ {
+   "Location Code": "LLZ",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LLZ"
+ },
+ {
+   "Location Code": "LLZ2",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LLZ2"
+ },
+ {
+   "Location Code": "LO",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LO"
+ },
+ {
+   "Location Code": "LOL",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LOL"
+ },
+ {
+   "Location Code": "LOLO",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LOLO"
+ },
+ {
+   "Location Code": "LOR",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LOR"
+ },
+ {
+   "Location Code": "LOT",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LOT"
+ },
+ {
+   "Location Code": "LOW",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LOW"
+ },
+ {
+   "Location Code": "LR",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LR"
+ },
+ {
+   "Location Code": "LRDS",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LRDS"
+ },
+ {
+   "Location Code": "LSOV",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LSOV"
+ },
+ {
+   "Location Code": "LSTA",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LSTA"
+ },
+ {
+   "Location Code": "LT1",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LT1"
+ },
+ {
+   "Location Code": "LT2",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "LT2"
+ },
+ {
+   "Location Code": "LZ",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Leeszaal"
+ },
+ {
+   "Location Code": "MA",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MA"
+ },
+ {
+   "Location Code": "MAG",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Magazijn"
+ },
+ {
+   "Location Code": "MAS",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MAS"
+ },
+ {
+   "Location Code": "MBUR",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MBUR"
+ },
+ {
+   "Location Code": "MCDL",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MCDL"
+ },
+ {
+   "Location Code": "MCDR",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MCDR"
+ },
+ {
+   "Location Code": "MK",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MK"
+ },
+ {
+   "Location Code": "MLIC",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MLIC"
+ },
+ {
+   "Location Code": "MMAG",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "MMAG"
+ },
+ {
+   "Location Code": "RDC",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Leeszaal: RDC"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "HHA: Resource Sharing"
+ },
+ {
+   "Location Code": "STAT",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "Leeszaal: Statistieken"
+ },
+ {
+   "Location Code": "TS",
+   "Library Code": "HHA",
+   "nl_BE": "KU Leuven Bibliotheken Economie en Bedrijfswetenschappen Campus Antwerpen",
+   "en": "KU Leuven Libraries Economics and Business Campus Antwerp",
+   "Location Name": "TS"
+ },
+ {
+   "Location Code": "ILL",
+   "Library Code": "KVHA",
+   "nl_BE": "KU Leuven Bibliotheken Artes Antwerpen",
+   "en": "KU Leuven Libraries Artes Antwerp / KU Leuven Bibliotheken Artes Antwerpen",
+   "Location Name": "ILL"
+ },
+ {
+   "Location Code": "KVHA",
+   "Library Code": "KVHA",
+   "nl_BE": "KU Leuven Bibliotheken Artes Antwerpen",
+   "en": "KU Leuven Libraries Artes Antwerp / KU Leuven Bibliotheken Artes Antwerpen",
+   "Location Name": "KVHA"
+ },
+ {
+   "Location Code": "KVHAM",
+   "Library Code": "KVHA",
+   "nl_BE": "KU Leuven Bibliotheken Artes Antwerpen",
+   "en": "KU Leuven Libraries Artes Antwerp / KU Leuven Bibliotheken Artes Antwerpen",
+   "Location Name": "Magazijn"
+ },
+ {
+   "Location Code": "LLIN",
+   "Library Code": "KVHA",
+   "nl_BE": "KU Leuven Bibliotheken Artes Antwerpen",
+   "en": "KU Leuven Libraries Artes Antwerp / KU Leuven Bibliotheken Artes Antwerpen",
+   "Location Name": "LLIN"
+ },
+ {
+   "Location Code": "LSTA",
+   "Library Code": "KVHA",
+   "nl_BE": "KU Leuven Bibliotheken Artes Antwerpen",
+   "en": "KU Leuven Libraries Artes Antwerp / KU Leuven Bibliotheken Artes Antwerpen",
+   "Location Name": "LSTA"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "KVHA",
+   "nl_BE": "KU Leuven Bibliotheken Artes Antwerpen",
+   "en": "KU Leuven Libraries Artes Antwerp / KU Leuven Bibliotheken Artes Antwerpen",
+   "Location Name": "KVHA: Resource Sharing"
+ },
+ {
+   "Location Code": "LAGG",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LAGG: Academic Teacher Training (ground-floor)"
+ },
+ {
+   "Location Code": "LBIB",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LBIB: Reference Works & Older Periodicals (first floor)"
+ },
+ {
+   "Location Code": "LBYZ",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LBYZ: Byzantinistiek"
+ },
+ {
+   "Location Code": "LCRS",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LCRS: Centrum voor Russische Studies (Babelhuis)"
+ },
+ {
+   "Location Code": "LDSL",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LDSL: German Literature (third floor)"
+ },
+ {
+   "Location Code": "LELI",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LELI: English Literature (third floor)"
+ },
+ {
+   "Location Code": "LFLE",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LFLE: Romance Literature (third floor)"
+ },
+ {
+   "Location Code": "LGES",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LGES: General Collection History (fifth floor)"
+ },
+ {
+   "Location Code": "LGLB",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LGLB: Gulden Librije"
+ },
+ {
+   "Location Code": "LHEG",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LHEG: Contemporary History (fifth floor)"
+ },
+ {
+   "Location Code": "LHUM",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LHUM: Humanist Philology (fifth floor)"
+ },
+ {
+   "Location Code": "LKLS",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LKLS: Classical Studies (sixth floor)"
+ },
+ {
+   "Location Code": "LLIN",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LLIN: Linguistics (second floor)"
+ },
+ {
+   "Location Code": "LLIT",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LLIT: Literature (general) (third floor)"
+ },
+ {
+   "Location Code": "LMAG",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LMAG: Stack Rooms (basement)"
+ },
+ {
+   "Location Code": "LMID",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LMID: Medieval History (fifth floor)"
+ },
+ {
+   "Location Code": "LMOG",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LMOG: Early Modern History (fifth floor)"
+ },
+ {
+   "Location Code": "LMUZ",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LMUZ: Musicology (general) (fourth floor)"
+ },
+ {
+   "Location Code": "LNEL",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LNEL: Dutch Literature (third floor)"
+ },
+ {
+   "Location Code": "LOKO",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LOKO: Archaeology (fourth floor)"
+ },
+ {
+   "Location Code": "LORI",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LORI: Eastern Studies (seventh floor)"
+ },
+ {
+   "Location Code": "LOUK",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LOUK: Art History (fourth floor)"
+ },
+ {
+   "Location Code": "LSTL",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LSTL: Slavonic and East European Studies (seventh floor)"
+ },
+ {
+   "Location Code": "LVOL",
+   "Library Code": "LBIB",
+   "nl_BE": "KU Leuven Bibliotheken Artes Erasmushuis",
+   "en": "KU Leuven Libraries Artes Erasmushuis / KU Leuven Bibliotheken Artes Erasmushuis",
+   "Location Name": "LVOL: Folklore (third floor)"
+ },
+ {
+   "Location Code": "LMAT",
+   "Library Code": "LMAT",
+   "nl_BE": "KU Leuven MATRIX",
+   "en": "KU Leuven MATRIX",
+   "Location Name": "LMAT: MATRIX"
+ },
+ {
+   "Location Code": "B01",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Allergie en Immunologie"
+ },
+ {
+   "Location Code": "B02",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Alternatieve geneeskunde en complementaire therapieen"
+ },
+ {
+   "Location Code": "B03",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Anatomie"
+ },
+ {
+   "Location Code": "B04",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Andrologie"
+ },
+ {
+   "Location Code": "B05",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Anesthesiologie"
+ },
+ {
+   "Location Code": "B06",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Arbeids- en verzekeringsgeneeskunde"
+ },
+ {
+   "Location Code": "B07",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Bibliotheek- en informatiewetenschappen"
+ },
+ {
+   "Location Code": "B08",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Biochemie en moleculaire biologie"
+ },
+ {
+   "Location Code": "B09",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Biomedische opleiding en onderwijs"
+ },
+ {
+   "Location Code": "B10",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Biomedische technieken"
+ },
+ {
+   "Location Code": "B11",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Biomedische ethiek"
+ },
+ {
+   "Location Code": "B12",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Biotechnologie"
+ },
+ {
+   "Location Code": "B13",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Bromatologie"
+ },
+ {
+   "Location Code": "B14",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Cardiologie"
+ },
+ {
+   "Location Code": "B15",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Cardiovasculaire heelkunde"
+ },
+ {
+   "Location Code": "B16",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Chemie"
+ },
+ {
+   "Location Code": "B17",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Dermatologie"
+ },
+ {
+   "Location Code": "B18",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Embryologie"
+ },
+ {
+   "Location Code": "B19",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Endocrinologie en metabolisme"
+ },
+ {
+   "Location Code": "B20",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Epidemiologie en biostatistiek"
+ },
+ {
+   "Location Code": "B21",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Erfelijkheid en genetica"
+ },
+ {
+   "Location Code": "B22",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Evidence-based medicine"
+ },
+ {
+   "Location Code": "B23",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Familiale en seksuologische wetenschappen"
+ },
+ {
+   "Location Code": "B24",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Farmaceutische technologie"
+ },
+ {
+   "Location Code": "B25",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Farmaceutische wetenschappen: algemeen"
+ },
+ {
+   "Location Code": "B26",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Farmacognosie"
+ },
+ {
+   "Location Code": "B27",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Farmacologie en farmacokinetiek"
+ },
+ {
+   "Location Code": "B28",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Forensische geneeskunde"
+ },
+ {
+   "Location Code": "B29",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Fysiologie en neurofysiologie"
+ },
+ {
+   "Location Code": "B30",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Fysische geneeskunde en revalidatie"
+ },
+ {
+   "Location Code": "B31",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Gastroenterologie (B31)"
+ },
+ {
+   "Location Code": "B32",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Geneeskunde: algemeen"
+ },
+ {
+   "Location Code": "B33",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Geriatrie"
+ },
+ {
+   "Location Code": "B34",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Geschiedenis van de geneeskunde en farmacie"
+ },
+ {
+   "Location Code": "B35",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Gezondheidszorg: beleid en management"
+ },
+ {
+   "Location Code": "B36",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Gynecologie en verloskunde"
+ },
+ {
+   "Location Code": "B37",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Hart- en vaatziekten"
+ },
+ {
+   "Location Code": "B38",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Heelkunde: algemeen"
+ },
+ {
+   "Location Code": "B39",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Hematologie"
+ },
+ {
+   "Location Code": "B40",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Hepatologie"
+ },
+ {
+   "Location Code": "B41",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Histologie en cytologie"
+ },
+ {
+   "Location Code": "B42",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Huisartsgeneeskunde (B42)"
+ },
+ {
+   "Location Code": "B43",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Intensieve geneeskunde"
+ },
+ {
+   "Location Code": "B44",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Inwendige geneeskunde: algemeen"
+ },
+ {
+   "Location Code": "B45",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Kindergeneeskunde en Jeugdgezondheidszorg"
+ },
+ {
+   "Location Code": "B46",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Laboratoriumtechnieken en diagnostiek"
+ },
+ {
+   "Location Code": "B47",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Lucht- en ruimtevaartgeneeskunde"
+ },
+ {
+   "Location Code": "B48",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Maatschappelijke gezondheidszorg"
+ },
+ {
+   "Location Code": "B49",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Medische beeldvorming"
+ },
+ {
+   "Location Code": "B50",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Medisch recht en gezondheidsrecht"
+ },
+ {
+   "Location Code": "B51",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Medische informatica"
+ },
+ {
+   "Location Code": "B52",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Microbiologie en infectieziekten"
+ },
+ {
+   "Location Code": "B53",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Militaire geneeskunde"
+ },
+ {
+   "Location Code": "B54",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Nefrologie (B54)"
+ },
+ {
+   "Location Code": "B55",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Neurologie en neurochirurgie"
+ },
+ {
+   "Location Code": "B56",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Neurosciences"
+ },
+ {
+   "Location Code": "B57",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Nucleaire geneeskunde"
+ },
+ {
+   "Location Code": "B58",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Oftalmologie (B58)"
+ },
+ {
+   "Location Code": "B59",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Oncologie en radiotherapie"
+ },
+ {
+   "Location Code": "B60",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Oncologische heelkunde"
+ },
+ {
+   "Location Code": "B61",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Orthopedie"
+ },
+ {
+   "Location Code": "B62",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Otorhinolaryngology en logopedie"
+ },
+ {
+   "Location Code": "B63",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Palliatieve zorg"
+ },
+ {
+   "Location Code": "B64",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Pathologie"
+ },
+ {
+   "Location Code": "B65",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Patientenbegeleiding"
+ },
+ {
+   "Location Code": "B66",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Plastische, reconstructieve en esthetische heelkunde"
+ },
+ {
+   "Location Code": "B67",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Pneumologie"
+ },
+ {
+   "Location Code": "B68",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Proefdierentechnieken"
+ },
+ {
+   "Location Code": "B69",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Psychiatrie (B69)"
+ },
+ {
+   "Location Code": "B70",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Psychologie"
+ },
+ {
+   "Location Code": "B71",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Reumatologie"
+ },
+ {
+   "Location Code": "B72",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Sportgeneeskunde"
+ },
+ {
+   "Location Code": "B73",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Tandheelkunde, mondziekten en kaakchirurgie"
+ },
+ {
+   "Location Code": "B74",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Thorax- en vasculaire heelkunde"
+ },
+ {
+   "Location Code": "B75",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Toxicologie"
+ },
+ {
+   "Location Code": "B76",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Transplantatie"
+ },
+ {
+   "Location Code": "B77",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Tropische geneeskunde en parasitologie"
+ },
+ {
+   "Location Code": "B78",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Urgentiegeneeskunde en traumatologie"
+ },
+ {
+   "Location Code": "B79",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Urologie"
+ },
+ {
+   "Location Code": "B80",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Verpleegkunde"
+ },
+ {
+   "Location Code": "B81",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Voeding (B81)"
+ },
+ {
+   "Location Code": "B82",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Ziekenhuishygiene en -infecties"
+ },
+ {
+   "Location Code": "B83",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "Basiswerk Niet-Medisch en/of Extra Basiswerken"
+ },
+ {
+   "Location Code": "BACT",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "MGAS: Bacteriologie"
+ },
+ {
+   "Location Code": "BMWAR",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "MGAS: Magazijn"
+ },
+ {
+   "Location Code": "MAVG",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "MGAS: Arbeids-, milieu- en verzekeringsgeneeskunde"
+ },
+ {
+   "Location Code": "MGAS",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "MGAS: Biomedische Bibliotheek"
+ },
+ {
+   "Location Code": "REGA",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "MGAS: Rega Instituut"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "MGAS",
+   "nl_BE": "KU Leuven Bibliotheken - Learning Centre Désiré Collen",
+   "en": "KU Leuven Libraries 2Bergen - Learning Centre Désiré Collen",
+   "Location Name": "MGAS: Resource Sharing"
+ },
+ {
+   "Location Code": "COURS",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "Course library"
+ },
+ {
+   "Location Code": "EDUCA",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "Educatieve collectie"
+ },
+ {
+   "Location Code": "HCPPW",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "Historische collectie PPW"
+ },
+ {
+   "Location Code": "MAGPB",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "Magazijn PBIB"
+ },
+ {
+   "Location Code": "PBIB",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "PBIB: Bibliotheek Psychologie en Pedagogische Wetenschappen"
+ },
+ {
+   "Location Code": "PEDA",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "PEDA: Departementsbibliotheek Pedagogische Wetenschappen"
+ },
+ {
+   "Location Code": "PSYC",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "PSYC: Departementsbibliotheek Psychologie"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "PBIB: Resource Sharing"
+ },
+ {
+   "Location Code": "TEST",
+   "Library Code": "PBIB",
+   "nl_BE": "KU Leuven Bibliotheken Psychologie en Pedagogische Wetenschappen",
+   "en": "KU Leuven Libraries Psychology and Educational Sciences",
+   "Location Name": "Testotheek"
+ },
+ {
+   "Location Code": "RBIB",
+   "Library Code": "RBIB",
+   "nl_BE": "KU Leuven Bibliotheken Rechtsgeleerdheid",
+   "en": "KU Leuven Libraries Law",
+   "Location Name": "RBIB: Rechtsgeleerdheid"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "RBIB",
+   "nl_BE": "KU Leuven Bibliotheken Rechtsgeleerdheid",
+   "en": "KU Leuven Libraries Law",
+   "Location Name": "RBIB: Resource Sharing"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "SBIB",
+   "nl_BE": "KU Leuven Bibliotheken Sociale Wetenschappen",
+   "en": "KU Leuven Libraries Social Sciences",
+   "Location Name": "SBIB: Resource Sharing"
+ },
+ {
+   "Location Code": "SBIB",
+   "Library Code": "SBIB",
+   "nl_BE": "KU Leuven Bibliotheken Sociale Wetenschappen",
+   "en": "KU Leuven Libraries Social Sciences",
+   "Location Name": "SBIB: Sociale Wetenschappen"
+ },
+ {
+   "Location Code": "ABIB",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "ABIB: Externe collectie"
+ },
+ {
+   "Location Code": "BWET",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "BWET: Campusbibliotheekdienst Exacte Wetenschappen"
+ },
+ {
+   "Location Code": "RS",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WBIB: Resource Sharing"
+ },
+ {
+   "Location Code": "TCIT",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TCIT: Externe collectie"
+ },
+ {
+   "Location Code": "TCON",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TCON: Constructie"
+ },
+ {
+   "Location Code": "TCPW",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TCPW: Externe collectie"
+ },
+ {
+   "Location Code": "TELE",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TELE: Externe collectie"
+ },
+ {
+   "Location Code": "TMTS",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TMTS: Externe collectie"
+ },
+ {
+   "Location Code": "TOND",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TOND: Kandidatuurcentrum Onderwijsbibliotheek"
+ },
+ {
+   "Location Code": "TSAF",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TSAF: Veiligheid"
+ },
+ {
+   "Location Code": "TWER",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "TWER: Externe collectie"
+ },
+ {
+   "Location Code": "WAAR",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WAAR: Externe collectie"
+ },
+ {
+   "Location Code": "WAIT",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WAIT: Externe collectie"
+ },
+ {
+   "Location Code": "WARD",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WARD: Sociale en Economische Geografie"
+ },
+ {
+   "Location Code": "WBIB",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WBIB: Openrek-collectie (CBA)"
+ },
+ {
+   "Location Code": "WDEP",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WDEP: Extern depot (CBA)"
+ },
+ {
+   "Location Code": "WDIR",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WDIR: Externe collectie"
+ },
+ {
+   "Location Code": "WKRT",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WKRT: Kaartencollectie"
+ },
+ {
+   "Location Code": "WLABO",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WLABO: Labocollecties"
+ },
+ {
+   "Location Code": "WMAG",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WMAG: Magazijn (CBA)"
+ },
+ {
+   "Location Code": "WNAT",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WNAT: Externe collectie"
+ },
+ {
+   "Location Code": "WNDF",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WNDF: Didactische Fysica"
+ },
+ {
+   "Location Code": "WPLT",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WPLT: Externe collectie"
+ },
+ {
+   "Location Code": "WSCH",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WSCH: Externe collectie"
+ },
+ {
+   "Location Code": "WSTE",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WSTE: Sterrekunde"
+ },
+ {
+   "Location Code": "WSTU",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WSTU: Studielandschap CBA"
+ },
+ {
+   "Location Code": "WWIS",
+   "Library Code": "WBIB",
+   "nl_BE": " KU Leuven Bibliotheken 2Bergen - Campus Arenberg",
+   "en": "KU Leuven Libraries 2Bergen - Campus Arenberg",
+   "Location Name": "WWIS: Externe collectie"
+ }
+]

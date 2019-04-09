@@ -1,5 +1,5 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
-
+<?php $lang = Zend_Registry::get('bootstrap')->getResource('Locale')->toString();?>
 <section class="item-section">
   <div class="container-fluid">
     <div class="row">
@@ -37,10 +37,34 @@
               </div>
               <?php endif; ?>
 
+
+
               <?php if (isset($texts['Dublin Core']['Source'])): ?>
+                <?php
+                $string = file_get_contents(PLUGIN_DIR."/AlmaImport/sigil_mapping.json");
+                $json_a = json_decode($string, true);
+                $bibcode = '';$source = '';$loccode='';
+
+                foreach($json_a as $sigil):
+                  $bibcode = '';
+                  if(isset($texts['Object Item Type Metadata']['Bibliotheekcode'][0])):
+                    $bibcode = $texts['Object Item Type Metadata']['Bibliotheekcode'][0];
+                  endif;
+                  $loccode = $texts['Dublin Core']['Source'][0];
+                  if($bibcode == $sigil["Library Code"]):
+                    echo $lang;
+                    $source = $sigil[$lang];
+                  elseif($loccode == $sigil["Location Code"]):
+                      echo $sigil[$lang];
+                    $source = $sigil[$lang];
+                  elseif($source == ''):
+                    $source = implode(', ',$texts['Dublin Core']['Source']);
+                  endif;
+                endforeach;
+                ?>
               <div class="element">
-                  <h3><?php echo 'Collectie'; ?></h3>
-                  <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Source']); ?></p></div>
+                  <h3><?php echo __('Collection'); ?></h3>
+                  <div class="element-text"><p><?php echo $source; ?></p></div>
               </div>
               <?php endif; ?>
 
@@ -74,7 +98,7 @@
 
               <?php if (isset($texts['Dublin Core']['Coverage'])): ?>
               <div class="element">
-                  <h3><?php echo 'Plaats'; ?></h3>
+                  <h3><?php echo __('Coverage'); ?></h3>
                   <div class="element-text"><p><?php echo implode(', ',$texts['Dublin Core']['Coverage']); ?></p></div>
               </div>
               <?php endif; ?>

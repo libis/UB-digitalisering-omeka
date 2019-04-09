@@ -217,6 +217,9 @@ class Transformer{
                 if (isset($field["852"]['subfields']['c'])) {
 			             $result['source'][] =$field["852"]['subfields']['c'];
                 }
+                if (isset($field["852"]['subfields']['b'])) {
+			             $result['bibcode'][] =$field["852"]['subfields']['b'];
+                }
     				    if ($field["852"]['subfields']['h'] != null) {
     					    $result["IdentifierCallnumber"][] = $field["852"]['subfields']['h'];
     				    }
