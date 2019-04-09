@@ -61,4 +61,7 @@ jQuery(document).ready(function(){
 
 </script>
 
+<!-- Latest compiled and minified JS -->
+<script src="<?php echo WEB_PUBLIC_THEME;?>/default/javascripts/salvattore.js"></script>
+
 </html>

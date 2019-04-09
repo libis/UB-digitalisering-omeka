@@ -22,27 +22,23 @@
     <?php
       queue_js_file('jquery.bg');
       queue_js_file('jquery.detect_swipe');
-      queue_js_file("lightbox");
       queue_js_file("lightgallery-all.min");
       queue_js_file("slick.min");
       echo head_js();
     ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
     <!-- Google Fonts used in the housestyle -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons|Open+Sans:400italic,600italic,700italic,400,700,600|Merriweather:400italic,400,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons|Open+Sans:400italic,600italic,700italic,300,400,700,600|Merriweather:400italic,400,700">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//stijl.kuleuven.be/2016/css/main.css">
 
     <!-- Stylesheets -->
     <?php
       queue_css_file(array('iconfonts', 'app','lightbox','lightgallery.min','slick','slick-theme'));
-      queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
+      //queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
       echo head_css();
       echo theme_header_background();
     ?>
