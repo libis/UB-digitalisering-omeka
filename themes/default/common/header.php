@@ -29,7 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <!-- Google Fonts used in the housestyle -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons|Open+Sans:400italic,600italic,700italic,300,400,700,600|Merriweather:400italic,400,700">
     <!-- Latest compiled and minified CSS -->
@@ -37,7 +37,7 @@
 
     <!-- Stylesheets -->
     <?php
-      queue_css_file(array('iconfonts', 'app','lightbox','lightgallery.min','slick','slick-theme'));
+      queue_css_file(array('iconfonts', 'app.min','lightgallery.min','slick','slick-theme'));
       //queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
       echo head_css();
       echo theme_header_background();
