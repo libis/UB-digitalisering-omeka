@@ -1,3 +1,4 @@
+<?php $lang = Zend_Registry::get('bootstrap')->getResource('Locale')->toString();?>
     <footer>
       <section class="info">
         <div class="container">
@@ -13,6 +14,7 @@
                       </div>
                     </div>
                     <div class="col-xs-12 col-md-5 col-lg-4">
+                      <?php if($lang = 'nl_BE'):?>
                         <ul>
                           <li><a href="<?php echo url("contact");?>"><?php echo __("Contact");?></a></li>
                           <li><a href="<?php echo url("collectiehouders_partners");?>"><?php echo __("Collection holders & partners");?></a></li>
@@ -20,6 +22,15 @@
                           <li><a href="<?php echo url("over-de-website");?>"><?php echo __("About the website");?></a></li>
                           <li><a target="_blank" href="http://bib.kuleuven.be/"><?php echo __("KU Leuven Libraries");?></a></li>
                         </ul>
+                      <?php else: ?>
+                        <ul>
+                          <li><a href="<?php echo url("en/contact");?>"><?php echo __("Contact");?></a></li>
+                          <li><a href="<?php echo url("en/partners");?>"><?php echo __("Collection holders & partners");?></a></li>
+                          <li><a href="<?php echo url("en/copyright");?>"><?php echo __("Copyright");?></a></li>
+                          <li><a href="<?php echo url("about");?>"><?php echo __("About the website");?></a></li>
+                          <li><a target="_blank" href="http://bib.kuleuven.be/english"><?php echo __("KU Leuven Libraries");?></a></li>
+                        </ul>
+                      <?php endif;?>
                     </div>
                 </div>
             </div>
