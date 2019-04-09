@@ -51,11 +51,9 @@
                     $bibcode = $texts['Object Item Type Metadata']['Bibliotheekcode'][0];
                   endif;
                   $loccode = $texts['Dublin Core']['Source'][0];
-                  if($bibcode == $sigil["Library Code"]):
-                    echo $lang;
+                  if($bibcode == $sigil["Library Code"]):                    
                     $source = $sigil[$lang];
                   elseif($loccode == $sigil["Location Code"]):
-                      echo $sigil[$lang];
                     $source = $sigil[$lang];
                   elseif($source == ''):
                     $source = implode(', ',$texts['Dublin Core']['Source']);
