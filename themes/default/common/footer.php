@@ -73,6 +73,7 @@ jQuery(document).ready(function(){
 </script>
 
 <!-- Latest compiled and minified JS -->
+<script src="//stijl.kuleuven.be/2016/js/all.min.js"></script>
 <script src="<?php echo WEB_PUBLIC_THEME;?>/default/javascripts/salvattore.js"></script>
 
 </html>
