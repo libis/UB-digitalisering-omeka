@@ -51,7 +51,7 @@
                     $bibcode = $texts['Object Item Type Metadata']['Bibliotheekcode'][0];
                   endif;
                   $loccode = $texts['Dublin Core']['Source'][0];
-                  if($bibcode == $sigil["Library Code"]):                    
+                  if($bibcode == $sigil["Library Code"]):
                     $source = $sigil[$lang];
                   elseif($loccode == $sigil["Location Code"]):
                     $source = $sigil[$lang];
@@ -122,13 +122,13 @@
               <div class="element">
                   <i class="material-icons">&#xE02F;</i>
                   <a target="_blank" href="https://limo.libis.be/primo-explore/search?query=any,contains,<?php echo $texts['Object Item Type Metadata']['MMS ID'][0]; ?>&tab=all_content_tab&search_scope=ALL_CONTENT&vid=KULeuven_UX&lang=en_US&offset=0">
-                    <?php echo __('Bekijk uitgebreide beschrijving');?></a>
+                    <?php echo __('View more information');?></a>
               </div>
               <?php endif; ?>
 
               <?php if (isset($texts['Object Item Type Metadata']['IE nummer'])): ?>
               <div class="element">
-                  <i class="material-icons">&#xE3B6;</i><a target="_blank" href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['IE nummer'][0]; ?>/representation"><?php echo __('Bekijk het volledige object');?></a>
+                  <i class="material-icons">&#xE3B6;</i><a target="_blank" href="https://resolver.libis.be/<?php echo $texts['Object Item Type Metadata']['IE nummer'][0]; ?>/representation"><?php echo __('View the complete object');?></a>
               </div>
               <?php endif; ?>
 
