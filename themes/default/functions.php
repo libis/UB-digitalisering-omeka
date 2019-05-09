@@ -82,11 +82,11 @@ function libis_link_to_related_exhibits($item) {
             $type = "";
 
             if(in_array("tentoonstelling",$tags)):
-              $type = "tentoonstelling";
+              $type = "exhibit";
             elseif(in_array("project",$tags)):
               $type = "project";
             else:
-              $type = "bijzonder werk";
+              $type = "selected showcase";
             endif;
             echo '<div class="element in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.exhibit_builder_exhibit_uri($exhibit).'">'.__("Is part of").' '.__($type).' <em>'.$exhibit->title.'</em></a></div>';
         }
