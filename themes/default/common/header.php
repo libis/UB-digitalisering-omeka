@@ -70,6 +70,9 @@
                     $request = Zend_Controller_Front::getInstance()->getRequest();
                     $currentLocale = Zend_Registry::get('bootstrap')->getResource('Locale')->toString();
                     $currentUrl = $request ->getRequestUri();
+                    if($currentUrl == '/?lang=en'):
+                      $currentUrl = '/';
+                    endif;
                     $query = array();
                   ?>
 
