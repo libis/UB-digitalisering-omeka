@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UBtheme\n"
 "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-SimplePages/issues\n"
 "POT-Creation-Date: 2012-01-09 21:49-0500\n"
-"PO-Revision-Date: 2019-02-18 12:27+0100\n"
+"PO-Revision-Date: 2019-07-22 10:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_BE\n"
@@ -123,15 +123,23 @@ msgid "View the digitisation projects"
 msgstr "Bekijk de digitaliseringsprojecten"
 
 #: index.php:99
-msgid "Recent exhibits"
+msgid "Recent exhibitions"
 msgstr "Recente tentoonstellingen"
 
 #: index.php:116
-msgid "View exhibit"
+msgid "View exhibition"
 msgstr "Bekijk tentoonstelling"
 
+#: index.php:116
+msgid "Exhibitions"
+msgstr "Tentoonstellingen"
+
+#: index.php:116
+msgid "Exhibition"
+msgstr "Tentoonstelling"
+
 #: index.php:123
-msgid "All exhibits"
+msgid "All exhibitions"
 msgstr "Alle tentoonstellingen"
 
 #: index.php:136

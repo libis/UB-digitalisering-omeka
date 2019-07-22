@@ -125,15 +125,23 @@ msgid "View the digitisation projects"
 msgstr ""
 
 #: index.php:99
-msgid "Recent exhibits"
+msgid "Recent exhibitions"
 msgstr ""
 
 #: index.php:116
-msgid "view exhibit"
+msgid "Exhibitions"
+msgstr ""
+
+#: index.php:116
+msgid "Exhibition"
+msgstr ""
+
+#: index.php:116
+msgid "view exhibition"
 msgstr ""
 
 #: index.php:123
-msgid "All exhibits"
+msgid "All exhibitions"
 msgstr ""
 
 #: index.php:136

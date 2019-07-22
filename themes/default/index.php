@@ -96,7 +96,7 @@
 ?>
 <section class="home-section gray">
     <div id="content" class='container'>
-        <h2><?php echo __("Recent exhibits");?></h2>
+        <h2><?php echo __("Recent exhibitions");?></h2>
         <hr align=left>
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
@@ -113,14 +113,14 @@
                               <?php endif; ?>
                         </div>
                         <div class="card-footer">
-                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View exhibit")); ?>
+                          <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View exhibition")); ?>
                         </div>
                     </div>
                 </div>
             <?php endforeach;?>
         </div>
         <div class="link-to-all">
-            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=tentoonstelling&sort_field=added&sort_dir=d"); ?>"><?php echo __("All exhibits");?></a>
+            <a class="btn btn-inverse" href="<?php echo url("exhibits/browse?tag=tentoonstelling&sort_field=added&sort_dir=d"); ?>"><?php echo __("All exhibitions");?></a>
         </div>
     </div>
 </section>

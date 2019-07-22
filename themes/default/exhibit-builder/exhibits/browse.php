@@ -1,5 +1,5 @@
 <?php
-$title = __('Exhibits');
+$title = __('Exhibitions');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 
 $params = $_GET;
@@ -29,7 +29,7 @@ endif;
 
             switch($tag){
               case "tentoonstelling":
-                $title = "Exhibits";
+                $title = "Exhibitions";
                 break;
               case "project":
                 $title = "Projects";
