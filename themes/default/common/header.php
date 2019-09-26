@@ -61,20 +61,26 @@
               &#9776;
             </button>
             <a class="navbar-brand" href="<?php echo WEB_ROOT;?>">EXPO</a>
-            <div class="logo"><a target="_blank" href="//bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png") ?>"></a></div>
+            <?php
+              $languages = array('en'=> 'EN','nl_BE' => 'NL');
+              $path = url();
+              $request = Zend_Controller_Front::getInstance()->getRequest();
+              $currentLocale = Zend_Registry::get('bootstrap')->getResource('Locale')->toString();
+              $currentUrl = $request ->getRequestUri();
+              if($currentUrl == '/?lang=en'):
+                $currentUrl = '/';
+              endif;
+              $query = array();
+            ?>
+            <?php if($currentLocale == 'en'):?>
+              <div class="logo"><a target="_blank" href="//bib.kuleuven.be/english"><img src="<?php echo img("KULEUVENen.png") ?>"></a></div>
+
+            <?php else: ?>
+              <div class="logo"><a target="_blank" href="//bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png") ?>"></a></div>
+            <?php endif; ?>
             <div class="pull-xs-right hidden-md-down">
               <div id="lang-switcher" class="ui-dropdown-list">
-                  <?php
-                    $languages = array('en'=> 'EN','nl_BE' => 'NL');
-                    $path = url();
-                    $request = Zend_Controller_Front::getInstance()->getRequest();
-                    $currentLocale = Zend_Registry::get('bootstrap')->getResource('Locale')->toString();
-                    $currentUrl = $request ->getRequestUri();
-                    if($currentUrl == '/?lang=en'):
-                      $currentUrl = '/';
-                    endif;
-                    $query = array();
-                  ?>
+
 
                   <h2 class="visuallyhidden">Sprache wählen</h2>
                   <?php foreach ($languages as $locale => $language): ?>

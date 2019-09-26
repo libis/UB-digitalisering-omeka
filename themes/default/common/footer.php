@@ -10,8 +10,12 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-7 col-lg-8">
                       <div class="footer-images">
-                        <a target="_blank" href="http://bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png");?>"></a>
-                      </div>
+                        <?php if($lang == 'en'):?>
+                          <a target="_blank" href="http://bib.kuleuven.be/english"><img src="<?php echo img("KULEUVENen.png");?>"></a>
+                        <?php else: ?>
+                          <a target="_blank" href="http://bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png");?>"></a>
+                        <?php endif; ?>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-5 col-lg-4">
                       <?php if($lang == 'nl_BE'):?>
