@@ -121,7 +121,7 @@
               <?php if (isset($texts['Object Item Type Metadata']['MMS ID'])): ?>
               <div class="element">
                   <i class="material-icons">&#xE02F;</i>
-                  <a target="_blank" href="https://limo.libis.be/primo-explore/search?query=any,contains,<?php echo $texts['Object Item Type Metadata']['MMS ID'][0]; ?>&tab=all_content_tab&search_scope=ALL_CONTENT&vid=KULeuven_UX&lang=en_US&offset=0"><?php echo __('View more information');?></a>
+                  <a target="_blank" href="https://limo.libis.be/primo-explore/search?query=any,contains,<?php echo $texts['Object Item Type Metadata']['MMS ID'][0]; ?>&tab=all_content_tab&search_scope=ALL_CONTENT&vid=KULeuven&lang=en_US&offset=0"><?php echo __('View more information');?></a>
               </div>
               <?php endif; ?>
 
