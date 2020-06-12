@@ -71,7 +71,7 @@ class Importer{
               $item->collection_id = $this->collection;
             endif;
             $item->featured = 0;
-            $item->public = 1;
+            $item->public = 0;
             $item->owner_id = 1;
             $item->save();
         else:
