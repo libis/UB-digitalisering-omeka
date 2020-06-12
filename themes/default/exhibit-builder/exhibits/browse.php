@@ -12,9 +12,24 @@ if(isset($params['featured'])):
   endif;
 endif;
 
-if(isset($params['tag'])):
-  $tags = $params['tag'];
+$tag="";
+if(isset($_GET['tag'])):
+  $tag = $_GET['tag'];
 endif;
+if(isset($params['tags'])):
+  $tag = $params['tags'];
+endif;
+$exhibits = get_db()->getTable('Exhibit')->findBy(array('tags'=>$tag));
+$ftags = array();
+$no_array = array('tentoonstelling','project','showcase');
+foreach($exhibits as $exhibit):
+  $etags = $exhibit->getTags();
+  foreach($etags as $etag):
+    if(!in_array($etag->name,$no_array)):
+      $ftags[$etag->name] = $etag;
+    endif;
+  endforeach;
+endforeach;
 
 ?>
 
@@ -22,23 +37,19 @@ endif;
   <section class="overlay">
     <div class="container">
         <?php
-            $tag="";
-            if(isset($_GET['tag'])):
-              $tag = $_GET['tag'];
-            endif;
 
-            switch($tag){
-              case "tentoonstelling":
-                $title = "Exhibitions";
-                break;
-              case "project":
-                $title = "Projects";
-                break;
-              case "galerij":
-                $title = "Gallery";
-                break;
-              default:
-                $title = "All";
+            if (strpos($tag, 'tentoonstelling') !== false) {
+              $theme = "tentoonstelling";
+              $title = "Exhibits";
+            }elseif (strpos($tag, 'project') !== false) {
+              $theme = "project";
+              $title = "Projects";
+            }elseif (strpos($tag, 'galerij') !== false) {
+              $theme = "galerij";
+              $title = "Showcase";
+            }else{
+              $theme = '';
+              $title = "All";
             }
         ?>
         <h1 class="white"><?php echo __($title); ?></h1>
@@ -61,13 +72,19 @@ endif;
              </a>
            <?php endif;?>
     </div>
+    <div class="tags">
+      <?php foreach($ftags as $ftag):?>
+        <a href="<?php echo url('exhibits/browse/?tags='.$theme.','.$ftag->name); ?>"><?php echo $ftag->name;?></a>
+      <?php endforeach;?>
+      <?php if($ftags){?>
+        <a class="clear-tags" href="<?php echo url('exhibits/browse/?tags='.$theme); ?>"><?php echo __($title); ?></a>
+      <?php } ?>
+      <?php //echo tag_string($ftags,'/exhibits/browse?tags=tentoonstelling');?>
+    </div>
     <?php echo pagination_links(); ?>
       <div class="row">
         <?php if (count($exhibits) > 0): ?>
-
-
           <?php $exhibitCount = 0;$i=0; ?>
-
           <?php foreach (loop('exhibit') as $exhibit): ?>
               <div class="col-md-6 col-lg-4 col-xs-12">
               <div class="card">

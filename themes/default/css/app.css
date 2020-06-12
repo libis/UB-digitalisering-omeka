@@ -7278,6 +7278,29 @@ section.gray {
   /* These are the classes that are going to be applied: */
 }
 
+.exhibit-show-section .tags,
+.simple-page-section .tags {
+  margin-bottom: 1rem;
+}
+
+.exhibit-show-section .tags a,
+.simple-page-section .tags a {
+  background: #08A7EB;
+  color: white;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.exhibit-show-section .tags .clear-tags,
+.simple-page-section .tags .clear-tags {
+  background: #eee;
+  color: #666;
+}
+
 .exhibit-show-section h1,
 .simple-page-section h1 {
   margin-bottom: 2rem;

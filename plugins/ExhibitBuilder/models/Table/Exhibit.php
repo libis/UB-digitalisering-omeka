@@ -4,7 +4,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.txt
  * @package ExhibitBuilder
  */
- 
+
 /**
  * Exhibit table class.
  *
@@ -45,13 +45,22 @@ class Table_Exhibit extends Omeka_Db_Table
             switch($paramName) {
                 case 'tag':
                 case 'tags':
+                    $db = $this->getDb();
                     $tags = explode(',', $paramValue);
-                    $select->joinInner(array('tg'=>$db->RecordsTags), 'tg.record_id = exhibits.id', array());
-                    $select->joinInner(array('t'=>$db->Tag), "t.id = tg.tag_id", array());
                     foreach ($tags as $k => $tag) {
-                        $select->where('t.name = ?', trim($tag));
+                      //$select->joinInner(array('tg'=>$db->RecordsTags), 'tg.record_id = exhibits.id', array());
+                      //$select->joinInner(array('t'=>$db->Tag), "t.id = tg.tag_id", array());
+
+                      //$select->where('t.name = ?', trim($tag));
+                      $subSelect = new Omeka_Db_Select;
+                      $subSelect->from(array('records_tags' => $db->RecordsTags), array('exhibits.id' => 'records_tags.record_id'))
+                          ->joinInner(array('tags' => $db->Tag), 'tags.id = records_tags.tag_id', array())
+                          ->where('tags.name = ? AND records_tags.`record_type` = "Exhibit"', trim($tag));
+
+                      $select->where('exhibits.id IN (' . (string) $subSelect . ')');
                     }
-                    $select->where("tg.record_type = ? ", array('Exhibit'));
+                    //$select->where("tg.record_type = ? ", array('Exhibit'));
+
                     break;
                 case 'public':
                     $this->filterByPublic($select, $params['public']);
@@ -105,7 +114,7 @@ class Table_Exhibit extends Omeka_Db_Table
 
     /**
      * Get a random featured Exhibit.
-     * 
+     *
      * @return Exhibit
      */
     public function findRandomFeatured()
