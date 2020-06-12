@@ -46,7 +46,7 @@ endforeach;
               $title = "Projects";
             }elseif (strpos($tag, 'galerij') !== false) {
               $theme = "galerij";
-              $title = "Showcase";
+              $title = "Gallery";
             }else{
               $theme = '';
               $title = "All";
