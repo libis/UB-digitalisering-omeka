@@ -64,7 +64,8 @@ echo head(array(
 
   jQuery("#exhibit-blocks").lightGallery(
     {
-      selector:'a.download-file'
+      selector:'a.download-file',
+      download: false
     }
   );
 </script>

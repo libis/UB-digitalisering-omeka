@@ -207,3 +207,6 @@ msgstr ""
 
 msgid "Previous page"
 msgstr ""
+
+msgid "Read more about this item"
+msgstr ""

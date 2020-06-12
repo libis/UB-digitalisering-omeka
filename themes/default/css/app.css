@@ -7280,15 +7280,15 @@ section.gray {
 
 .exhibit-show-section .tags,
 .simple-page-section .tags {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .exhibit-show-section .tags a,
 .simple-page-section .tags a {
   background: #08A7EB;
   color: white;
-  margin-right: 5px;
-  padding: 5px;
+  margin-right: 3px;
+  padding: 5px 6px;
   font-size: 0.9rem;
   font-weight: bold;
   border-radius: 5px;

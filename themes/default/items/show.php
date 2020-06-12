@@ -165,12 +165,13 @@
       speed: 300,
       slidesToShow: 1,
       adaptiveHeight: true,
-      infinite: false
+      infinite: false,
     });
 
     jQuery("#lightgallery").lightGallery(
       {
-        selector:'a'
+        selector:'a',
+        download: false
       }
     );
 </script>
