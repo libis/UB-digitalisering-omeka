@@ -8036,10 +8036,6 @@ footer .made-by img {
 }
 
 /* main: app.scss */
-.locale-switcher {
-  display: none;
-}
-
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -8058,6 +8054,7 @@ footer .made-by img {
   flex: 0 0 40px;
   margin-right: 5px;
   margin-left: auto;
+  text-transform: uppercase;
 }
 
 p.ui-dropdown-list-trigger {

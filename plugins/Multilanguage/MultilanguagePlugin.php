@@ -23,8 +23,11 @@ class MultilanguagePlugin extends Omeka_Plugin_AbstractPlugin
         'after_save_simple_pages_page',
         // No hook for exhibit form.
         'after_save_exhibit',
+        'after_save_exhibit_page',
         'after_delete_simple_pages_page',
         'after_delete_exhibit',
+        'after_delete_exhibit_page',
+        // No hook to browse exhibit page: the language is the exhibit one.
         'exhibits_browse_sql',
         'simple_pages_pages_browse_sql',
     );
@@ -49,6 +52,7 @@ class MultilanguagePlugin extends Omeka_Plugin_AbstractPlugin
     public function hookInitialize($args)
     {
         add_translation_source(dirname(__FILE__) . '/languages');
+        add_translation_source(dirname(dirname(dirname(__FILE__))) . '/themes/' . get_option('public_theme') . '/languages');
     }
 
     public function hookInstall()
@@ -59,8 +63,8 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageTranslation (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `element_id` int(11) NOT NULL,
   `record_id` int(11) NOT NULL,
-  `record_type` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL,
-  `locale_code` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL,
+  `record_type` tinytext COLLATE utf8_unicode_ci NOT NULL,
+  `locale_code` tinytext COLLATE utf8_unicode_ci NOT NULL,
   `text` text COLLATE utf8_unicode_ci,
   `translation` text COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
@@ -85,7 +89,7 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageContentLanguage (
         $sql = "
 CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `record_type` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL,
+  `record_type` tinytext COLLATE utf8_unicode_ci NOT NULL,
   `record_id` int(10) unsigned NOT NULL,
   `related_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
@@ -151,8 +155,6 @@ ALTER TABLE `$db->MultilanguageUserLanguage`
 ADD FOREIGN KEY (`user_id`) REFERENCES `omeka_users` (`id`) ON DELETE CASCADE;
             ";
             $db->query($sql);
-
-            // TODO Remove deleted records from MultilanguageContentLanguage.
         }
 
         if (version_compare($oldVersion, '1.2', '<')) {
@@ -177,9 +179,41 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             ";
             $db->query($sql);
-
-            // TODO Remove deleted records from MultilanguageContentLanguage.
         }
+
+        if (version_compare($oldVersion, '1.4', '<')) {
+            // Set language of all exhibit pages to the exhibit’s one.
+            $exhibits = get_records('Exhibit', array(), 0);
+            foreach ($exhibits as $exhibit) {
+                $contentLanguage = $this->localeCodeRecord($exhibit);
+                if ($contentLanguage) {
+                    $this->updateOrDeleteExhibitPagesLang($exhibit->id, $contentLanguage->lang);
+                }
+            }
+        }
+
+        if (version_compare($oldVersion, '1.4.1', '<')) {
+            $db = $this->_db;
+
+            $sql = <<<SQL
+UPDATE `$db->MultilanguageTranslation`
+SET `text` = REPLACE(`text`, CONCAT(CHAR(13), CHAR(10)), CHAR(10))
+SQL;
+            $db->query($sql);
+
+            $sql = <<<SQL
+UPDATE `$db->MultilanguageTranslation`
+SET `text` = REPLACE(`text`, CONCAT("\\\\", "r", "\\\\", "n"), CONCAT("\\\\", "n"))
+SQL;
+            $db->query($sql);
+        }
+
+        if (version_compare($oldVersion, '1.5.0', '<')) {
+            $flash = Zend_Controller_Action_HelperBroker::getStaticHelper('FlashMessenger');
+            $flash->addMessage(__('If plugin Translations is installed, it can be removed since this plugin integrates it.'));
+        }
+
+        // TODO Remove deleted records from MultilanguageContentLanguage.
     }
 
     public function hookConfigForm()
@@ -228,7 +262,7 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
 
         $elements = array();
         $elTable = get_db()->getTable('Element');
-        foreach ($post['element_sets'] as $elId) {
+        foreach ($post['multilanguage_elements'] as $elId) {
             $element = $elTable->find($elId);
             $elSet = $element->getElementSet();
             if (!array_key_exists($elSet->name, $elements)) {
@@ -236,19 +270,23 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
             }
             $elements[$elSet->name][] = $element->name;
         }
-        $post['element_sets'] = $elements;
+        $post['multilanguage_elements'] = $elements;
 
-        foreach ($this->_options as $optionKey => $optionValue) {
-            if (isset($post[$optionKey])) {
-                switch ($optionKey) {
-                    case 'multilanguage_locales':
-                    case 'multilanguage_locales_admin':
-                    case 'multilanguage_elements':
-                        $post[$optionKey] = serialize($post[$optionKey]);
-                        break;
-                }
-                set_option($optionKey, $post[$optionKey]);
+        if (!empty($post['multilanguage_translations_reset'])) {
+            $cache = Zend_Registry::get('Zend_Translate');
+            $cache::clearCache();
+        }
+
+        $post = array_intersect_key($post, $this->_options);
+        foreach ($post as $optionKey => $optionValue) {
+            switch ($optionKey) {
+                case 'multilanguage_locales':
+                case 'multilanguage_locales_admin':
+                case 'multilanguage_elements':
+                    $optionValue = serialize($optionValue);
+                    break;
             }
+            set_option($optionKey, $optionValue);
         }
     }
 
@@ -353,6 +391,25 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
     public function hookAfterSaveExhibit($args)
     {
         $this->saveMultilangueRecord($args);
+
+        // Set language of all exhibit pages to the exhibit’s one.
+        $exhibit = $args['record'];
+        $contentLanguage = $this->localeCodeRecord($exhibit);
+        $lang = $contentLanguage->lang ? $contentLanguage->lang : null;
+        $this->updateOrDeleteExhibitPagesLang($exhibit->id, $lang);
+    }
+
+    public function hookAfterSaveExhibitPage($args)
+    {
+        // Force the lang of the exhibit page.
+        $record = $args['record'];
+        $exhibit = get_record_by_id('Exhibit', $record->exhibit_id);
+        $contentLanguage = $this->localeCodeRecord($exhibit);
+        $lang = $contentLanguage->lang ? $contentLanguage->lang : null;
+        $post = $args['post'];
+        $post['locale_code'] = $lang;
+        $args['post'] = $post;
+        $this->saveMultilangueRecord($args);
     }
 
     public function hookAfterDeleteSimplePagesPage($args)
@@ -361,6 +418,11 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
     }
 
     public function hookAfterDeleteExhibit($args)
+    {
+        $this->deleteMultilangueRecord($args);
+    }
+
+    public function hookAfterDeleteExhibitPage($args)
     {
         $this->deleteMultilangueRecord($args);
     }
@@ -403,13 +465,11 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
 
         if (empty($enabledLocales)) {
             $newLocale = $this->getDefaultLocaleCode();
-
         } elseif (isset($_GET['lang'])
             && ($getLocale = html_escape($_GET['lang']))
             && in_array($getLocale, $enabledLocales)
         ) {
             $newLocale = $getLocale;
-
         } else {
             // Make sure the session has been configured properly
             Zend_Registry::get('bootstrap')->bootstrap('Session');
@@ -417,7 +477,6 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
 
             if ($session->locale && in_array($session->locale, $enabledLocales)) {
                 $newLocale = $session->locale;
-
             } else {
                 $user = current_user();
                 if ($user) {
@@ -432,7 +491,60 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
                 // Get the locale from the browser.
                 // TODO Get the locale from the browser: to be simplified.
                 if (empty($newLocale)) {
-                  $newLocale = 'nl_BE';
+                    $defaultCode = $this->getDefaultLocaleCode();
+                    $codes = $enabledLocales;
+                    //dump the site's default code to the end as a fallback
+                    $codes[] = $defaultCode;
+                    $browserCodes = array_keys(Zend_Locale::getBrowser());
+                    $match = false;
+                    foreach ($browserCodes as $browserCode) {
+                        if (in_array($browserCode, $codes)) {
+                            $newLocale = $browserCode;
+                            $match = true;
+                            break;
+                        }
+                    }
+                    if (!$match) {
+                        // Failed to find browserCode in our language codes.
+                        // Try to match a two character code and set it to
+                        // the closest equivalent if available.
+                        $shortcodes = array();
+                        foreach ($codes as $c) {
+                            $shortcodes[] = substr($c, 0, 2);
+                        }
+                        foreach ($browserCodes as $bcode) {
+                            if (in_array($bcode, $shortcodes)) {
+                                $lenCodes = count($codes);
+                                for ($i = 0; $i < $lenCodes; $i++) {
+                                    if (strcmp($bcode, $shortcodes[$i]) == 0) {
+                                        $newLocale = $codes[$i];
+                                        break 2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // From plugin Locale Switcher.
+                    if (empty($newLocale)) {
+                        if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+                            $languages = array_map(function ($l) {
+                                list($lang, $q) = array_pad(explode(';', $l), 2, null);
+                                return str_replace('-', '_', trim($lang));
+                            }, explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']));
+
+                            foreach ($languages as $language) {
+                                if (in_array($language, $enabledLocales)) {
+                                    $newLocale = $language;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (empty($newLocale)) {
+                            $newLocale = $defaultCode;
+                        }
+                    }
                 }
             }
         }
@@ -492,7 +604,7 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
     {
         $translatableElements = unserialize(get_option('multilanguage_elements'));
         if (is_array($translatableElements)) {
-            foreach ($translatableElements as $elementSet=>$elements) {
+            foreach ($translatableElements as $elementSet => $elements) {
                 foreach ($elements as $element) {
                     add_filter(array('Display', 'Item', $elementSet, $element), array($this, 'filterTranslate'), 1);
                     add_filter(array('ElementInput', 'Item', $elementSet, $element), array($this, 'filtertranslateField'), 1);
@@ -513,8 +625,14 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
         $languages = unserialize(get_option('multilanguage_locales'));
         $html = __('Translate to:');
         foreach ($languages as $code) {
-            $html .= sprintf(' <li data-element-id="%s" data-code="%s" data-record-id="%s" data-record-type="%s" class="multilanguage-code">%s</li>',
-                $element->id, $code, $record->id, $type, $code);
+            $html .= sprintf(
+                ' <li data-element-id="%s" data-code="%s" data-record-id="%s" data-record-type="%s" class="multilanguage-code">%s</li>',
+                $element->id,
+                $code,
+                $record->id,
+                $type,
+                $code
+            );
         }
         $components['form_controls'] .= '<ul class="multilanguage">' . $html . '</ul>';
         return $components;
@@ -662,13 +780,13 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
 
     protected function processRelatedRecordsRecord($record, $post)
     {
-        $relatedRecordIds = array_filter(array_map('intval', $post['related_records']));
-        sort($relatedRecordIds);
-
         // No relation can be set for a new record.
         if ($post['insert']) {
             return;
         }
+
+        $relatedRecordIds = array_filter(array_map('intval', $post['related_records']));
+        sort($relatedRecordIds);
 
         $recordType = get_class($record);
         $recordId = (int) $record->id;
@@ -760,5 +878,34 @@ CREATE TABLE IF NOT EXISTS $db->MultilanguageRelatedRecord (
         $records = get_db()->getTable('MultilanguageRelatedRecord')
             ->findRelatedRecords($recordType, $recordId, $included);
         return $records;
+    }
+
+    /**
+     * Force the language of all pages to the exhibit's one.
+     *
+     * @param int $exhibitId
+     * @param string|null $lang
+     */
+    protected function updateOrDeleteExhibitPagesLang($exhibitId, $lang)
+    {
+        $db = $this->_db;
+        if (empty($lang)) {
+            $sql = "
+DELETE FROM `{$db->MultilanguageContentLanguage}`
+WHERE `id` in (
+    SELECT DISTINCT `id` FROM `{$db->ExhibitPage}`
+    WHERE `exhibit_id` = $exhibitId
+);
+            ";
+        } else {
+            $sql = "
+INSERT INTO `{$db->MultilanguageContentLanguage}` (`record_type`, `record_id`, `lang`)
+SELECT 'ExhibitPage', `id`, '$lang'
+FROM `{$db->ExhibitPage}`
+WHERE `exhibit_id` = $exhibitId
+;
+            ";
+        }
+        $db->query($sql);
     }
 }

@@ -200,3 +200,10 @@ msgstr ""
 
 msgid "Exhibits"
 msgstr ""
+
+
+msgid "Next page"
+msgstr ""
+
+msgid "Previous page"
+msgstr ""

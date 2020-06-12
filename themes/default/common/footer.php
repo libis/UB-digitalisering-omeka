@@ -66,7 +66,7 @@
     ], {duration: 12000, fade: 1500});
   }
 jQuery(document).ready(function(){
-  jQuery('#lang-switcher').find('.ui-dropdown-list-trigger').each(function() {
+  jQuery('#lang-switcher1').find('.ui-dropdown-list-trigger').each(function() {
     jQuery(this).click(function(){
       jQuery(this).parent().toggleClass('active');
     });

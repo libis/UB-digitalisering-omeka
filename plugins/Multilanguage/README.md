@@ -3,7 +3,8 @@ Multilanguage (plugin for Omeka)
 
 [Multilanguage] is an [Omeka] plugin that is a limited attempt to make parts of
 Omeka multilanguage. It integrates the [locale switcher] from [BibLibre] for
-public front-end and admin back-end.
+public front-end and admin back-end, and [Translations], for management of
+translations of specific or hard coded theme strings.
 
 
 Installation
@@ -63,8 +64,77 @@ the navigation menu.
 For the exhibits, the list of exhibits will be limited to the exhibits that
 match the current language of the user.
 
+The language of the exhibit pages is forced to their exhibit’s one.
+
 The pages and exhibits with a language that doesn’t match the current language
 are still accessible, as long as the link is known or is hard coded somewhere.
+
+### Translations of specific strings
+
+Often, the theme contains hard-coded strings. To get them translated, you first
+need to translate them, then to make them available in Omeka.
+
+#### Translations of strings
+
+In Omeka, the translations are managed with `.po` files in the directory `application/languages/`
+for the core and in  the directory `languages/` of each enabled plugin. This
+plugin works the same.
+
+Simply update the translations files either in the directory `languages/` of the
+current theme, either in the directory `languages/` of the plugin: the main one
+`template.pot` and each translation like `fr.po` and `fr.mo`. You can add any
+language, but respect the names of the files (see `application/languages/`) and
+copy the two files `.po` and `.mo` for each language.
+
+The translations themselves can be created with a tool like [poedit], or [lokalize],
+or any other compliant software or online service.
+
+#### Reset cache of translations
+
+Omeka uses a cache to store translations. To reset it, go the the config page of
+the plugin and check the box. It must be done each time a language is updated.
+
+When the cache is not cleared, you shoud reset the cache manually. You can
+restart the web server or to remove all files starting with `omeka_i18n_cache`
+in the temp directory of the web server, usually `/tmp`, or `/tmp/systemd-private-xxx/tmp`.
+Or wait some hours for the automatic refresh of the translations.
+
+### Theme adaptation
+
+#### Standard functions
+
+- `metadata()`
+  The option `no_escape` should be set to `true` anytime.
+
+```php
+// Instead of:
+metadata($item, array('Dublin Core', 'Description'));
+// the theme should use:
+html_escape(metadata($item, array('Dublin Core', 'Description'), array('no_escape' => true)));
+```
+  In particular, this is required when the option `snippet` is used.
+
+```php
+// Instead of:
+metadata($item, array('Dublin Core', 'Description'), array('snippet' => 150));
+// the theme should use:
+html_escape(snippet(metadata($item, array('Dublin Core', 'Description'), array('no_escape' => true)), 0, 150));
+```
+
+For the function metadata(), the key `display_title` may not be translated, so
+use `array('Dublin Core', 'Title')`.
+
+#### Specific functions
+
+Some functions should be used in themes in order to use features of Omeka.
+
+- `locale_record()`
+- `locale_record_from_id_or_slug()`
+- `locale_exhibit_builder_display_random_featured_exhibit()`
+- `locale_exhibit_builder_random_featured_exhibit()`
+- `locale_convert_url()`
+
+See the file [`helpers/functions.php`] for more information.
 
 
 Limitations
@@ -105,7 +175,7 @@ exhibits in the new languages.
 
 If the plugin is installed, Simple Pages and Exhibits content will disappear
 without updating the language assignments from the Multilanguage Content tab.
-Each new SP or Exhibit requires a language assignment from that page.
+Each new simple page or Exhibit requires a language assignment from that page.
 
 
 Warning
@@ -160,9 +230,14 @@ Copyright
 [Multilanguage]: https://github.com/patrickmj/multilanguage
 [Omeka]: https://omeka.org
 [locale switcher]: https://github.com/Daniel-KM/Omeka-plugin-LocaleSwitcher
+[Translations]: https://github.com/Daniel-KM/Omeka-plugin-Translations
+[poedit]: https://poedit.net
+[lokalize]: https://www.kde.org/applications/development/lokalize
+[`helpers/functions.php`]: https://github.com/patrickmj/Multilanguage/blob/master/helpers/functions.php
 [flag-icon-css]: http://flag-icon-css.lip.is/
 [plugin issues]: https://github.com/patrickmj/Multilanguage/issues
 [GNU/GPL v3]: https://www.gnu.org/licenses/gpl-3.0.html
 [patrickmj]: https://github.com/patrickmj
 [BibLibre]: https://github.com/BibLibre
 [Daniel-KM]: https://github.com/Daniel-KM "Daniel Berthereau"
+

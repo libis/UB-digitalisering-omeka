@@ -79,28 +79,7 @@
               <div class="logo"><a target="_blank" href="//bib.kuleuven.be"><img src="<?php echo img("KULEUVEN.png") ?>"></a></div>
             <?php endif; ?>
             <div class="pull-xs-right hidden-md-down">
-              <div id="lang-switcher" class="ui-dropdown-list">
-
-
-                  <h2 class="visuallyhidden">Sprache wählen</h2>
-                  <?php foreach ($languages as $locale => $language): ?>
-                    <?php if ($locale == $currentLocale): ?>
-                        <p class="ui-dropdown-list-trigger">
-                        <span class="visuallyhidden">Aktuelle Sprache: </span> <strong><?php echo $language ?></strong></p>
-                    <?php endif; ?>
-                  <?php endforeach; ?>
-                  <ul>
-                  <?php foreach ($languages as $locale => $language): ?>
-                      <?php $url = url('setlocale', array('locale' => $locale, 'redirect' => $currentUrl) + $query); ?>
-                      <?php if ($locale != $currentLocale): ?>
-                           <li><a href="<?php echo $url;?>">
-                               <?php echo $language ?>
-                           </a></li>
-                      <?php endif;?>
-
-                  <?php endforeach; ?>
-                  </ul>
-              </div>
+              <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
             </div>
             <div class="pull-xs-right hidden-md-down">
               <button type="button" class="btn search-btn" data-toggle="modal" data-target="#exampleModal">
@@ -113,7 +92,7 @@
 
         </nav>
     </div>
-    <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
+
     <!-- Modals -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
