@@ -71,7 +71,7 @@ function libis_link_to_related_exhibits($item) {
     INNER JOIN {$db->prefix}exhibit_pages AS ep on ep.exhibit_id = e.id
     INNER JOIN {$db->prefix}exhibit_page_blocks AS epb ON epb.page_id = ep.id
     INNER JOIN {$db->prefix}exhibit_block_attachments AS epba ON epba.block_id = epb.id
-    WHERE epba.item_id = ? group by e.id";
+    WHERE epba.item_id = ? AND e.public = 1 group by e.id";
 
     $exhibits = $db->getTable("Exhibit")->fetchObjects($select,array($item->id));
 
@@ -89,6 +89,7 @@ function libis_link_to_related_exhibits($item) {
               $type = "selected showcase";
             endif;
             echo '<div class="element in-exhibit"><i class="material-icons">&#xE3B6;</i><a href="'.exhibit_builder_exhibit_uri($exhibit).'">'.__("Is part of").' '.__($type).' <em>'.$exhibit->title.'</em></a></div>';
+        
         }
     }
 }
