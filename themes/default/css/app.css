@@ -7984,6 +7984,37 @@ section.gray {
   text-align: right;
 }
 
+.search h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#search-results {
+  margin-bottom: 2rem;
+}
+
+#search-results tbody > tr > td {
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+#search-results .first {
+  max-width: 150px;
+}
+
+#search-results tr {
+  background: #fafafa;
+}
+
+#search-results a {
+  font-weight: bold;
+}
+
+#search-results .image img {
+  width: 50px;
+  margin-right: 10px;
+}
+
 footer .info {
   background: #067DB0;
   padding: 4rem 0;
