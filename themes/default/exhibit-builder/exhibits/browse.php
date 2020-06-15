@@ -87,6 +87,7 @@ endforeach;
           <?php $exhibitCount = 0;$i=0; ?>
           <?php foreach (loop('exhibit') as $exhibit): ?>
               <div class="col-md-6 col-lg-4 col-xs-12">
+              <a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>" style="text-decoration:none;">
               <div class="card">
                 <?php $exhibitCount++;$i++; ?>
 
@@ -96,7 +97,7 @@ endforeach;
                 <?php endif;?>
 
                 <div class="card-block browse-block page">
-                  <h2><a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>"><?php echo metadata($exhibit, 'title'); ?></a></h2>
+                  <h2><?php echo metadata($exhibit, 'title'); ?></h2>
                   <!--<?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
                   <div class="exhibit-credits">
                       <h4><?php echo $exhibitCredits; ?></h4>
@@ -111,6 +112,7 @@ endforeach;
                   <a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>"><?php echo __("read more");?></a>
                 </div>
               </div>
+              </a>
           </div>
       <?php endforeach; ?>
       </div>

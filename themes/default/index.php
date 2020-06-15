@@ -101,13 +101,14 @@
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
                 <div class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>" style="text-decoration:none;">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
                             <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("thumbnail"); ?>)"></div>
                         <?php endif; ?>
                         <div class="card-block">
-                              <h2><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h2>
+                              <h2><?php echo metadata($exhibit, 'title'); ?></h2>
                               <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true,'snippet'=>'150'))): ?>
                               <div class="description"><p><?php echo $exhibitDescription; ?></p></div>
                               <?php endif; ?>
@@ -116,6 +117,7 @@
                           <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View exhibition")); ?>
                         </div>
                     </div>
+                  </a>
                 </div>
             <?php endforeach;?>
         </div>
@@ -138,13 +140,14 @@
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
                 <div class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>" style="text-decoration:none;">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
                             <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("thumbnail"); ?>)"></div>
                         <?php endif; ?>
                         <div class="card-block">
-                              <h2><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h2>
+                              <h2><?php echo metadata($exhibit, 'title'); ?></h2>
                               <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true,'snippet'=>'150'))): ?>
                               <div class="description"><p><?php echo $exhibitDescription; ?></p></div>
                               <?php endif; ?>
@@ -153,6 +156,7 @@
                           <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View this selected showcase")); ?>
                         </div>
                     </div>
+                  </a>
                 </div>
             <?php endforeach;?>
         </div>
@@ -175,13 +179,14 @@
         <div class="row">
             <?php foreach($exhibits as $exhibit):?>
                 <div class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="<?php echo html_escape(exhibit_builder_exhibit_uri($exhibit)); ?>" style="text-decoration:none;">
                     <div class="card">
                         <?php $file = $exhibit->getFile();?>
                         <?php if ($file): ?>
                             <div class="card-img-top" style="background-image: url(<?php echo $file->getWebPath("thumbnail"); ?>)"></div>
                         <?php endif; ?>
                         <div class="card-block">
-                              <h2><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h2>
+                              <h2><?php echo metadata($exhibit, 'title'); ?></h2>
                               <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true,'snippet'=>'150'))): ?>
                               <div class="description"><p><?php echo $exhibitDescription; ?></p></div>
                               <?php endif; ?>
@@ -190,6 +195,7 @@
                           <?php echo exhibit_builder_link_to_exhibit($exhibit, __("View project")); ?>
                         </div>
                     </div>
+                  </a>
                 </div>
             <?php endforeach;?>
         </div>
