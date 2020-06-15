@@ -65,14 +65,17 @@
           "<?php echo img('bg/bg4.jpg');?>"
     ], {duration: 12000, fade: 1500});
   }
-jQuery(document).ready(function(){
-  jQuery('#lang-switcher1').find('.ui-dropdown-list-trigger').each(function() {
-    jQuery(this).click(function(){
-      jQuery(this).parent().toggleClass('active');
+  jQuery(document).ready(function(){
+    jQuery('#lang-switcher1').find('.ui-dropdown-list-trigger').each(function() {
+      jQuery(this).click(function(){
+        jQuery(this).parent().toggleClass('active');
+      });
     });
 
+    jQuery('#exampleModal').on('shown.bs.modal', function () {
+    jQuery('#inputSearch').focus();
+})
   });
-});
 
 </script>
 

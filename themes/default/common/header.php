@@ -103,7 +103,7 @@
                 <div class="col-xs-11">
                   <form id="search-modal" action="<?php echo url('/solr-search');?>">
                     <div class="input-group">
-                      <input type="search" class="form-control" name="q" value="" placeholder="<?php echo __("Search...");?> "/>
+                      <input type="search" id="inputSearch" class="form-control" name="q" value="" placeholder="<?php echo __("Search...");?> " autofocus/>
                       <span class="input-group-btn">
                         <button class="btn" type="submit"><i class="material-icons">search</i></button>
                       </span>
