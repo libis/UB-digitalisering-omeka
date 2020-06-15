@@ -6346,7 +6346,7 @@ a:hover {
   height: 100%;
   border-radius: 0;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 20%;
 }
 
 .navbar {
@@ -6732,6 +6732,10 @@ header .nav-container {
 .jumbotron .overlay {
   background: rgba(51, 51, 51, 0.3);
   padding: 2.5rem 0;
+}
+
+.exhibits.show .overlay {
+  padding: 0;
 }
 
 .feature-section {
