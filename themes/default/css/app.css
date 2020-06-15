@@ -8002,6 +8002,14 @@ section.gray {
   max-width: 150px;
 }
 
+#search-results .placeholder {
+  height: 50px;
+  width: 50px;
+  background: #eee;
+  float: left;
+  margin-right: 10px;
+}
+
 #search-results tr {
   background: #fafafa;
 }
