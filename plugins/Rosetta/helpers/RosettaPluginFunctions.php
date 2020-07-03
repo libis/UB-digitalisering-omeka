@@ -116,13 +116,14 @@ function rosetta_get_list($url){
 function rosetta_admin_form($item){
     ob_start();?>
     <h2>Insert file with Rosetta ID</h2>
-    <p class="explanation">Just fill in the pid (f.e. FL5113305)</p>
-    <Input type = 'text' Name ='known-pid' value= ''>
+    <p class="explanation">Just fill in the id's (f.e. IE13349238, FL5113305, ...).</p>
+    <p class="explanation">Multiple id's have to be seperated by | (f.e. IE13349238|FL5113305)</p>
+    <Input type = 'text' Name ='known-pid' value= '' size="80">
     <br>
     <br>
     <label>Search for child objects (case sensitive)</label>
 	  <br>
-    <input name='fileUrl' placeholder='FL5113305' id='fileUrl' type='text' class='fileinput' />
+    <input name='fileUrl' placeholder='IE12525603' id='fileUrl' type='text' class='fileinput' />
     <button style="float:none;" class="rosetta-search">Search</button>
     <br><br>
     <div id="wait" style="display:none;">Please wait, this might take a few seconds.</div>

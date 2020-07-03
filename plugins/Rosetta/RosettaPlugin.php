@@ -108,11 +108,11 @@ class RosettaPlugin extends Omeka_Plugin_AbstractPlugin
             $post = $args['post'];
 
             if($post['known-pid']):
-                $pids[] = $post['known-pid'];
+                $pids = explode('|',$post['known-pid']);
             elseif($post['pid']):
-                $pids[] = $post['pid'];
+                $pids = $post['pid'];
             endif;
-
+            //var_dump($pids);die();
             if(!empty($pids)):
                 foreach($pids as $pid):
                     $obj = rosetta_download_image(get_option('rosetta_resolver').'/'.$pid.'/stream?quality=low&from_cache=0');
