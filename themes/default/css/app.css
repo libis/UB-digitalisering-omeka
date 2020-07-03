@@ -7909,7 +7909,7 @@ section.gray {
   font-size: 0.85rem;
 }
 
-.solr-section-results .pagination {
+.pagination {
   list-style: none;
   width: 300px;
   float: right;
@@ -7919,28 +7919,28 @@ section.gray {
 }
 
 @media (max-width: 543px) {
-  .solr-section-results .pagination {
+  .pagination {
     width: 100%;
     text-align: center;
   }
 }
 
-.solr-section-results .pagination li {
+.pagination li {
   display: inline-block;
   text-align: center;
 }
 
-.solr-section-results .pagination li a {
+.pagination li a {
   line-height: inherit;
 }
 
-.solr-section-results .pagination li a i {
+.pagination li a i {
   font-size: 1.9rem;
   line-height: 0.7;
   vertical-align: text-top;
 }
 
-.solr-section-results .pagination li input {
+.pagination li input {
   background: rgba(8, 167, 235, 0.1);
   border: none;
   padding: 3px 5px;
