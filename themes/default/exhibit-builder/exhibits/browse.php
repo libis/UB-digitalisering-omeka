@@ -63,11 +63,11 @@ endforeach;
        <span class="sort-label"><i class="material-icons">&#xE152;</i>
            <?php echo __('Filter: '); ?></span>
            <?php if($show_featured):?>
-             <a href="<?php echo url('exhibits/browse?tag='.$tags.'&sort_field=added&sort_dir=d');?>">
+             <a href="<?php echo url('exhibits/browse?tag='.$tag.'&sort_field=added&sort_dir=d');?>">
                <?php echo __("All"); ?>
              </a>
            <?php else:?>
-             <a href="<?php echo url('exhibits/browse?featured=1&tag='.$tags.'&sort_field=added&sort_dir=d');?>">
+             <a href="<?php echo url('exhibits/browse?featured=1&tag='.$tag.'&sort_field=added&sort_dir=d');?>">
                <?php echo __("Featured"); ?>
              </a>
            <?php endif;?>
