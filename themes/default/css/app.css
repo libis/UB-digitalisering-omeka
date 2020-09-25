@@ -7909,6 +7909,11 @@ section.gray {
   font-size: 0.85rem;
 }
 
+.pagination-nav {
+  width: 100%;
+  display: flex;
+}
+
 .pagination {
   list-style: none;
   width: 300px;
