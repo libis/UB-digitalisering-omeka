@@ -17,6 +17,7 @@
     <?php echo auto_discovery_link_tags(); ?>
 
     <!-- Plugin Stuff -->
+    
     <?php fire_plugin_hook('public_head', array('view' => $this)); ?>
 
     <?php
@@ -26,6 +27,7 @@
       queue_js_file("slick.min");
       echo head_js();
     ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
