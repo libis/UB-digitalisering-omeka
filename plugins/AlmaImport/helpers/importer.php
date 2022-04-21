@@ -72,7 +72,7 @@ class Importer{
             endif;
             $item->featured = 0;
             $item->public = 0;
-            $item->owner_id = 1;
+            //$item->owner_id = 1;
             $item->save();
         else:
             $new_item = false;

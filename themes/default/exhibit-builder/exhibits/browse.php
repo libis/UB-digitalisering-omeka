@@ -13,12 +13,13 @@ if(isset($params['featured'])):
 endif;
 
 $tag="";
-if(isset($_GET['tag'])):
-  $tag = $_GET['tag'];
+if(isset($params['tag'])):
+  $tag = htmlspecialchars($params['tag'], ENT_QUOTES, 'UTF-8');
 endif;
 if(isset($params['tags'])):
-  $tag = $params['tags'];
+  $tag = htmlspecialchars($params['tags'], ENT_QUOTES, 'UTF-8');
 endif;
+
 $exhibits = get_db()->getTable('Exhibit')->findBy(array('tags'=>$tag));
 $ftags = array();
 $no_array = array('tentoonstelling','project','showcase');
