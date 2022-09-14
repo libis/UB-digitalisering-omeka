@@ -43,7 +43,7 @@
                 <?php
                 $string = file_get_contents(PLUGIN_DIR."/AlmaImport/sigil_mapping.json");
                 $json_a = json_decode($string, true);
-                $bibcode = '';$source = '';$loccode='';
+                $bibcode = '';$source = '';$source_l='';$loccode='';
 
                 foreach($json_a as $sigil):
                   $bibcode = '';
@@ -54,11 +54,16 @@
                   if($bibcode == $sigil["Library Code"]):
                     $source = $sigil[$lang];
                   elseif($loccode == $sigil["Location Code"]):
-                    $source = $sigil[$lang];
-                  elseif($source == ''):
-                    $source = implode(', ',$texts['Dublin Core']['Source']);
+                    $source_l = $sigil[$lang];                  
                   endif;
                 endforeach;
+                if($source == '' && $source_l != ''){
+                  $source = $source_l;
+                }
+                if($source == '' && $source_l == ''){
+                  $source = implode(', ',$texts['Dublin Core']['Source']);
+                }
+                  
                 ?>
               <div class="element">
                   <h3><?php echo __('Collection'); ?></h3>
